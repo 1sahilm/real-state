@@ -1,0 +1,130 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 50px;
+    
+  }
+  
+  .contact-info {
+    margin-left: 100px;
+    max-width: 40%;
+  }
+  
+  .contact-info h2 {
+    width: 124px;
+    height: 28px;
+    font-family: Inter;
+font-size: 22.62px;
+font-weight: 400;
+line-height: 27.37px;
+text-align: left;
+
+    /* font-size: 14px; */
+    color: #888;
+  }
+  
+  .contact-info h1 {
+    width: 1042px;
+    height: 81px;
+    font-family: Inter;
+font-size: 67.86px;
+font-weight: 545;
+line-height: 82.12px;
+text-align: left;
+
+    margin: 10px 0;
+  }
+  
+  .contact-info p {
+    width: 698px;
+    height: 26px;
+    font-family: Inter;
+    font-size: 22.62px;
+    font-weight: 400;
+    line-height: 27.37px;
+    text-align: left;
+    
+    color: #666;
+  }
+  
+  .contact-methods {
+    margin-top: 20px;
+  }
+  
+  .contact-method {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-method .icon {
+    /* font-size: 24px;
+    margin-right: 10px;
+    object-fit: contain; */
+  }
+  
+  .contact-form {
+    margin-top: 200px;
+    margin-right: 60px;
+   width: 800px;
+   height: 530px;
+    background-color: #F9F2E966;
+    padding: 60px;
+    border-radius: 8px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+  }
+  
+  .contact-form button {
+    padding: 10px;
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background-color: #333;
+  }
+
+  .contact-method-text{
+
+
+    margin-left: 30px;
+  }
+
+  .contact-method-text h3{
+    width: 162px;
+    height: 34px;
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 34.49px;
+    letter-spacing: 0.01em;
+    text-align: left;
+  }
+
+  .contact-method-text p{
+    width: 239px;
+    height: 26px;
+    font-family: Eloquiar;
+font-size: 22.62px;
+font-weight: 400;
+line-height: 27.37px;
+text-align: left;
+
+  }
