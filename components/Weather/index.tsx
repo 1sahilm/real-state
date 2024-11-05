@@ -1,11 +1,9 @@
-
-import React from 'react';
-import './Weather.css'; 
+import React from "react";
+import "./Weather.css";
 
 const Weather = () => {
   return (
     <div className="weather-container">
-   
       <div className="left-section">
         <div className="temperature">27°C</div>
         <div className="date">17th Jun '21</div>
@@ -23,7 +21,6 @@ const Weather = () => {
         </div>
       </div>
 
-    
       <div className="right-section">
         <div className="location">Delhi, India</div>
         <div className="sun-details">

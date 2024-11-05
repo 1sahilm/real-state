@@ -1,68 +1,80 @@
 .weather-container {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(to right, #63b3ed, #4299e1);
-    color: white;
-    padding: 2rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-   
-    /* top: 100px; */
-    /* bottom: 0px; */
-   
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(to right, #63b3ed, #4299e1); */
+  background: url("../../assets/footer.jpg");
+  background-size: cover;
+  color: black;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  /* top: 100px; */
+  /* bottom: 0px; */
+}
+
+@media (min-width: 768px) {
+  .weather-container {
+    flex-direction: row;
   }
-  
-  @media (min-width: 768px) {
-    .weather-container {
-      flex-direction: row;
-    }
+}
+@media (max-width: 768px) {
+  .weather-container {
+    width: 100%;
   }
-  
-  .left-section, .right-section {
-    flex: 1;
-    padding: 1rem;
-  }
-  
-  .temperature {
-    font-size: 3.75rem;
-    font-weight: 300;
-  }
-  
-  .date {
-    font-size: 1.25rem;
-    margin-top: 0.5rem;
-  }
-  
-  .time {
-    font-size: 1rem;
-    margin-top: 0.25rem;
-  }
-  
-  .weather-details, .forecast, .sun-details, .additional-details {
-    display: flex;
-    margin-top: 1rem;
-    gap: 1rem;
-    font-size: 0.875rem;
-  }
-  
-  .forecast-item, .sun-detail, .additional-detail {
-    text-align: center;
-  }
-  
-  .forecast-item {
-    background-color: white;
-    color: black;
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .location {
-    font-size: 1.5rem;
-    font-weight: 300;
-  }
-  
-  .quality, .uv-index {
-    font-size: 1.125rem;
-  }
+}
+
+.left-section,
+.right-section {
+  flex: 1;
+  padding: 1rem;
+}
+
+.temperature {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+.date {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.time {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+.weather-details,
+.forecast,
+.sun-details,
+.additional-details {
+  display: flex;
+  margin-top: 1rem;
+  gap: 1rem;
+  font-size: 0.875rem;
+}
+
+.forecast-item,
+.sun-detail,
+.additional-detail {
+  text-align: center;
+}
+
+.forecast-item {
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.location {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.quality,
+.uv-index {
+  font-size: 1.125rem;
+}

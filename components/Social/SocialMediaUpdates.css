@@ -66,7 +66,8 @@
   margin: 0 10px;
 }
 
-.next-arrow, .prev-arrow {
+.next-arrow,
+.prev-arrow {
   background-color: #007bff;
   color: #fff;
   border: none;
@@ -78,7 +79,8 @@
   position: relative;
 }
 
-.slick-prev, .slick-next {
+.slick-prev,
+.slick-next {
   position: absolute;
   bottom: -50px;
   transform: translateY(0);
@@ -98,8 +100,18 @@
   top: 120;
   width: 50%;
   height: 100%;
-  background-color: #E8F8F2;
+  background-color: #e8f8f2;
   border-radius: 50%;
   filter: blur(28px);
   z-index: -1;
+}
+
+@media (max-width: 768px) {
+  .social-media-updates {
+    padding: 15px;
+    height: auto;
+  }
+  .update-card {
+    height: 500px;
+  }
 }

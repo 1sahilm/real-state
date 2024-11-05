@@ -2,9 +2,8 @@
   width: 90%;
   margin: 0 auto;
   position: relative;
-  height: 755px;
+  min-height: 755px;
   margin-top: 100px;
-  
 }
 
 .title {
@@ -13,26 +12,17 @@
   text-align: center;
   font-weight: 600;
   margin-bottom: 100px;
-  /* align-self: center; */
-  /* width:485px; */
 }
 
 .carousel {
-    
-    width: 100%;
-    height: 588px;
+  width: 100%;
+  height: 588px;
   display: flex;
- 
-  /* overflow-x: auto;
-  scroll-snap-type: x mandatory; */
 }
 
 .slide {
-
   position: relative;
-  /* min-width: 1300px; */
-  /* height: 633px; */
-  gap: 10px;
+  /* gap: 10px; */
   margin: 0 10px;
   scroll-snap-align: center;
   border-radius: 10px;
@@ -70,5 +60,3 @@
   width: 1200px;
   height: 550px;
 }
-
-

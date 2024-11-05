@@ -1,62 +1,156 @@
-import React from 'react';
-import './Footer.css'; 
-import Weather from '../Weather';
+import React from "react";
+import "./Footer.css";
+import Weather from "../Weather";
 
 const Footer = () => {
   return (
     <>
-    <footer className="footer">
-      <div className="footer-content">
-        <div className="footer-section">
-          <h3>Product</h3>
-          <ul>
-            <li>Features</li>
-            <li>Integrations</li>
-            <li>Pricing</li>
-            <li>FAQ</li>
-          </ul>
+      <footer className="footerContainer">
+        <div className="footer">
+          <div className="footer-content">
+            <div className="footer-section">
+              <h3>Product</h3>
+              <ul>
+                <li>Features</li>
+                <li>Integrations</li>
+                <li>Pricing</li>
+                <li>FAQ</li>
+              </ul>
+            </div>
+            <div className="footer-section">
+              <h3>Company</h3>
+              <ul>
+                <li>About Us</li>
+                <li>Blog</li>
+                <li>Customers</li>
+                <li>Brand</li>
+              </ul>
+            </div>
+            <div className="footer-section">
+              <h3>INFO</h3>
+              <ul>
+                <li>Terms of Use</li>
+                <li>Terms & Conditions</li>
+                <li>Privacy Policy</li>
+                <li>Feedback</li>
+                <li>Help Centre</li>
+              </ul>
+            </div>
+          </div>
+          <div className="footer-social">
+            <p>Follow us</p>
+            <div className="social-icons">
+              {/* Replace '#' with actual links */}
+              <a href="#">
+                <svg
+                  width="55"
+                  height="55"
+                  viewBox="0 0 55 55"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="27.5" cy="27.5" r="27.5" fill="#6D6A6A" />
+                  <path
+                    d="M29.8846 26.0111L39.1875 15H36.9854L28.9072 24.5613L22.4541 15H15L24.7621 29.4498L15 41H17.2021L25.7395 30.9115L32.5577 41H40L29.8728 26.0111H29.8846ZM26.8582 29.5816L25.8691 28.1438L18.0028 16.6894H21.3943L27.7414 25.9272L28.7306 27.365L36.9854 39.3825H33.594L26.8582 29.5816Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="55"
+                  height="55"
+                  viewBox="0 0 55 55"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="27.5" cy="27.5" r="27.5" fill="#6D6A6A" />
+                  <path
+                    d="M11.8975 26.3224C11.8975 26.3224 25.6076 20.6175 30.3693 18.5991C32.1866 17.7942 38.3746 15.2275 38.3746 15.2275C38.3746 15.2275 41.227 14.1075 40.9855 16.8375C40.905 17.9575 40.2724 21.9008 39.6398 26.1591C38.6851 32.1907 37.6615 38.7823 37.6615 38.7823C37.6615 38.7823 37.5004 40.6373 36.1547 40.9523C34.809 41.279 32.5892 39.8323 32.1866 39.5057C31.8646 39.2607 26.2402 35.644 24.1814 33.8824C23.6293 33.404 22.9967 32.4357 24.2619 31.304C27.1143 28.6557 30.5189 25.3541 32.5892 23.2658C33.5438 22.2975 34.487 20.0458 30.5304 22.7874C24.906 26.7308 19.3506 30.4291 19.3506 30.4291C19.3506 30.4291 18.0854 31.234 15.7046 30.5107C13.3237 29.7874 10.5518 28.8191 10.5518 28.8191C10.5518 28.8191 8.654 27.6174 11.8975 26.3224Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="55"
+                  height="55"
+                  viewBox="0 0 55 55"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="27.5" cy="27.5" r="27.5" fill="#6D6A6A" />
+                  <path
+                    d="M38.7862 17.1771C36.5499 16.1452 34.2007 15.4195 31.7724 15C31.4674 15.5443 31.1173 16.27 30.8801 16.8482C28.305 16.4627 25.6847 16.4627 23.1096 16.8482C22.8385 16.2133 22.5223 15.601 22.1834 15C19.7551 15.4082 17.3946 16.1452 15.1696 17.1884C10.7422 23.8103 9.54499 30.2734 10.1436 36.6459C12.7413 38.5848 15.6553 40.0589 18.7499 41C19.4502 40.0475 20.0601 39.0497 20.5909 37.9952C19.5857 37.621 18.6144 37.1561 17.6883 36.6005C17.9254 36.4191 18.1626 36.2377 18.3885 36.0449C23.8324 38.6302 30.146 38.6302 35.6012 36.0449C35.8271 36.2377 36.0755 36.4191 36.3127 36.6005C35.3866 37.1561 34.4153 37.621 33.4101 37.9952C33.9409 39.0384 34.5621 40.0475 35.2511 40.9887C38.3457 40.0475 41.2597 38.5735 43.8574 36.6345C44.5576 29.2529 42.6489 22.8465 38.7975 17.1657L38.7862 17.1771ZM21.3364 32.734C19.6535 32.734 18.2869 31.1919 18.2869 29.2983C18.2869 27.4047 19.6309 25.8513 21.3364 25.8513C23.0418 25.8513 24.4084 27.3934 24.3971 29.287C24.3858 31.1805 23.0531 32.734 21.3364 32.734ZM32.6308 32.734C30.9479 32.734 29.5813 31.1919 29.5813 29.2983C29.5813 27.4047 30.9253 25.8513 32.6308 25.8513C34.3362 25.8513 35.7028 27.3934 35.6802 29.287C35.6577 31.1805 34.3362 32.734 32.6308 32.734Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="55"
+                  height="55"
+                  viewBox="0 0 55 55"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="27.5" cy="27.5" r="27.5" fill="#6D6A6A" />
+                  <path
+                    d="M40.852 24.8624C40.852 21.6196 38.2324 19 34.9896 19H19.9991C16.7563 19 14.1367 21.6196 14.1367 24.8624V31.8326C14.1367 35.0753 16.7563 37.6949 19.9991 37.6949H34.9896C38.2324 37.6949 40.852 35.0753 40.852 31.8326V24.8624ZM32.0354 28.8783L25.3191 32.2018C25.0536 32.3403 24.165 32.1557 24.165 31.8556V25.0239C24.165 24.7239 25.0652 24.5277 25.3306 24.6777L31.77 28.1744C32.0354 28.3244 32.3239 28.7167 32.0469 28.8668L32.0354 28.8783Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="55"
+                  height="55"
+                  viewBox="0 0 55 55"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="27.5" cy="27.5" r="27.5" fill="#6D6A6A" />
+                  <path
+                    d="M30.546 45.0357V29.7104H35.6583L36.6276 23.3749H30.546V19.2551C30.546 17.5241 31.4 15.8277 34.1235 15.8277H36.8931V10.427C36.8931 10.427 34.3773 10 31.9885 10C26.9802 10 23.7028 13.035 23.7028 18.5281V23.3634H18.1289V29.6989H23.7028V45.0241H30.5576L30.546 45.0357Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="55"
+                  height="55"
+                  viewBox="0 0 55 55"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <circle cx="27.5" cy="27.5" r="27.5" fill="#6D6A6A" />
+                  <path
+                    d="M35.1838 18.1797C34.2484 18.1797 33.4883 18.9398 33.4883 19.8753C33.4883 20.8107 34.2484 21.5708 35.1838 21.5708C36.1193 21.5708 36.8794 20.8107 36.8794 19.8753C36.8794 18.9398 36.1193 18.1797 35.1838 18.1797Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M27.6174 20.3545C23.6767 20.3545 20.4727 23.5585 20.4727 27.4993C20.4727 31.44 23.6767 34.644 27.6174 34.644C31.5581 34.644 34.7622 31.44 34.7622 27.4993C34.7622 23.5585 31.5581 20.3545 27.6174 20.3545ZM27.6174 32.0714C25.0916 32.0714 23.0452 30.0134 23.0452 27.4993C23.0452 24.9851 25.1033 22.9271 27.6174 22.9271C30.1315 22.9271 32.1896 24.9851 32.1896 27.4993C32.1896 30.0134 30.1315 32.0714 27.6174 32.0714Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M33.2883 42H21.7117C16.9056 42 13 38.0944 13 33.2883V21.7117C13 16.9056 16.9056 13 21.7117 13H33.2883C38.0944 13 42 16.9056 42 21.7117V33.2883C42 38.0944 38.0944 42 33.2883 42ZM21.7117 15.7246C18.4141 15.7246 15.7246 18.4141 15.7246 21.7117V33.2883C15.7246 36.5859 18.4141 39.2754 21.7117 39.2754H33.2883C36.5859 39.2754 39.2754 36.5859 39.2754 33.2883V21.7117C39.2754 18.4141 36.5859 15.7246 33.2883 15.7246H21.7117Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className="footer-copyright">
+            <center>
+              <p>Copyright © 2023-2024 INFRANIUM. All Rights Reserved</p>
+            </center>
+          </div>
         </div>
-        <div className="footer-section">
-          <h3>Company</h3>
-          <ul>
-            <li>About Us</li>
-            <li>Blog</li>
-            <li>Customers</li>
-            <li>Brand</li>
-          </ul>
-        </div>
-        <div className="footer-section">
-          <h3>INFO</h3>
-          <ul>
-            <li>Terms of Use</li>
-            <li>Terms & Conditions</li>
-            <li>Privacy Policy</li>
-            <li>Feedback</li>
-            <li>Help Centre</li>
-          </ul>
-        </div>
-      </div>
-      <div className="footer-social">
-        <p>Follow us</p>
-        <div className="social-icons">
-          {/* Replace '#' with actual links */}
-          <a href="#"><i className="icon-x"></i></a>
-          <a href="#"><i className="icon-telegram"></i></a>
-          <a href="#"><i className="icon-discord"></i></a>
-          <a href="#"><i className="icon-youtube"></i></a>
-          <a href="#"><i className="icon-facebook"></i></a>
-          <a href="#"><i className="icon-instagram"></i></a>
-        </div>
-      </div>
-      <div className="footer-copyright">
-        <p>Copyright © 2023-2024 INFRANIUM. All Rights Reserved</p>
-      </div>
-      <Weather />
-    </footer>
-    
+        <Weather />
+      </footer>
     </>
   );
 };
 
 export default Footer;
-
