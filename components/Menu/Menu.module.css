@@ -32,3 +32,9 @@
 .icon {
   margin-right: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  .menu {
+    width: 51%;
+  }
+}
