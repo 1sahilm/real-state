@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  background: linear-gradient(to center, #e8f8f2, #e8f8f2);
+  background: linear-gradient(center, #e8f8f2, #e8f8f2);
 }
 
 .aboutimages {

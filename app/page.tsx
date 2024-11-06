@@ -1,8 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
 import Banner from "../components/Banner/Banner";
-import Story from "../components/Story/Story";
 import About from "../components/About/About";
 import Welcome from "../components/Welcome/welcome";
 import Story2 from "../components/Story2";
@@ -14,7 +12,6 @@ import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/Contact";
 // import LocomotiveScroll from 'locomotive-scroll';
 import Footer from "@/components/Footer";
-import Weather from "@/components/Weather";
 import Carousel from "@/components/Carousel/Carousel";
 export default function Home() {
   const bannerData = [

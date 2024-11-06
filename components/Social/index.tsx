@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SocialMediaUpdates.css";
 import Image from "next/image";
 import Slider from "react-slick";
@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { isMobile } from "react-device-detect";
 
 const SocialMediaUpdates = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [_, setCurrentIndex] = useState(0);
   const visibleItems = isMobile ? 1 : 3;
 
   const updates = [
@@ -44,7 +44,7 @@ const SocialMediaUpdates = () => {
     speed: 500,
     slidesToShow: visibleItems,
     slidesToScroll: 1,
-    beforeChange: (current: number, next: number) => setCurrentIndex(next),
+    // beforeChange: (current: number, next: number) => setCurrentIndex(next),
   };
 
   return (

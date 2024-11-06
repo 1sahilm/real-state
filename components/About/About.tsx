@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import style from "./About.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
