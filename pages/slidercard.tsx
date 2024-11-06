@@ -1,7 +1,6 @@
-// pages/slider.tsx
 "use client";
-import React, { useState } from "react";
-import { motion } from "framer-motion";
+
+import React from "react";
 import "./slider.css";
 import Slider from "../components/slider";
 
