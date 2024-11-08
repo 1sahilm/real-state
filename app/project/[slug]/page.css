@@ -1,0 +1,14 @@
+.overlay-project-detail-image {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+}
+
+.aminity-image {
+  width: 500px;
+  height: 530px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -7,9 +7,24 @@ import Magic from "../../assets/Projects/Magic.png";
 import AfterRain from "../../assets/Projects/after_rain.png";
 import Wood from "../../assets/Projects/wood.png";
 import WindMills from "../../assets/Projects/wind_mills.png";
-import { DevelopmentIcon, MapIcon } from "../Icons/Icon";
+import dynamic from "next/dynamic";
+import Link from "next/link";
 
-const ProjectList: React.FC = () => {
+// Dynamically import icons to reduce initial bundle size
+const DevelopmentIcon = dynamic(() =>
+  import("../Icons/Icon").then((mod) => mod.DevelopmentIcon)
+);
+const MapIcon = dynamic(() =>
+  import("../Icons/Icon").then((mod) => mod.MapIcon)
+);
+
+type ProjectListProps = {
+  isRenderingFromProjectDetails?: boolean;
+};
+
+const ProjectList: React.FC<ProjectListProps> = ({
+  isRenderingFromProjectDetails,
+}) => {
   const projectListing = [
     {
       profileImage: Trangled,
@@ -80,53 +95,61 @@ exclusive community of apartments and earth-sheltered homes with green roofs.`,
 
   return (
     <div className="md:py-8 px-8 md:px-20">
-      <div className="grid gap-8 md:grid-cols-2 mb-20 lg:grid-cols-3 mt-8 md:mt-16 md:mb-16">
+      {isRenderingFromProjectDetails && (
+        <h2 className="font-bold text-4xl">More</h2>
+      )}
+      <div
+        className={
+          "grid gap-8 md:grid-cols-2 mb-20 lg:grid-cols-3 mt-8 md:mt-16 md:mb-16"
+        }
+      >
         {projectListing.map((project, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-lg overflow-hidden project-card-wrapper p-3"
-          >
-            <Image
-              src={project.profileImage}
-              alt="Team Image"
-              className="shadow-lg projects-image"
-            />
-            <div>
-              <div className="text-[18.73px] font-semibold mb-2 mt-2">
-                {project.name}
+          <>
+            <Link href={`/project/${index + 1}`} key={index} passHref>
+              <div className="bg-white rounded-lg overflow-hidden project-card-wrapper p-3">
+                <Image
+                  src={project.profileImage}
+                  alt="Team Image"
+                  className="shadow-lg projects-image"
+                />
+                <div>
+                  <div className="text-[18.73px] font-semibold mb-2 mt-2">
+                    {project?.name}
+                  </div>
+                  <p className="text-[#7C7885] mb-4 text-[13px] leading-[21.33px] font-normal project-description">
+                    {project?.description}
+                  </p>
+                  <div className="flex items-center text-gray-500 mb-4">
+                    <span className="mr-2 ">
+                      <DevelopmentIcon />
+                    </span>
+                    <span className="text-[#7C7885] leading-[21.33px] text-[12.89px]">
+                      {project.developmentType}
+                    </span>
+                  </div>
+                  <div className="mb-4 text-[#7C7885] leading-[21.33px] text-[12.89px] ml-[25px]">
+                    {project?.price ? project.price : ""}
+                  </div>
+                  <div className="flex items-center text-gray-500 mb-4">
+                    <span className="mr-2">
+                      <MapIcon />
+                    </span>
+                    <span className="text-[#7C7885] leading-[21.33px] text-[12.89px]">
+                      {project?.location}
+                    </span>
+                  </div>
+                  <div className="flex space-x-4">
+                    <button className="px-4 py-2 bg-black text-white rounded-md learn-more-button">
+                      Learn More
+                    </button>
+                    <button className="px-4 py-2 contact-us-button ">
+                      Contact Us
+                    </button>
+                  </div>
+                </div>
               </div>
-              <p className="text-[#7C7885] mb-4 text-[13px] leading-[21.33px] font-normal project-description">
-                {project.description}
-              </p>
-              <div className="flex items-center text-gray-500 mb-4">
-                <span className="mr-2 ">
-                  <DevelopmentIcon />
-                </span>
-                <span className="text-[#7C7885] leading-[21.33px] text-[12.89px]">
-                  {project.developmentType}
-                </span>
-              </div>
-              <div className="mb-4 text-[#7C7885] leading-[21.33px] text-[12.89px] ml-[25px]">
-                {project?.price ? project.price : ""}
-              </div>
-              <div className="flex items-center text-gray-500 mb-4">
-                <span className="mr-2">
-                  <MapIcon />
-                </span>
-                <span className="text-[#7C7885] leading-[21.33px] text-[12.89px]">
-                  {project?.location}
-                </span>
-              </div>
-              <div className="flex space-x-4">
-                <button className="px-4 py-2 bg-black text-white rounded-md learn-more-button">
-                  Learn More
-                </button>
-                <button className="px-4 py-2 contact-us-button ">
-                  Contact Us
-                </button>
-              </div>
-            </div>
-          </div>
+            </Link>
+          </>
         ))}
       </div>
     </div>
