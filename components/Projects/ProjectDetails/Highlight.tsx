@@ -46,7 +46,7 @@ const Highlight: React.FC = () => {
                 <div className="font-medium uppercase mr-2 mb-8">
                   Key Features:
                 </div>
-                <ul className="text-[#6B6B6B] space-y-4 list-disc">
+                <ul className="text-[#6B6B6B] space-y-4 list-disc mb-8 md:mb-0">
                   <li>Prime Location</li>
                   <li>Spacious Interiors</li>
                   <li>Luxurious Master Suite</li>

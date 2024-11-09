@@ -99,9 +99,9 @@ exclusive community of apartments and earth-sheltered homes with green roofs.`,
         <h2 className="font-bold text-4xl">More</h2>
       )}
       <div
-        className={
-          "grid gap-8 md:grid-cols-2 mb-20 lg:grid-cols-3 mt-8 md:mt-16 md:mb-16"
-        }
+        className={`grid gap-8 md:grid-cols-2 mb-20 lg:grid-cols-3 ${
+          isRenderingFromProjectDetails ? "mt-6" : "mt-8 md:mt-16"
+        } md:mb-16`}
       >
         {projectListing.map((project, index) => (
           <>
