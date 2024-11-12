@@ -31,9 +31,7 @@
   }
 
   .aminity-image {
-    width: 500px;
-    height: 530px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    width: auto;
+    height: auto;
   }
 }
