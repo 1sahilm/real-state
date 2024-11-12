@@ -51,10 +51,10 @@ const Features: React.FC = () => {
       <div className="grid gap-8 md:grid-cols-2 mb-20 lg:grid-cols-3 md:mt-16 md:mb-16 relative">
         {!isMobile && (
           <>
-            <div className="hidden absolute top-0 bottom-0 left-[422px] md:block">
+            <div className="hidden absolute top-0 bottom-0 left-[395px] md:block">
               <div className="h-96 w-px bg-gray-300"></div>
             </div>
-            <div className="hidden absolute top-0 bottom-0 left-[850px] md:block ">
+            <div className="hidden absolute top-0 bottom-0 left-[860px] md:block ">
               <div className="h-96 w-px bg-gray-300"></div>
             </div>
           </>

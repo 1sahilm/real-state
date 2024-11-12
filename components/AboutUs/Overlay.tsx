@@ -6,14 +6,11 @@ import overlayImg from "../../assets/AboutUs/real_estate_overlay_image.png";
 const Overlay: React.FC = () => {
   return (
     <div
-      className="relative h-screen bg-cover bg-center"
+      className="relative md:h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${backgroundImg.src})` }}
     >
       {/* Semi-transparent overlay */}
-      <div
-        className="block md:hidden absolute inset-0 bg-gradient-to-b from-transparent via-white/50 to-white"
-        style={{ backdropFilter: "blur(8px)" }}
-      ></div>
+      <div className="block md:hidden absolute inset-0 bg-gradient-to-b from-transparent  to-white"></div>
 
       {/* Container for content */}
       <div className="relative z-10 flex flex-col md:justify-center md:items-center h-full p-8 space-y-8 md:flex-row md:space-x-24 md:space-y-0 md:p-20">

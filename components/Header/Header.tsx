@@ -25,9 +25,10 @@ const Header: React.FC = () => {
             alt="Real Estate"
             width={40}
             height={50}
-            className={`${styles.logoImage} ${styles.logoSmall}`}
+            className={`${styles.logoImage} ${styles.logoSmall} hidden md:block`}
             priority
           />
+
           <Image
             src={logo}
             alt="Real Estate"

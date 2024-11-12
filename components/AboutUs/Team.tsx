@@ -69,7 +69,7 @@ const Team: React.FC = () => {
 
       <div className="grid gap-8 md:grid-cols-2 mb-20 lg:grid-cols-4 md:mt-16 md:mb-16">
         {realStateTeam.map((team, index) => (
-          <div key={index} className="text-left mr-0 md:mr-16">
+          <div key={index} className="text-left mr-0 md:mr-3">
             <Image
               src={team.profileImage}
               alt="Team Image"

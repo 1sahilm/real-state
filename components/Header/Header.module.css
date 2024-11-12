@@ -67,3 +67,23 @@
 .logoSmall {
   margin-right: 0.5rem;
 }
+
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: row-reverse;
+  }
+  .logoWrapper {
+    margin-top: 0;
+  }
+  .logoLink {
+    position: unset;
+    left: 0;
+    transform: none;
+  }
+
+  .button {
+    background-color: transparent;
+    border: none;
+    color: white;
+  }
+}
