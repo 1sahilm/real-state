@@ -107,11 +107,16 @@ exclusive community of apartments and earth-sheltered homes with green roofs.`,
           <>
             <Link href={`/project/${index + 1}`} key={index} passHref>
               <div className="bg-white rounded-lg overflow-hidden project-card-wrapper p-3">
-                <Image
-                  src={project.profileImage}
-                  alt="Team Image"
-                  className="shadow-lg projects-image"
-                />
+                <div className="projects-image">
+                  <Image
+                    src={project.profileImage}
+                    alt="Team Image"
+                    className="shadow-lg projects-image"
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition="center"
+                  />
+                </div>
                 <div>
                   <div className="text-[18.73px] font-semibold mb-2 mt-2">
                     {project?.name}
