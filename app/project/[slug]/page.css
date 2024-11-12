@@ -7,8 +7,33 @@
 }
 
 .aminity-image {
-  width: 500px;
-  height: 530px;
+  width: 450px;
+  height: 550px;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.overlay-text-bg {
+  width: 705px;
+  height: 136px;
+  top: 1048px;
+  left: 1215px;
+  padding: 20px 175px 20px 40px;
+}
+
+@media (max-width: 768px) {
+  .overlay-text-bg {
+    width: auto;
+    height: auto;
+    left: auto;
+    border: none;
+    padding: 20px 0px 20px 40px;
+  }
+
+  .aminity-image {
+    width: 500px;
+    height: 530px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }

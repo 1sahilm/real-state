@@ -7,8 +7,8 @@ const Overlay: React.FC = () => {
       className="overlay-project-detail-image"
       style={{ backgroundImage: `url(${backgroundImg.src})` }}
     >
-      <div className="relative z-10 flex items-end space-x-20 md:space-x-52 justify-end md:items-end h-full text-white">
-        <div>
+      <div className="relative z-10 flex items-end space-x-20 md:space-x-36 justify-end md:items-end h-full text-white">
+        <div className="mb-0 md:mb-10">
           <h2 className="text-3xl font-bold md:text-xl ml-2 md:ml-0">
             Projects
           </h2>
@@ -16,17 +16,17 @@ const Overlay: React.FC = () => {
             Residential fort’d
           </h2>
         </div>
-        <div className="bg-black px-10 py-6 flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-24">
+        <div className="bg-black flex flex-col space-y-3 md:space-y-0 md:flex-row md:space-x-24 overlay-text-bg">
           <div>
             <div className="uppercase text-base font-bold mb-3">Location:</div>
-            <div className="text-[#888888] text-base">
+            <div className="text-[#888888] text-sm leading-7">
               Andreas Vesaliusstraat & Frederik 3000
               <br /> Louvain Belgium
             </div>
           </div>
           <div>
-            <div className="uppercase text-base font-bold mb-3">Price:</div>
-            <div className="text-[#888888] text-base">
+            <div className="uppercase text-base font-bold mb-3 ">Price:</div>
+            <div className="text-[#888888] text-sm leading-7">
               Starting <br />
               from $2.999.99
             </div>

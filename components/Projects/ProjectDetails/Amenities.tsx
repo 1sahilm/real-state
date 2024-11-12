@@ -52,7 +52,7 @@ const Amenities: React.FC = () => {
 
   return (
     <div className="container mx-auto px-8 mt-10 md:mt-20">
-      <div className="px-0 md:px-10 grid grid-cols-1 md:grid-cols-2 md:space-x-40">
+      <div className="px-0 md:px-10 grid grid-cols-1 md:grid-cols-2 md:space-x-32">
         <div>
           <p className="text-[#888888] text-lg mb-10 md:mb-8">
             This Visualization Project Is About The Building In The Historical
@@ -81,12 +81,15 @@ const Amenities: React.FC = () => {
               </>
             )}
 
-            {/* Amenity items */}
             {amenities.map((item, index) => {
               const IconComponent = item.icon;
               return (
-                <div key={index} className="space-y-4 mr-0 md:mr-16 md:mb-10">
-                  <div className="rounded-[50%] border-black border-[1.54px] w-24 h-24 p-10 flex items-center justify-center">
+                <div key={index} className="space-y-4 mr-0 md:mr-16">
+                  <div
+                    className={`rounded-[50%] border-black border-[1.54px] ${
+                      index > 2 && " mt-0 md:mt-10"
+                    }  w-24 h-24 p-10 flex items-center justify-center`}
+                  >
                     <div className="w-8 h-8 flex items-center justify-center">
                       <IconComponent />
                     </div>
