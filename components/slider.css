@@ -159,4 +159,8 @@
     align-items: space-between;
     justify-content: center;
   }
+
+  .slider-container {
+    height: 580px;
+  }
 }

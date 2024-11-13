@@ -2,21 +2,20 @@
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  
+
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: top;
   height: 100vh;
-  margin: 0 auto;
+  margin-bottom: 30px;
+
   /* padding: 3rem; */
 }
 
 .bannerImageContainer {
   position: absolute;
   inset: 0;
-  
-
 }
 
 .bannerOverlay {
@@ -34,9 +33,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
 }
-
 
 .bannerText {
   text-align: center;
@@ -46,24 +43,19 @@
 }
 
 .bannerHeading {
-
   /* font-family: Inter; */
   font-size: 60px;
   font-weight: 700;
   line-height: 80.17px;
   text-align: center;
-  
 }
 
 .bannerDescription {
-  
   /* font-family: Inter; */
   font-size: 20px;
   font-weight: 600;
   line-height: 40.06px;
   text-align: center;
-  
-  
 }
 
 .bannerDots {
@@ -71,7 +63,6 @@
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  
 }
 
 .dot {
@@ -87,4 +78,3 @@
 .activeDot {
   background-color: #000000;
 }
-
