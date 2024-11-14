@@ -41,7 +41,6 @@ export default function Home() {
   return (
     <div>
       <Banner bannerData={bannerData} />
-      {/* <Story /> */}
       <Carousel />
       <About />
       <Welcome />
@@ -53,7 +52,6 @@ export default function Home() {
       <FAQ />
       <ContactForm />
       <Footer />
-      {/* <Weather /> */}
     </div>
   );
 }

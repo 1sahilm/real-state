@@ -1,44 +1,13 @@
 .contact-container {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
   margin-top: 50px;
-}
-
-.contact-info {
-  margin-left: 100px;
-  max-width: 40%;
-}
-
-.contact-info h2 {
-  width: 124px;
-  height: 28px;
-  font-family: Inter;
-  font-size: 22.62px;
-  font-weight: 400;
-  line-height: 27.37px;
-  text-align: left;
-
-  /* font-size: 14px; */
-  color: #888;
-}
-
-.contact-info h1 {
-  width: 1042px;
-  height: 81px;
-  font-family: Inter;
-  font-size: 67.86px;
-  font-weight: 545;
-  line-height: 82.12px;
-  text-align: left;
-
-  margin: 10px 0;
+  border-bottom: 1px solid;
 }
 
 .contact-info p {
   width: 698px;
   height: 26px;
-  font-family: Inter;
   font-size: 22.62px;
   font-weight: 400;
   line-height: 27.37px;
@@ -46,26 +15,8 @@
   color: #666;
 }
 
-.contact-methods {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  min-height: 325px;
-}
-
-.contact-method {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
 .contact-form {
-  margin-top: 200px;
-  margin-right: 60px;
-  width: 800px;
-  height: 530px;
   background-color: #f9f2e966;
-  padding: 60px;
   border-radius: 8px;
 }
 
@@ -94,51 +45,21 @@
 
 .contact-form button:hover {
   background-color: #333;
+  color: white;
 }
 
-.contact-method-text {
-  margin-left: 30px;
+.help-wrapper {
+  bottom: -9px;
+  right: 4px;
+  border-radius: 17px 17px 17px 0px;
 }
 
-.contact-method-text h3 {
-  width: 162px;
-  height: 34px;
-  font-family: Inter;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 34.49px;
-  letter-spacing: 0.01em;
-  text-align: left;
-}
-
-.contact-method-text p {
-  width: 239px;
-  height: 26px;
-  font-family: Eloquiar;
-  font-size: 22.62px;
-  font-weight: 400;
-  line-height: 27.37px;
-  text-align: left;
+.chat-wrapper {
+  bottom: -52px;
+  right: 4px;
 }
 
 @media (max-width: 768px) {
-  .contact-container {
-    padding: 15px;
-    display: block;
-  }
-  .contact-info {
-    margin-left: 10px;
-    max-width: 100%;
-  }
-  .contact-info h1 {
-    width: 100%;
-    height: auto;
-  }
-
-  .contact-info p {
-    width: 100%;
-    height: auto;
-  }
   .contact-form {
     margin-top: 10px;
     margin-right: 10px;
@@ -148,5 +69,12 @@
   }
   .contact-methods {
     min-height: 0px;
+  }
+  .help-wrapper {
+    bottom: -40px;
+  }
+  .chat-wrapper {
+    bottom: -80px;
+    right: 4px;
   }
 }
