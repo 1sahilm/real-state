@@ -1,13 +1,37 @@
 import React from "react";
 import "./Footer.css";
 import Weather from "../Weather";
+import Image from "next/image";
+import logo1 from "../../assets/Logo/Black_logo_1.png";
+import logo from "../../assets/Logo/Blakc_logo_2.png";
 
 const Footer = () => {
   return (
     <>
       <footer className="footerContainer">
-        <div className="footer">
-          <div className="footer-content">
+        <div className="footer md:w-1/2 relative">
+          <div className="blur-bg" />
+          <div className="flex items-center md:justify-normal w-full space-x-4 ml-14 md:ml-8 mb-4">
+            <div>
+              <Image
+                src={logo1}
+                alt="Real Estate"
+                width={40}
+                height={60}
+                priority
+              />
+            </div>
+            <div>
+              <Image
+                src={logo}
+                alt="Real Estate"
+                width={140}
+                height={50}
+                priority
+              />
+            </div>
+          </div>
+          <div className="footer-content space-y-10 md:space-y-0 md:space-x-20 md:ml-10">
             <div className="footer-section">
               <h3>Product</h3>
               <ul>
@@ -37,10 +61,11 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="footer-social">
-            <p>Follow us</p>
+          <div className="footer-social md:w-4/5 mt-10 md:mt-28">
+            <div className="mb-2 font-bold text-center md:text-right md:mr-20">
+              Follow us
+            </div>
             <div className="social-icons">
-              {/* Replace '#' with actual links */}
               <a href="#">
                 <svg
                   width="55"
@@ -140,13 +165,12 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
-          </div>
-          <div className="footer-copyright">
-            <center>
-              <p>Copyright © 2023-2024 INFRANIUM. All Rights Reserved</p>
-            </center>
+            <div className="md:text-[18px] mt-6 md:mt-4">
+              Copyright © 2023-2024 INFRANIUM. All Rights Reserved
+            </div>
           </div>
         </div>
+
         <Weather />
       </footer>
     </>
