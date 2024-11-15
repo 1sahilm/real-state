@@ -15,25 +15,26 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="faq-main-container">
+    <div className="md:px-32 p-8 my-10  md:my-28 flex flex-col md:flex-row justify-between">
       <div className="faq-container">
-        <h2>Frequently Asked Questions</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur. Tellus urna urna molestie.
+        <h2 className="text-5xl font-semibold leading-[55px]">
+          Frequently Asked Questions
+        </h2>
+        <p className="text-xl mt-2 leading-[30px] font-normal">
+          Lorem ipsum dolor sit amet consectetur. Tellus urna <br /> urna
+          molestie.
         </p>
       </div>
       <div className="faq-list">
         {questions.map((question, index) => (
-          <div key={index} className="faq-item">
-            <div className="faq-question" onClick={() => toggleQuestion(index)}>
+          <div key={index} className="faq-item mt-10 md:mt-0">
+            <div
+              className="faq-question w-full px-8 py-5"
+              onClick={() => toggleQuestion(index)}
+            >
               <span>{question}</span>
-              <span>{activeIndex === index ? "-" : "+"}</span>
+              <span className="font-3xl">+</span>
             </div>
-            {activeIndex === index && (
-              <div className="faq-answer">
-                <p>This is the answer to {question.toLowerCase()}.</p>
-              </div>
-            )}
           </div>
         ))}
       </div>
