@@ -7,7 +7,7 @@ import aboutSectionBehindImage from "../../assets/AboutUs/overlay_image-3.png";
 
 const Description: React.FC = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row">
+    <div className="flex flex-col-reverse md:flex-row  max-w-[1366px] mr-auto ml-auto">
       <div className="relative z-10 md:mb-20 flex flex-col-reverse md:justify-center md:items-center h-full p-8 space-y-8 md:flex-row md:space-x-24 md:space-y-0 md:p-20">
         {/* Text Section */}
         <div className="md:w-2/5 mt-40 md:mt-14 mb-8 md:mb-0 md:font-medium">

@@ -12,7 +12,8 @@ import FAQ from "@/components/FAQ";
 import ContactForm from "@/components/Contact";
 // import LocomotiveScroll from 'locomotive-scroll';
 import Footer from "@/components/Footer";
-import Carousel from "@/components/Carousel/Carousel";
+// import Carousel from "@/components/Carousel/Carousel";
+import Propertiesslider from "@/components/Properties";
 export default function Home() {
   const bannerData = [
     {
@@ -41,7 +42,8 @@ export default function Home() {
   return (
     <div>
       <Banner bannerData={bannerData} />
-      <Carousel />
+      <Propertiesslider />
+      {/* <Carousel /> */}
       <About />
       <Welcome />
       <Slider />

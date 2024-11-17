@@ -4,7 +4,7 @@
   display: flex;
   align-items: flex-start;
   padding: 70px;
-  background-color: white;
+  /* background-color: white; */
   gap: 40px;
   /* margin: 0 auto; */
 }

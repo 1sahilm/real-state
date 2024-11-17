@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Welcome = () => {
   return (
-    <div className={styles.container} style={{ overflow: "hidden" }}>
+    <div className={`${styles.container}  max-w-[1366px] mr-auto ml-auto`}>
       <div className={styles.text}>
         <h1 className={styles.title}>Welcome To The</h1>
         <h2 className={styles.subtitle}>Vision of Infranium</h2>
@@ -28,7 +28,7 @@ const Welcome = () => {
       <div className={styles.image}>
         <Image
           className={styles.customImage}
-          src={require("../../assets/Welcome/pexels-mtk402-2098913.jpg")}
+          src={require("../../assets/Welcome/image.png")}
           alt="Welcome"
         />
       </div>

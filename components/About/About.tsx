@@ -12,18 +12,18 @@ const About: React.FC = () => {
   }, []);
 
   return (
-    <div className={style.aboutcontainer}>
+    <div className={`${style.aboutcontainer} max-w-[1366px] mr-auto ml-auto`}>
       <div className={style.aboutimages}>
         <div className={style.blurbackground}></div>
         <Image
-          src={require("../../assets/About/image (2).png")}
+          src={require("../../assets/About/image1.svg")}
           alt="Team Meeting"
           className={style.aboutimage1}
           data-aos="fade-out-bounce"
         />
         <motion.div>
           <Image
-            src={require("../../assets/About/image (3).png")}
+            src={require("../../assets/About/image2.svg")}
             alt="Construction"
             className={style.aboutimage2}
             data-aos="fade-out-bounce"

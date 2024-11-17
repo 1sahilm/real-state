@@ -13,7 +13,7 @@ const Overlay: React.FC = () => {
       <div className="block md:hidden absolute inset-0 bg-gradient-to-b from-transparent  to-white"></div>
 
       {/* Container for content */}
-      <div className="relative z-10 flex flex-col md:justify-center md:items-center h-full p-8 space-y-8 md:flex-row md:space-x-24 md:space-y-0 md:p-20">
+      <div className="max-w-[1366px] mr-auto ml-auto relative z-10 flex flex-col md:justify-center md:items-center h-full p-8 space-y-8 md:flex-row md:space-x-24 md:space-y-0 md:p-20">
         {/* Overlay Image */}
         <div className="relative  md:mb-0 md:w-2/5 mt-24 md:mt-0 ">
           <Image

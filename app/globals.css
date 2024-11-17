@@ -8,11 +8,11 @@ body {
   overflow-x: hidden;
 }
 
-body {
+/* body {
   cursor: none;
-}
+}   */
 
-.custom-cursor {
+ /* .custom-cursor {
   width: 5px;
   height: 5px;
   background-color: white;
@@ -36,4 +36,35 @@ body {
 
 html {
   scroll-behavior: smooth;
+} */
+
+
+
+
+ 
+
+.Propertiescardslider .slick-arrow {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    display: block;
+    z-index: 1;
+    border-radius: 100px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px 0px #00000059;
+}
+.Propertiescardslider .slick-arrow:before {
+ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='32' height='32' fill='rgba(0,0,0,1)'%3E%3Cpath d='M7.82843 10.9999H20V12.9999H7.82843L13.1924 18.3638L11.7782 19.778L4 11.9999L11.7782 4.22168L13.1924 5.63589L7.82843 10.9999Z'%3E%3C/path%3E%3C/svg%3E") !important;
+ width: 32px;
+ height: 32px;
+ background-size: contain;
+ background-repeat: no-repeat;
+ font-size: 0px;
+}
+
+.Propertiescardslider .slick-arrow.slick-next:before  {
+    transform: rotate(180deg);
 }

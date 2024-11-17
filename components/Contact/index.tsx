@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ContactForm = () => {
   return (
-    <div className="md:px-32 pb-24 md:pb-0 px-8 border-black border-b-[1px] mb-6">
+    <div className="md:px-32 pb-24 md:pb-0 px-8 border-black border-b-[1px] mb-6  max-w-[1366px] mr-auto ml-auto  ">
       <div>
         <h2 className="text-[22.67px] font-normal">Contact Us</h2>
         <h1 className="text-5xl md:text-6xl font-semibold -ml-1 mt-2">

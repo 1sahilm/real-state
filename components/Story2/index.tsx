@@ -10,26 +10,26 @@ const PropertyFeatures = () => {
   }, []);
 
   return (
-    <div className="features-container">
+    <div className="features-container relative max-w-[1366px] mr-auto ml-auto">
       <div className="images">
         <div className="blurbackground"></div>
         <Image
           src={require("../../assets/Story22/pexels-pixabay-164558 (1).jpg")}
           alt="House 1"
           className="feature-image1"
-          data-aos="fade-up"
+          // data-aos="fade-up"
         />
         <Image
           src={require("../../assets/Story22/pexels-pixabay-209315.jpg")}
           alt="House 2"
           className="feature-image2"
-          data-aos="fade-down"
+          // data-aos="fade-down"
         />
         <Image
           src={require("../../assets/Story22/pexels-pixabay-221024.jpg")}
           alt="House 3"
           className="feature-image3"
-          data-aos="fade-right"
+          // data-aos="fade-right"
         />
       </div>
       <div className="feature-text">

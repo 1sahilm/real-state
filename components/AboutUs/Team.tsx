@@ -56,7 +56,7 @@ const Team: React.FC = () => {
   ];
 
   return (
-    <div className="md:py-16 px-8 md:px-20 ">
+    <div className="md:py-16 px-8 md:px-20 max-w-[1366px] mr-auto ml-auto">
       <h2 className="text-4xl font-semibold uppercase text-center md:text-left mb-6 md:mb-8">
         Meet our team
       </h2>

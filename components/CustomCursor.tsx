@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
 
 const CustomCursor: React.FC = () => {
   const cursorRef = useRef<HTMLDivElement>(null);
@@ -68,7 +68,8 @@ const CustomCursor: React.FC = () => {
       <div ref={cursorRef} className="custom-cursor"></div>
       <div ref={cursorBorderRef} className="custom-cursor-border"></div>
       <style jsx global>{`
-        .custom-cursor, .custom-cursor-border {
+        .custom-cursor,
+        .custom-cursor-border {
           pointer-events: none;
           position: fixed;
           top: 0;

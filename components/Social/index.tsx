@@ -48,21 +48,27 @@ const SocialMediaUpdates = () => {
   };
 
   return (
-    <div className="social-media-updates-container">
-      <div className="social-media-updates">
-        <div className="blurbackground2"></div>
-        <h2 className="social-media-updates-title">Our Social Media Updates</h2>
-        <Slider {...settings}>
-          {updates.map((update, index) => (
-            <div className="update-card" key={index}>
-              <Image src={update.image} alt={update.title} />
-              <h3>{update.title}</h3>
-              <p>{update.description}</p>
-            </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
+    <>
+      <section className="max-w-[1366px] mr-auto ml-auto">
+        <div className="social-media-updates-container">
+          <div className="social-media-updates">
+            <div className="blurbackground2"></div>
+            <h2 className="social-media-updates-title">
+              Our Social Media Updates
+            </h2>
+            <Slider {...settings}>
+              {updates.map((update, index) => (
+                <div className="update-card" key={index}>
+                  <Image src={update.image} alt={update.title} />
+                  <h3>{update.title}</h3>
+                  <p>{update.description}</p>
+                </div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

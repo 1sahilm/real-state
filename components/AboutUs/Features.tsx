@@ -43,7 +43,7 @@ const Features: React.FC = () => {
   ];
 
   return (
-    <div className="md:py-16 px-8 md:px-20 ">
+    <div className="md:py-16 px-8 md:px-20 max-w-[1366px] mr-auto ml-auto">
       <h2 className="text-4xl font-semibold text-center md:text-left mb-12">
         WHY CHOOSE INFRANIUM
       </h2>
@@ -51,11 +51,11 @@ const Features: React.FC = () => {
       <div className="grid gap-8 md:grid-cols-2 mb-20 lg:grid-cols-3 md:mt-16 md:mb-16 relative">
         {!isMobile && (
           <>
-            <div className="hidden absolute top-0 bottom-0 left-[395px] md:block">
-              <div className="h-96 w-px bg-gray-300"></div>
+            <div className="hidden absolute top-0 bottom-0 left-[373px] md:block">
+              <div className="h-[100%] w-px bg-gray-300"></div>
             </div>
-            <div className="hidden absolute top-0 bottom-0 left-[860px] md:block ">
-              <div className="h-96 w-px bg-gray-300"></div>
+            <div className="hidden absolute top-0 bottom-0 left-[780px] md:block ">
+              <div className="h-[100%] w-px bg-gray-300"></div>
             </div>
           </>
         )}

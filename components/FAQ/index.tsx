@@ -15,7 +15,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="md:px-32 p-8 my-10  md:my-28 flex flex-col md:flex-row justify-between">
+    <div className="md:px-32 p-8 my-10  md:my-28 flex flex-col md:flex-row justify-between  max-w-[1366px] mr-auto ml-auto ">
       <div className="faq-container">
         <h2 className="text-5xl font-semibold leading-[55px]">
           Frequently Asked Questions
