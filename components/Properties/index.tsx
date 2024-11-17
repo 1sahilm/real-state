@@ -9,25 +9,25 @@ import Slider from "react-slick";
 // import righticon from "@/assets/arrow-right-line.svg";
 // import lefticon from "@/assets/arrow-left-line.svg";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+function SampleNextArrow(props: {
+  className?: string;
+  //   style?: any;
+  onClick?: () => void;
+}) {
+  const { className, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block" }}
-      onClick={onClick}
-    />
+    <div className={className} style={{ display: "block" }} onClick={onClick} />
   );
 }
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+function SamplePrevArrow(props: {
+  className?: string;
+  //   style?: any;
+  onClick?: () => void;
+}) {
+  const { className, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block" }}
-      onClick={onClick}
-    />
+    <div className={className} style={{ display: "block" }} onClick={onClick} />
   );
 }
 
