@@ -17,12 +17,20 @@ const DreamHome = () => {
           mauris aliquam vitae posuere amet.
         </p>
 
-        <Image src={img2} alt="Bedroom" className="image2" />
+        <Image
+          src={img2}
+          alt="Bedroom"
+          className="image2 max-[768px]:!hidden"
+        />
       </div>
       <div className="imagesSection">
         <div className="blurbackground"></div>
         <Image src={img1} alt="Room view" className="image1" />
-
+        <Image
+          src={img2}
+          alt="Bedroom"
+          className="image4 min-[768px]:!hidden"
+        />
         <Image src={img3} alt="Living space" className="image3" />
       </div>
     </div>

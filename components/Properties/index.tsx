@@ -38,7 +38,7 @@ const Propertiesslider = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: 0,
+    initialSlide: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
@@ -71,7 +71,7 @@ const Propertiesslider = () => {
   return (
     <>
       <section>
-        <div className="max-w-[1366px] mr-auto ml-auto px-[50px]">
+        <div className="max-w-[1366px] mr-auto ml-auto px-[50px] max-[500px]:px-[30px]">
           <div className="Propertiescardslider">
             <Slider {...settings}>
               {propertiesarry?.map((item, index) => {

@@ -100,7 +100,8 @@
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    height: 900px;
+    /* height: 900px; */
+    height: auto;
   }
   .title {
     font-size: 58px;
@@ -112,8 +113,12 @@
   }
   .image1 {
     position: relative;
-    width: 250px;
-    height: 200px;
+    width: 83%;
+    height: auto;
+    margin-left: auto;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-top: 30px;
   }
 
   .image2 {
@@ -125,10 +130,25 @@
   }
 
   .image3 {
-    position: absolute;
-    width: 280px;
-    height: 180px;
-    margin-top: 0px;
+    width: 340px;
+    height: 210px;
+    margin-top: -63px;
+    object-fit: cover;
     z-index: 1;
+    margin-left: auto;
+    margin-right: 0px;
+    position: static;
+  }
+  .image4 {
+    width: 200px;
+    height: 250px;
+    margin-top: -100px;
+    z-index: 9;
+    position: relative;
+  }
+  .imagesSection {
+    display: block;
+    position: relative;
+    width: 100%;
   }
 }

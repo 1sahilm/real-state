@@ -93,11 +93,12 @@
   .feature-image2 {
     width: 204px;
     height: 196px;
+    left: 140px;
   }
   .feature-image3 {
     width: 204px;
     height: 196px;
-    left: 130px;
+    left: 70px;
     margin-top: 250px;
   }
   .feature-text {

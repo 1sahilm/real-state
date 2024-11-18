@@ -84,7 +84,7 @@ const Slider = () => {
 
         <motion.div
           key={slides[currentSlide].image.src}
-          className="slider-current"
+          className="slider-current mnnmenmer"
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{

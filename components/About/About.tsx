@@ -14,7 +14,7 @@ const About: React.FC = () => {
   return (
     <div className={`${style.aboutcontainer} max-w-[1366px] mr-auto ml-auto`}>
       <div className={style.aboutimages}>
-        <div className={style.blurbackground}></div>
+        <div className={`${style.blurbackground} max-[500px]:hidden	`}></div>
         <Image
           src={require("../../assets/About/image1.svg")}
           alt="Team Meeting"

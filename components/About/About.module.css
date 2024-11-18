@@ -112,15 +112,50 @@
   }
   .aboutimages {
     margin-left: 0px;
+    margin-top: 0; 
   }
   .aboutimage1 {
     width: 250px;
-    height: 354px;
+    height: auto;
+    /* top: -50px; */
   }
   .aboutimage2 {
     width: 250px;
-    height: 354px;
-    left: 130px;
-    top: -20px;
+    height: auto;
+    left: 80px;
+    /* top: 40px; */
+    margin-top: 80px;
+    margin-right: 0;
+  }
+  .aboutcontent {
+    max-width: 100%;
+    margin-left: 0;
+    margin-top: 38px;
+  }
+
+  .aboutcontent h1 {  
+font-size: 12.58px;
+font-weight: 600;
+line-height: 15.09px; 
+
+  }
+  .aboutcontent h2 {  
+font-size: 34.59px;
+font-weight: 700;
+line-height: 43.24px; 
+
+  }
+  
+  .aboutcontent p {  
+font-size: 12.58px;
+font-weight: 400;
+line-height: 18.26px; 
+margin-top: 40px;
+
   }
 }
+
+
+
+
+ 

@@ -106,4 +106,7 @@
   .testimonial-card {
     width: 80vw;
   }
+  .testimonial-section h1 {
+    font-size: 50px;
+  }
 }

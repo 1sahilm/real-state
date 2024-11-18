@@ -78,3 +78,25 @@
 .activeDot {
   background-color: #000000;
 }
+
+
+
+
+
+@media (max-width:500px) {
+  .bannerHeading{ 
+font-size: 25.9px;
+font-weight: 700;
+line-height: 32.44px;
+text-align: center; 
+  }
+
+
+  .bannerDescription { 
+font-size: 9.71px;
+font-weight: 600;
+line-height: 12.17px;
+text-align: center; 
+
+  }
+}

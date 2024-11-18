@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import ArrowImage from "@/assets/arrow-right-line.svg";
 
@@ -28,6 +29,7 @@ const Propertiescard = ({
             width={400}
             height={400}
             className="rounded-[15px]"
+            alt={"image"}
           />
         </div>
         <div className="p-[15px] flex gap-[15px] justify-between items-center">

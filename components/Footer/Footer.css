@@ -86,12 +86,19 @@
 @media (max-width: 768px) {
   .footerContainer {
     display: block;
+    overflow-x: hidden;
   }
   .social-icons {
     flex-wrap: wrap;
+    gap: 10px;
   }
   .social-icons a {
-    margin-top: 5px;
+    margin-top: 0px;
+    margin: 0;
+  }
+  .social-icons a svg {
+    width: 33px;
+    height: 33px;
   }
   .footer-content {
     flex-direction: column;

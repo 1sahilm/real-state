@@ -6,7 +6,9 @@ import Image from "next/image";
 
 const Welcome = () => {
   return (
-    <div className={`${styles.container}  max-w-[1366px] mr-auto ml-auto`}>
+    <div
+      className={`${styles.container}  max-[768px]:!block max-w-[1366px] mr-auto ml-auto`}
+    >
       <div className={styles.text}>
         <h1 className={styles.title}>Welcome To The</h1>
         <h2 className={styles.subtitle}>Vision of Infranium</h2>
