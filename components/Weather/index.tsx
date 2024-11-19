@@ -66,7 +66,7 @@ const Weather = () => {
         </div>
         <div className="md:items-start flex flex-col items-center md:pl-24 absolute">
           <div className="temperature ">27°C</div>
-          <div className="date ">17th Jun '21</div>
+          <div className="date ">17th Jun &apos;21</div>
           <div className="time">Thrusday | 2:45 am</div>
           <div className="flex gap-1 md:gap-4 mt-4">
             <div className="flex">

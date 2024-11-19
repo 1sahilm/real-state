@@ -38,7 +38,7 @@ const Propertiesslider = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    initialSlide: true,
+    initialSlide: 0,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [

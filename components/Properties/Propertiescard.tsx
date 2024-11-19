@@ -3,7 +3,7 @@ import Image from "next/image";
 import ArrowImage from "@/assets/arrow-right-line.svg";
 
 interface PropertiescardProp {
-  imageurl?: string;
+  imageurl?: any;
   title?: string;
   content?: string;
   pagelink?: string;

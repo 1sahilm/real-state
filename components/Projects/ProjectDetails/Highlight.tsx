@@ -12,8 +12,8 @@ const Highlight: React.FC = () => {
           </div>
           <p className="md:w-1/2 text-[#888888] text-lg">
             This is your opportunity to experience luxury, comfort, and
-            convenience like never before. Don't miss out on the chance to make
-            residential fort’d your forever property. Contact us today for a
+            convenience like never before. Don&apos;t miss out on the chance to make
+            residential fort&apos;d your forever property. Contact us today for a
             private tour and to explore all that this exceptional property has
             to offer.
           </p>
