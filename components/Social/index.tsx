@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./SocialMediaUpdates.css";
 import Image from "next/image";
 import Slider from "react-slick";
@@ -10,16 +10,14 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 const SocialMediaUpdates = () => {
   // const [_, setCurrentIndex] = useState(0);
   // const visibleItems = isMobile ? 1 : 3;
+  const sliderRef = useRef<Slider | null>(null);
 
   const settings = {
-    dots: true,
     infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
-    // nextArrow: <SampleNextArrow />,
-    // prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -27,7 +25,6 @@ const SocialMediaUpdates = () => {
           slidesToShow: 3,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
         },
       },
       {
@@ -46,12 +43,15 @@ const SocialMediaUpdates = () => {
         },
       },
     ],
-    customPaging: (i: number) =>
-      i === 0 ? (
-        <FaAngleLeft style={{ height: "28px" }} />
-      ) : (
-        <FaAngleRight style={{ height: "28px" }} />
-      ),
+  };
+
+  const next = () => {
+    if (!sliderRef.current) return;
+    sliderRef.current.slickNext();
+  };
+  const previous = () => {
+    if (!sliderRef.current) return;
+    sliderRef.current.slickPrev();
   };
 
   return (
@@ -63,7 +63,12 @@ const SocialMediaUpdates = () => {
             <h2 className="social-media-updates-title">
               Our Social Media Updates
             </h2>
-            <Slider {...settings}>
+            <Slider
+              ref={(slider) => {
+                sliderRef.current = slider;
+              }}
+              {...settings}
+            >
               {updates.map((update, index) => (
                 <div className="update-card" key={index}>
                   <Image src={update.image} alt={update.title} />
@@ -72,6 +77,14 @@ const SocialMediaUpdates = () => {
                 </div>
               ))}
             </Slider>
+            <div className="flex gap-4 justify-center">
+              <button className="button" onClick={previous}>
+                <FaAngleLeft />
+              </button>
+              <button className="button" onClick={next}>
+                <FaAngleRight />
+              </button>
+            </div>
           </div>
         </div>
       </section>
