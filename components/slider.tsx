@@ -173,7 +173,7 @@ const Slider = () => {
                   </button>
                 </div>
 
-                <div className="progress-line" style={{ width: `70%` }}></div>
+                <div className="progress-line"></div>
 
                 <div className="slider-counter">0{currentSlide + 1}</div>
               </div>
