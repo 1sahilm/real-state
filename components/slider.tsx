@@ -14,7 +14,7 @@ const slides = [
     id: 1,
     image: slider,
     title: "California, USA",
-    subtitle: "4 beds / 3 Bath",
+    subtitle: "California lorem ipsum USA",
     price: "Rp 2.500.000",
   },
   {
@@ -125,9 +125,6 @@ const Slider = () => {
                   className="slider-subtitle"
                 >
                   {slides[currentSlide].subtitle}
-                </motion.p>
-                <motion.p className="slider-price">
-                  {slides[currentSlide].price}
                 </motion.p>
                 <button className="slider-button">Discover Location</button>
               </motion.div>

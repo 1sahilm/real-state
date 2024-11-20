@@ -56,8 +56,9 @@
 .slider-button {
   margin-top: 12px;
   padding: 0.75rem 1.5rem;
-  background-color: #fbbf24;
-  color: black;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
   border-radius: 9999px;
 }
 
@@ -101,6 +102,8 @@
   position: absolute;
   bottom: -120;
   left: 120;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .slider-button-prev {
