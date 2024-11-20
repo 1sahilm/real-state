@@ -38,7 +38,7 @@
   justify-content: flex-start;
   display: flex;
   overflow-x: auto;
-  padding: 42px;
+  padding-bottom: 42px;
   scrollbar-width: thin;
   scrollbar-color: #007bff #f1f1f1;
 }
