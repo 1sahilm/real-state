@@ -70,7 +70,7 @@ const Propertiesslider = () => {
   };
   return (
     <>
-      <section>
+      <section className="py-8">
         <div className="max-w-[1366px] mr-auto ml-auto px-[50px] max-[500px]:px-[30px]">
           <div className="Propertiescardslider">
             <Slider {...settings}>

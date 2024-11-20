@@ -21,7 +21,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 2.5rem;
+  padding-left: 2.5rem;
+  padding-top: 128px;
   color: white;
 }
 
@@ -29,6 +30,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  gap: 16rem;
 }
 
 .slider-indicator {
@@ -61,9 +63,6 @@
 .slider-thumbnails {
   display: flex;
   gap: 1rem;
-  overflow-x: auto;
-  white-space: nowrap;
-  padding-bottom: 10px; /* Optional: adds space below the items */
 }
 
 .slider-thumbnails::-webkit-scrollbar {
@@ -80,10 +79,8 @@
 }
 
 .slider-thumbnail {
-  margin-top: 140px;
-  width: 204px;
-  height: 308px;
-
+  width: 250px;
+  height: 332px;
   border-radius: 0.5rem;
   overflow: hidden;
   cursor: pointer;
@@ -130,23 +127,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: absolute;
   gap: 33px;
   bottom: 20px;
   left: 620px;
 }
 
 .progress-line {
-  position: absolute;
-  bottom: 50px;
-  left: 735px;
   height: 5px;
-  background-color: #4caf50;
+  background-color: #f0f0f0;
   overflow: hidden;
   transition: width 0.3s ease;
 }
 .slider-counter {
-  position: absolute;
   bottom: 20px;
   left: 1250px;
   font-size: 52px;
@@ -158,9 +150,19 @@
     flex-direction: column;
     align-items: space-between;
     justify-content: center;
+    gap: 4rem;
   }
 
   .slider-container {
     height: 580px;
+  }
+
+  .slider-content {
+    padding-top: 1rem;
+  }
+
+  .slider-thumbnail {
+    width: 130px;
+    height: 172px;
   }
 }

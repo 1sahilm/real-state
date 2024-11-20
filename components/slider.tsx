@@ -103,7 +103,7 @@ const Slider = () => {
           />
         </motion.div>
 
-        <div className="slider-content  max-w-[1366px] mr-auto ml-auto">
+        <div className="slider-content mr-auto ml-auto">
           <div className="slider-info">
             <AnimatePresence mode="wait">
               <motion.div
@@ -132,7 +132,7 @@ const Slider = () => {
                 <button className="slider-button">Discover Location</button>
               </motion.div>
             </AnimatePresence>
-            <div className="slider-thumbnails">
+            <div className="slider-thumbnails relative">
               {slides.map((slide, index) => (
                 <motion.div
                   key={slide.id}
@@ -154,37 +154,33 @@ const Slider = () => {
                   </div>
                 </motion.div>
               ))}
-            </div>
+              <div className="absolute w-full flex left-0 -bottom-40 items-center gap-4">
+                <div className="button-container">
+                  <button
+                    className="slider-button-prev"
+                    onClick={() =>
+                      handleSlideChange(
+                        (currentSlide - 1 + slides.length) % slides.length
+                      )
+                    }
+                  >
+                    &lt;
+                  </button>
+                  <button
+                    className="slider-button-next"
+                    onClick={() =>
+                      handleSlideChange((currentSlide + 1) % slides.length)
+                    }
+                  >
+                    &gt;
+                  </button>
+                </div>
 
-            <div className="button-container">
-              <button
-                className="slider-button-prev"
-                onClick={() =>
-                  handleSlideChange(
-                    (currentSlide - 1 + slides.length) % slides.length
-                  )
-                }
-              >
-                &lt;
-              </button>
-              <button
-                className="slider-button-next"
-                onClick={() =>
-                  handleSlideChange((currentSlide + 1) % slides.length)
-                }
-              >
-                &gt;
-              </button>
-            </div>
+                <div className="progress-line" style={{ width: `70%` }}></div>
 
-            <div className="progress-line-wrapper">
-              <div
-                className="progress-line"
-                style={{ width: `${progress}%` }}
-              ></div>
+                <div className="slider-counter">0{currentSlide + 1}</div>
+              </div>
             </div>
-
-            <div className="slider-counter">0{currentSlide + 1}</div>
           </div>
         </div>
       </div>

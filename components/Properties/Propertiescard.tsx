@@ -17,7 +17,7 @@ const Propertiescard = ({
 }: PropertiescardProp) => {
   return (
     <>
-      <div className="p-[20px]">
+      <div className="px-5">
         <div
           className=""
           style={{
@@ -32,7 +32,7 @@ const Propertiescard = ({
             alt={"image"}
           />
         </div>
-        <div className="p-[15px] flex gap-[15px] justify-between items-center">
+        <div className="px-4 pt-4 flex gap-4 justify-between items-center">
           <div className="flex-1">
             {" "}
             {title && (
