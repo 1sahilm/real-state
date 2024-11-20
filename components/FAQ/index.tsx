@@ -17,7 +17,7 @@ const FAQ = () => {
   // ];
 
   return (
-    <div className="md:px-32 p-8 my-10  max-[768px]:pl-[20px] max-[768px]:pr-[20px]    md:my-28 flex flex-col md:flex-row justify-between  max-w-[1366px] mr-auto ml-auto ">
+    <div className="md:p-10 my-10 max-[768px]:pl-[20px] max-[768px]:pr-[20px] md:my-28 flex flex-col gap-4 md:flex-row justify-between  max-w-[1366px] mr-auto ml-auto ">
       <div className="faq-container">
         <h2 className="text-5xl font-semibold leading-[55px]">
           Frequently Asked Questions
