@@ -23,6 +23,11 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
   };
 
+  const handleBannerDotsClick = (event: React.MouseEvent<HTMLSpanElement, MouseEvent>, index: number) => {
+    event.stopPropagation()
+    setCurrentIndex(index)
+  }
+
   return (
     <>
       <Header />
@@ -69,7 +74,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
             <motion.span
               key={index}
               className={`${styles.dot} ${index === currentIndex ? styles.activeDot : ''}`}
-              onClick={() => setCurrentIndex(index)}
+              onClick={(e)=>handleBannerDotsClick(e,index)}
               whileHover={{ scale: 1.2 }}
             />
           ))}
