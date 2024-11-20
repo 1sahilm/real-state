@@ -4,6 +4,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 // import { isMobile } from "react-device-detect";
 
 const SocialMediaUpdates = () => {
@@ -45,6 +46,12 @@ const SocialMediaUpdates = () => {
         },
       },
     ],
+    customPaging: (i: number) =>
+      i === 0 ? (
+        <FaAngleLeft style={{ height: "28px" }} />
+      ) : (
+        <FaAngleRight style={{ height: "28px" }} />
+      ),
   };
 
   return (
