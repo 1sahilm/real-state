@@ -28,10 +28,10 @@
 .bannerContent {
   height: 100%;
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 10rem 2rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
 }
 
@@ -98,5 +98,9 @@ font-weight: 600;
 line-height: 12.17px;
 text-align: center; 
 
+  }
+
+  .bannerContent {
+    justify-content: space-between;
   }
 }
