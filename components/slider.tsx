@@ -14,7 +14,7 @@ const slides = [
     id: 1,
     image: slider,
     title: "California, USA",
-    subtitle: "California lorem ipsum USA",
+    subtitle: "California lorem ipsum",
     price: "Rp 2.500.000",
   },
   {

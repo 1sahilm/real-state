@@ -99,6 +99,8 @@
 }
 
 .thumbnail-info {
+  width: inherit;
+  overflow: hidden;
   position: absolute;
   bottom: -120;
   left: 120;
@@ -150,6 +152,19 @@
   font-weight: bold;
 }
 
+@media (max-width: 1024px) {
+  .slider-info {
+    gap: 2rem;
+  }
+  .slider-thumbnail {
+    width: 200px;
+    height: 266px;
+  }
+
+  .progress-line {
+    width: 50%;
+  }
+}
 @media (max-width: 768px) {
   .slider-info {
     flex-direction: column;
