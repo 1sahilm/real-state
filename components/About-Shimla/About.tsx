@@ -19,20 +19,19 @@ const AboutShimla: React.FC = () => {
         <div className={style.content}>
           {/* Left Section */}
           <div className={style.textWrapper}>
-            <h4>About Us</h4>
-            <h1>Today Sells Properties</h1>
+            <h4>About Shimla</h4>
+            <h1>WHY SHIMLA/HP
+            A GLOBAL COMPARISON</h1>
             <p>
-              Houzez allows you to design unlimited panels and real estate
-              custom forms to capture leads and keep a record of all
-              information.
-            </p>
-            {/* <ul className={style.features}>
-              <li>Live Music Concerts at Luviana</li>
-              <li>Our Secret Island Boat Tour is Just for You</li>
-              <li>Live Music Concerts at Luviana</li>
-              <li>Live Music Concerts at Luviana</li>
-            </ul> */}
-
+            The ever-beautiful Shimla, much like other renowned mountain destinations such as St. Moritz,
+Switzerland, and Aspen, Colorado, offers a premier living experience at 2,200 metres above sea
+level. It is an exceptional blend of climate, awe-inspiring landscapes, and cultural richness places it
+amongst the globe’s top high-altitude retreats. Lending itself as one of the most loved hill stations,
+the city of Shimla stands tall on its own and reflects the allure of destinations like the Alps and the
+Rockies, to bring an exquisite fusion of luxury and nature. The region is distinguished by its exclusive
+golf course, adding to its prestige and stately, old-world charm.
+            </p> 
+{/* 
             <ul>
               <span>
                 <img src="/right-arrow.png" alt="" />
@@ -50,25 +49,7 @@ const AboutShimla: React.FC = () => {
                 <img src="/right-arrow.png" alt="" />
                 <li>Live Music Concerts at Luviana</li>
               </span>
-            </ul>
-            {/* <div className={style.propertyDetails}>
-              <div>
-                <span>3</span>
-                <p>Bedrooms</p>
-              </div>
-              <div>
-                <span>2</span>
-                <p>Bathrooms</p>
-              </div>
-              <div>
-                <span>2</span>
-                <p>Car parking</p>
-              </div>
-              <div>
-                <span>3450</span>
-                <p>square Ft</p>
-              </div>
-            </div> */}
+            </ul>  */}
 
             <div className={style.imaggg}>
               {imagearray?.map((images, index) => {

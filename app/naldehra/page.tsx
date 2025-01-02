@@ -5,15 +5,14 @@ import Amenities from "@/components/Projects/ProjectDetails/Amenities";
 import Header from "@/components/Header/Header";
 import Footer from "@/components/Footer";
 import Highlight from "@/components/Projects/ProjectDetails/Highlight";
-import ProjectList from "@/components/Projects/ProjectList";
-import "../../projects/page.css";
-import "./page.css";
 import Collactions from "@/components/Collaction/collactions";
+import "./page.css";
 
-const ProjectDetails: React.FC = () => {
-  return (
-    <>
-      <Header />
+
+const Naldehra = ()=>{
+    return(
+        <>
+        <Header />
       <Overlay />
       <Amenities />
       <Highlight /> 
@@ -21,8 +20,9 @@ const ProjectDetails: React.FC = () => {
       <Collactions />
 
       <Footer />
-    </>
-  );
-};
+        </>
 
-export default ProjectDetails;
+    )
+}
+
+export default Naldehra;
