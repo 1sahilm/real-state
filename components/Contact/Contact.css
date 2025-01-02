@@ -1,0 +1,80 @@
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  border-bottom: 1px solid;
+}
+
+.contact-info p {
+  width: 698px;
+  height: 26px;
+  font-size: 22.62px;
+  font-weight: 400;
+  line-height: 27.37px;
+  text-align: left;
+  color: #666;
+}
+
+.contact-form {
+  background-color: #f9f2e966;
+  border-radius: 8px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+}
+
+.contact-form button {
+  padding: 10px;
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+  color: white;
+}
+
+.help-wrapper {
+  bottom: -9px;
+  right: 4px;
+  border-radius: 17px 17px 17px 0px;
+}
+
+.chat-wrapper {
+  bottom: -52px;
+  right: 4px;
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .contact-methods {
+    min-height: 0px;
+  }
+  .help-wrapper {
+    bottom: -40px;
+  }
+  .chat-wrapper {
+    bottom: -80px;
+    right: 4px;
+  }
+}

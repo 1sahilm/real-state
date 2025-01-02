@@ -1,0 +1,41 @@
+.caption {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.activeSliderImage {
+  border: 6.34px solid #fffbfb;
+}
+
+.slick-dots {
+  bottom: -50px !important;
+}
+
+.arrow-div {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.shadow-wrapper {
+  box-shadow: 7px 48px 34px 21px rgba(2, 41, 92, 0.25);
+}
+
+.slick-dots li button {
+  width: 12.67px !important;
+  height: 12.67px !important;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.slick-dots li.slick-active button {
+  width: 12.67px !important;
+  height: 12.67px !important;
+  background-color: black;
+}
+
+.slick-dots li button:before {
+  opacity: 0 !important;
+}

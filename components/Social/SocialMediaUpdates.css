@@ -1,0 +1,121 @@
+.social-media-updates-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.social-media-updates {
+  text-align: center;
+  padding: 40px;
+  /* height: 100vh; */
+}
+
+.social-media-updates-title {
+  /* font-family: Inter; */
+  font-weight: 600;
+    font-size: 40px;
+    line-height: 50px;
+  text-align: left;
+}
+
+.updates-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.update-card {
+  padding: 30px;
+  width: 30%;
+  /* background-color: #fff; */
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.update-card img {
+  width: 100%;
+  height: auto;
+}
+
+.update-card h3 {
+  /* font-family: Inter; */
+  font-size: 23.1px;
+  font-weight: 700;
+  line-height: 36.14px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.update-card p {
+  /* font-family: Inter; */
+  font-size: 16.28px;
+  font-weight: 400;
+  line-height: 28.91px;
+  text-align: left;
+  color: #555;
+}
+
+.navigation {
+  margin-top: 20px;
+}
+
+.navigation button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.next-arrow,
+.prev-arrow {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.slick-slider {
+  position: relative;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  bottom: -50px;
+  transform: translateY(0);
+}
+
+.slick-prev {
+  color: black;
+  left: 10px;
+}
+
+.slick-next {
+  right: 10px;
+}
+
+.blurbackground2 {
+  position: absolute;
+    top: auto;
+    width: 50%;
+    height: 100%;
+    background-color: #e8f8f2;
+    border-radius: 50%;
+    filter: blur(28px);
+    z-index: -1;
+    bottom: -193px;
+}
+
+@media (max-width: 768px) {
+  .social-media-updates {
+    padding: 15px;
+    height: auto;
+  }
+  .update-card {
+    height: auto;
+    padding: 10px;
+  }
+}

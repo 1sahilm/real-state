@@ -1,0 +1,112 @@
+.section {
+  /* background-color: #fff8f2; */
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  gap: 20px;
+}
+
+.textWrapper {
+  flex: 1;
+}
+
+.textWrapper h4 {
+  font-size: 1rem;
+  color: #ff9e85;
+  margin-bottom: 10px;
+}
+
+/* .textWrapper h1 {
+  font-size: 2.5rem;
+  color: #000;
+  margin-bottom: 20px;
+} */
+.textWrapper h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 50px;
+  color: #16243E;
+}
+
+.textWrapper p {
+  font-size: 1rem;
+  color: #5c5c5c;
+  margin-bottom: 20px;
+}
+.textWrapper ul span{
+  display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 7px;
+}
+.imaggg {
+  display: flex;
+  gap: 15px;
+  margin-top: 40px;
+}
+.features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.aboutimage2 {
+  height: 500px;
+}
+.features li {
+  font-size: 1rem;
+  color: #000;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.features li::before {
+  content: "➖";
+  color: #ff9e85;
+  margin-right: 10px;
+}
+
+.propertyDetails {
+  display: flex;
+  gap: 20px;
+}
+
+.propertyDetails div {
+  text-align: center;
+}
+
+.propertyDetails span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.propertyDetails p {
+  font-size: 0.9rem;
+  color: #5c5c5c;
+}
+
+.imageWrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.mainImage {
+  flex: 2;
+}
+
+.gridImages {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}

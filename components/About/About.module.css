@@ -1,0 +1,105 @@
+
+
+/* new section  */
+
+.bannerSection {
+  background: #fff8f2 url('https://gaviaspreview.com/wp/homirx/wp-content/uploads/2024/11/bg-02.png') no-repeat ; 
+  background-size: contain;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff8f2;
+  margin-top: 20px;
+}
+
+.contentWrapper {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.imageWrapper {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageMask {
+  width: 500px;
+  height: 500px;
+  /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageMask img {
+  width: 100%;
+  height: auto;
+}
+
+
+.textWrapper {
+  flex: 1;
+  margin-left: 50px;
+}
+.textWrapper ul span{
+  display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.textWrapper h2 {
+  color: #ff5722;
+  margin-bottom: 10px;
+}
+
+.textWrapper h1 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+  line-height: 50px;
+  color: #16243E;
+}
+
+.textWrapper p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.textWrapper ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.textWrapper ul li { 
+  color: #333;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+}
+ 
+
+.exploreButton {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.exploreButton span {
+  margin-right: 10px;
+}
+
+ 
+

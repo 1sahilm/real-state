@@ -1,0 +1,35 @@
+.overlay-image {
+  border-radius: 8px 8px 80px 8px;
+}
+
+.team-profile-image {
+  width: 401.31px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.about-section-2 {
+  width: 280px;
+  height: 340px;
+  /* border-radius: 6px 6px 6px 60px; */
+  border: 10px solid #f2ede8;
+}
+
+.about-section-3 {
+  width: 420px;
+  height: 450px;
+  /* border-radius: 6px 60px 6px 6px; */
+  border: 0.19px 0px 0px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about-section-2 {
+    width: 250px;
+    height: 300px;
+  }
+
+  .about-section-3 {
+    width: 300px;
+    height: 300px;
+  }
+}
