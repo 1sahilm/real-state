@@ -55,7 +55,7 @@ const Menu: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link href="/contact" className={styles.menuItem}>
+          <Link href="/contact-us" className={styles.menuItem}>
             <span className={styles.icon}>
               <Image
                 src={contactIcon}

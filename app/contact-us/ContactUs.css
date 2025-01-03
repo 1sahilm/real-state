@@ -48,7 +48,7 @@ body {
 .form-group {
     display: flex;
     gap: 10px;
-    width: 105%;
+    width: 100%;
  
 }
 
@@ -101,18 +101,20 @@ body {
     font-weight: 400;
     color: #585981;
 }
-.contact-info p {
-    margin: 35px 0;
+.contact-info p { 
     color: #585981;
+    display: flex;
+    gap: 24px;
+    align-items: center;
 }
 
-.social-icons {
+.social-icons-contact {
     display: flex;
     gap: 10px;
     margin-top: 10px;
 }
 
-.social-icons a {
+.social-icons-contact a {
     text-decoration: none;
     font-size: 20px;
 }

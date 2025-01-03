@@ -5,7 +5,7 @@ const TopArticles: any = ({latestBlogs}:any) => {
     console.log("latestBlogs new",{latestBlogs});
   
     // need to filter the latest blogs inder category 
-    const latestBlogsData = latestBlogs.filter((blog:any) => blog.customCategory[0].value === "latest-blog");
+    const latestBlogsData = latestBlogs?.filter((blog:any) => blog.customCategory[0].value === "latest-blog");
     console.log("latestBlogsData",{latestBlogsData});
   
    

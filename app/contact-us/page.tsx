@@ -1,6 +1,9 @@
+"use client";
 import React from 'react';
 import './ContactUs.css';
 import Image from 'next/image';
+import Header from '@/components/Header/Header';
+import Footer from '@/components/Footer';
 
 const ContactUs = () => {
 
@@ -17,7 +20,9 @@ const ContactUs = () => {
   // };
 
   return (
-    <div>
+    <>
+    <Header />
+     <div>
       <div className="hero" id="hero">
         <div className="hero-backgroundimage">
           <h1 className='hero-title'>CONTACT US</h1>
@@ -26,7 +31,7 @@ const ContactUs = () => {
             <a href="#contact-section"
             //  onClick={handleScroll}
               style={{display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', color: 'white'}}>
-              <Image src={require('../../assets/contact/Frame 2.png')} alt="Scroll down" className='scroll-down-icon'/>
+              <Image src={require('../../assets/drop-icon.png')} alt="Scroll down" className='scroll-down-icon'/>
               Scroll down
             </a>
           </div>
@@ -48,7 +53,7 @@ const ContactUs = () => {
           <p><Image src={require('../../assets/contact/Vector (5).png')} alt="phone" className='contact-icon'/> +1012 3456 789</p>
           <p><Image src={require('../../assets/contact/Vector (6).png')} alt="email" className='contact-icon'/> demo@gmail.com</p>
           <p><Image src={require('../../assets/contact/Vector (7).png')} alt="location" className='contact-icon'/> 132 Dartmouth Street Boston, Massachusetts 02156 United States</p>
-          <div className="social-icons">
+          <div className="social-icons-contact">
             <a href="#"><Image src={require('../../assets/contact/Facebook - Original.png')} alt="facebook" className='contact-icon'/></a>
             <a href="#"><Image src={require('../../assets/contact/Instagram - Original.png')} alt="instagram" className='contact-icon'/></a>
             <a href="#"><Image src={require('../../assets/contact/Twitter - Original.png')} alt="twitter" className='contact-icon'/></a>
@@ -71,6 +76,9 @@ const ContactUs = () => {
         ></iframe>
       </div>
     </div>
+    <Footer />
+    </>
+   
   );
 };
 

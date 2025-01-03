@@ -104,3 +104,39 @@ html {
   background-color: #f9f9f9;
 }
 
+.realStateTeam {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.realStateTeambox {
+  display: flex;
+  gap: 30px;
+  margin: 0px;
+}
+
+.realStateTeamboximage {
+  width: 210px;
+}
+
+.realStateTeamboxcontentbox {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.realStateTeambox:nth-child(02) {
+  flex-direction: row-reverse;
+}
+.realStateTeambox:nth-child(04) {
+  flex-direction: row-reverse;
+}
+.realStateTeambox:nth-child(06) {
+  flex-direction: row-reverse;
+}
+
+
