@@ -7,6 +7,7 @@ interface PropertiescardProp {
   title?: string;
   content?: string;
   pagelink?: string;
+  openModal?: any;
 }
 
 const Propertiescard = ({
@@ -14,10 +15,17 @@ const Propertiescard = ({
   title,
   content,
   pagelink,
+  openModal,
 }: PropertiescardProp) => {
   return (
     <>
-      <div className="px-5">
+      <div className="px-5" 
+      style={
+        {
+          cursor:"pointer"
+        }
+      }
+      >
         <div
           className=""
           style={{
@@ -30,6 +38,7 @@ const Propertiescard = ({
 
           <Image
             src={imageurl}
+            onClick={()=>openModal(imageurl)}
             width={400}
             height={400}
             style={{
@@ -59,7 +68,7 @@ const Propertiescard = ({
               </>
             )}
           </div>
-          <div>
+          {/* <div>
             <a
               href={pagelink}
               className="flex items-center border border-[#1c2d37] py-[5px] px-[20px] rounded-[30px] w-fit"
@@ -74,7 +83,7 @@ const Propertiescard = ({
                 />
               </span>
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

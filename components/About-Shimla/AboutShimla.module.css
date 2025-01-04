@@ -28,6 +28,9 @@
   color: #000;
   margin-bottom: 20px;
 } */
+ .imagesbanner img{
+  height: 50%;
+ }
 .textWrapper h1 {
   font-weight: 700;
   font-size: 40px;

@@ -18,7 +18,7 @@ const AboutUs: React.FC = () => {
 
       <Description />
 
-      <Features />
+      {/* <Features /> */}
 
       <Team />
 

@@ -42,22 +42,23 @@ const Header: React.FC = () => {
       <Link href="/" data-cursor="pointer2" className={styles.logoLink}>
         <div className={styles.logoWrapper}>
           <Image
-            src={logo1}
+            // src={logo1}
+            src={"/new-logo.png"}
             alt="Real Estate"
-            width={40}
-            height={50}
+            width={100}
+            height={100}
             className={`${styles.logoImage} ${styles.logoSmall} hidden md:block`}
             priority
           />
 
-          <Image
+          {/* <Image
             src={logo}
             alt="Real Estate"
             width={140}
             height={50}
             className={styles.logoImage}
             priority
-          />
+          /> */}
         </div>
       </Link>
       {isMenuOpen && <Menu />}

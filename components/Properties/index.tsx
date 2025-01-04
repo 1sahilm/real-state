@@ -8,6 +8,7 @@ import Image4 from "@/assets/infranium-images/12.jpeg";
 import Image5 from "@/assets/infranium-images/13.jpeg";
 import React from "react";
 import Slider from "react-slick";
+import Image from "next/image";
 // import righticon from "@/assets/arrow-right-line.svg";
 // import lefticon from "@/assets/arrow-left-line.svg";
 
@@ -34,6 +35,20 @@ function SamplePrevArrow(props: {
 }
 
 const Propertiesslider = () => {
+
+  const [isOpen, setIsOpen] = React.useState(false);
+  const [imageSrc, setImageSrc] = React.useState("");
+
+  const openModal = (src: string) => {
+    console.log("src image",src);
+    setImageSrc(src);
+    setIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsOpen(false);
+    setImageSrc("");
+  };
   const settings = {
     dots: false,
     infinite: false,
@@ -72,8 +87,10 @@ const Propertiesslider = () => {
   };
   return (
     <>
-      <section className="mt-[2rem] md:mt-[2rem]">
+      <section className="mt-[2rem] md:mt-[2rem] gallery">
+        
         <div className="max-w-[1366px] mr-auto ml-auto px-[50px] max-[500px]:px-[30px]">
+        <h1 className="gallery-section">Gallery</h1>
           <div className="Propertiescardslider">
             <Slider {...settings}>
               {propertiesarry?.map((item, index) => {
@@ -81,10 +98,11 @@ const Propertiesslider = () => {
                   <>
                     <Propertiescard
                       key={index}
-                      title={item.title}
+                      // title={item.title}
                       imageurl={item.image}
-                      content={item.content}
-                      pagelink={item.pagelink}
+                      openModal={openModal}
+                      // content={item.content}
+                      // pagelink={item.pagelink}
                     />
                   </>
                 );
@@ -92,6 +110,20 @@ const Propertiesslider = () => {
             </Slider>
           </div>
         </div>
+        {isOpen && (
+        <div className="modal" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close" onClick={closeModal}>
+              &times;
+            </span>
+            <Image src={imageSrc} alt="Popup" className="popup-image" 
+            width={600}
+            height={600}
+             objectFit="cover"
+            />
+          </div>
+        </div>
+      )} 
       </section>
     </>
   );

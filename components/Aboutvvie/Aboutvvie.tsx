@@ -42,6 +42,11 @@ const Aboutvvie: React.FC = () => {
               dining, and living spaces. Enjoy the stunning landscape
               year-round, even in winter, from your private rooftop jacuzzi.{" "}
             </p>
+            <button className={style.exploreButton} 
+          onClick={() => router.push("/naldehra")}
+          >
+            <span>🏠</span> Explore More
+          </button>
           </div>
 
           {/* Right Section */}

@@ -3,12 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./Menu.module.css";
 
-import homeIcon from "../../assets/Menu/home 1.png";
-import aboutIcon from "../../assets/Menu/info-button 1.png";
-import projectsIcon from "../../assets/Menu/project 1.png";
-import faqIcon from "../../assets/Menu/help 1.png";
+import homeIcon from "../../assets/Menu/home-new.png";
+import aboutIcon from "../../assets/Menu/info-new.png";
+import projectsIcon from "../../assets/Menu/project-management.png";
+import faqIcon from "../../assets/Menu/question.png";
 import blogIcon from "../../assets/Menu/blog 1.png";
-import contactIcon from "../../assets/Menu/call 1.png";
+import contactIcon from "../../assets/Menu/phone-call.png";
 
 const Menu: React.FC = () => {
   return (
@@ -46,14 +46,14 @@ const Menu: React.FC = () => {
             FAQ
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link href="/blogs" className={styles.menuItem}>
             <span className={styles.icon}>
               <Image src={blogIcon} alt="Blog" width={20} height={20} />
             </span>{" "}
             Blog
           </Link>
-        </li>
+        </li> */}
         <li>
           <Link href="/contact-us" className={styles.menuItem}>
             <span className={styles.icon}>

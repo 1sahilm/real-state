@@ -110,3 +110,18 @@
   display: flex;
   gap: 10px;
 }
+
+.exploreButton {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.exploreButton span {
+  margin-right: 10px;
+}

@@ -55,7 +55,7 @@ golf course, adding to its prestige and stately, old-world charm.
               {imagearray?.map((images, index) => {
                 return (
                   <>
-                    <div>
+                    <div className={style.imagesbanner} key={index}>
                       <Image
                         src={images.image}
                         width={160}
@@ -73,7 +73,7 @@ golf course, adding to its prestige and stately, old-world charm.
           <div className={style.imageWrapper}>
             <div className={style.mainImage}>
               <Image
-                src={require("../../assets/infranium-images/15.jpeg")}
+                src={require("../../assets/infranium-images/shimla.jpg")}
                 alt="Construction"
                 className={style.aboutimage2}
                 data-aos="fade-out-bounce"
@@ -94,12 +94,12 @@ export default AboutShimla;
 
 const imagearray = [
   {
-    image: "/11.jpg",
+    image: "/train-shimla.jpg",
   },
   {
-    image: "/12.jpg",
+    image: "/minar.jpg",
   },
   {
-    image: "/13.jpg",
+    image: "/new.jpg",
   },
 ];
