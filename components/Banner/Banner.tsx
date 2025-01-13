@@ -59,7 +59,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
       <Header />
       <section className={styles.bannerSection} >
       <video
-        ref={videoRef}
+        // ref={videoRef}
         className={styles.bannerVideo}
         muted
         autoPlay
@@ -67,7 +67,7 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
         playsInline
       >
         {/* <source src={"../../assets/banner-video/videos.mov"} type="video/mp4" /> */}
-        <source src="/banner-video/videos.mp4" type="video/mp4" />
+        <source src="/banner-video/Vvie-Villas-Website.mp4" type="video/mp4" />
   {/* <source src="../../assets/banner-video/videos.mp4" type="video/quicktime" /> */}
         Your browser does not support the video tag.
       </video>
