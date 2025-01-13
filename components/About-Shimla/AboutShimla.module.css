@@ -1,5 +1,6 @@
 .section {
-  /* background-color: #fff8f2; */
+  background: rgb(247, 247, 247);
+
   padding: 50px;
   display: flex;
   justify-content: center;
@@ -32,10 +33,10 @@
   height: 50%;
  }
 .textWrapper h1 {
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 30px;
   margin-bottom: 20px;
-  line-height: 50px;
+  line-height: 40px;
   color: #16243E;
 }
 

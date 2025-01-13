@@ -29,9 +29,27 @@ const Header: React.FC = () => {
           setIsMenuOpen(false);
         }
       });
+      // when user hover on another element then close the menu 
+      // document.addEventListener("mouseover", (e) => {
+      //   if (e.target !== buttonHover) {
+      //     setIsMenuOpen(false);
+      //   }
+      // });
+
+      // need when user scroll the page then close the menu
+      window.addEventListener("scroll",()=>{
+        setIsMenuOpen(false);
+      })
+
+
+
+      
 
 
   },[])
+   
+
+
 
 
   return (

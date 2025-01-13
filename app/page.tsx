@@ -47,6 +47,7 @@ export default function Home() {
       <Banner bannerData={bannerData} />
       {/* <Propertiesslider /> */}
       {/* <Carousel /> */}
+      <Propertiesslider />
       <About />
       <AboutShimla />
 
@@ -55,7 +56,6 @@ export default function Home() {
       {/* <Welcome /> */}
       {/* <Slider /> */}
       <Aboutvvie />
-      <Propertiesslider />
       {/* <Story2 /> */}
       {/* <Dream /> */}
       {/* <Testimonial /> */}

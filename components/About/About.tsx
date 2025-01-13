@@ -19,6 +19,7 @@ const About: React.FC = () => {
     
 
     <section className={style.bannerSection}>
+      <div className="max-w-[1366px] mr-auto ml-auto">
       <div className={style.contentWrapper}>
         {/* Left Section */}
         <div className={style.imageWrapper}>
@@ -62,6 +63,8 @@ const About: React.FC = () => {
           </button>
         </div>
       </div>
+      </div>
+      
     </section>
 
 

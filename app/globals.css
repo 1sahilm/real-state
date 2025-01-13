@@ -139,14 +139,14 @@ html {
   flex-direction: row-reverse;
 }
 .gallery{
-  background: #fff8f2;
-  padding: 40px 10px;
+  background: rgb(247, 247, 247);
+  padding: 20px 10px;
 }
 
 .gallery-section{
   text-align: center;
   font-weight: 700;
-    font-size: 40px;
+    font-size: 30px;
     margin-bottom: 20px;
     line-height: 50px;
     color: #16243E;

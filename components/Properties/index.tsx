@@ -87,10 +87,10 @@ const Propertiesslider = () => {
   };
   return (
     <>
-      <section className="mt-[2rem] md:mt-[2rem] gallery">
+      <section className="gallery">
         
         <div className="max-w-[1366px] mr-auto ml-auto px-[50px] max-[500px]:px-[30px]">
-        <h1 className="gallery-section">Gallery</h1>
+        <h1 className="gallery-section">Featured Properties</h1>
           <div className="Propertiescardslider">
             <Slider {...settings}>
               {propertiesarry?.map((item, index) => {
@@ -133,14 +133,14 @@ export default Propertiesslider;
 const propertiesarry = [
   {
     id: 0,
-    image: Image1,
+    image: Image5,
     title: "Naldehra Golf Course",
     content: "Golf Courses",
     pagelink: "#",
   },
   {
     id: 1,
-    image: Image2,
+    image: Image4,
     title: "Reserve Forest Sanctuary",
     content: "Forests",
     pagelink: "#",
@@ -154,14 +154,14 @@ const propertiesarry = [
   },
   {
     id: 3,
-    image: Image4,
+    image: Image1,
     title: "Woodstock Resort",
     content: "Resort",
     pagelink: "#",
   },
   {
     id: 4,
-    image: Image5,
+    image: Image2,
     title: "Pahuna Nature Lodge",
     content: "Nature",
     pagelink: "#",

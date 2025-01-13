@@ -3,7 +3,7 @@
 /* new section  */
 
 .bannerSection {
-  background: #fff8f2 url('https://gaviaspreview.com/wp/homirx/wp-content/uploads/2024/11/bg-02.png') no-repeat ; 
+  background: #fff;
   background-size: contain;
   padding: 50px;
   display: flex;
@@ -15,7 +15,7 @@
 
 .contentWrapper {
   display: flex;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   width: 100%;
 }
 
@@ -55,14 +55,13 @@
 }
 
 .textWrapper h2 {
-  color: #ff5722;
-  margin-bottom: 10px;
+  color: #000; 
 }
 
 .textWrapper h1 {
-  font-weight: 700;
-  font-size: 40px;
-  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 10px;
   line-height: 50px;
   color: #16243E;
 }
@@ -70,6 +69,7 @@
 .textWrapper p {
   margin-bottom: 20px;
   color: #666;
+  padding-right: 40px;
 }
 
 .textWrapper ul {
