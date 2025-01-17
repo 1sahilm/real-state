@@ -5,9 +5,10 @@ import styles from "./read-more.module.css";
 interface ReadMoreProps {
   text: string;
   maxLength: number;
+  css?: string;
 }
 
-const ReadMore = ({ text, maxLength }: ReadMoreProps) => {
+const ReadMore = ({ text, maxLength , css }: ReadMoreProps) => {
   const [readMore, setReadMore] = React.useState(false);
 
   const handleReadMore = () => {
@@ -28,11 +29,11 @@ const ReadMore = ({ text, maxLength }: ReadMoreProps) => {
           className="label-medium !tertiary-500 d-flex items-center simply-gap-8"
           style={{
             cursor: "pointer",
-            color: "#FFF",
+            color: css ? "#000" :"#FFF",
             fontSize: "18px",
             textAlign: "center",
             margin:"0 auto",
-            display:"block",
+            display: css ? "flex" :"block",
             fontWeight: 700,
           }}
         >

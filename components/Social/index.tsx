@@ -18,6 +18,7 @@ const SocialMediaUpdates = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     initialSlide: 0,
+    
     responsive: [
       {
         breakpoint: 1024,
@@ -56,7 +57,7 @@ const SocialMediaUpdates = () => {
 
   return (
     <>
-      <section className="max-w-[1366px] mr-auto ml-auto">
+      {/* <section className="max-w-[1366px] mr-auto ml-auto">
         <div className="social-media-updates-container">
           <div className="social-media-updates">
             <div className="blurbackground2"></div>
@@ -87,6 +88,55 @@ const SocialMediaUpdates = () => {
             </div>
           </div>
         </div>
+      </section> */}
+
+<section className="gallery">
+        
+        <div className="max-w-[1366px] mr-auto ml-auto   max-[500px]:px-[30px]">
+        <h2 className="gallery-top">Social Media</h2>
+        <h1 className="gallery-section">Our Social Media Updates</h1>
+
+        <div>
+        <Slider
+        className="updatesdsfd"
+              ref={(slider) => {
+                sliderRef.current = slider;
+              }}
+              {...settings}
+            >
+              {updates.map((update, index) => (
+                <div className="update-card" key={index}>
+                  <Image src={update.image} alt={update.title} />
+                  <span>
+                  <h4>Sep 30, 2024</h4>
+                  </span>
+                  <h3>{update.title}</h3>
+                  <p>{update.description}</p>
+                </div>
+              ))}
+            </Slider>
+        </div>
+          {/* <div className="Propertiescardslider">
+            <Slider {...settings}>
+              {propertiesarry?.map((item, index) => {
+                return (
+                  <>
+                    <Propertiescard
+                      key={index}
+                      // title={item.title}
+                      imageurl={item.image}
+                      openModal={openModal}
+                      // content={item.content}
+                      // pagelink={item.pagelink}
+                    />
+                  </>
+                );
+              })}
+            </Slider>
+          </div> */}
+      {/* <Collactions /> */}
+
+        </div> 
       </section>
     </>
   );
@@ -98,7 +148,7 @@ const updates = [
   {
     title: "Six ways to make your house a smart home",
     description:
-      "Smart home tech can help you save time, money and energy – plus it can add value to your home. Here's how to turn your house into a smart home.",
+      "Smart home tech can help you save time, money and energy – plus it can add value to your home. Here's how to turn your house.",
     image: require("../../assets/Social/image (10).png"),
   },
   {
@@ -110,13 +160,13 @@ const updates = [
   {
     title: "Seven ways to improve your home's EPC rating",
     description:
-      "Rising energy bills and a hunger for greener living mean a good EPC rating is now more important than ever. Here's how to get one for your home.",
+      "Rising energy bills and a hunger for greener living mean a good EPC rating is now more important than ever. Here's how to get one.",
     image: require("../../assets/Social/unsplash_mCxk_ba7CJ8.png"),
   },
   {
     title: "Seven ways to improve your home's EPC rating",
     description:
-      "Rising energy bills and a hunger for greener living mean a good EPC rating is now more important than ever. Here's how to get one for your home.",
+      "Rising energy bills and a hunger for greener living mean a good EPC rating is now more important than ever. Here's how to get one.",
     image: require("../../assets/Social/unsplash_mCxk_ba7CJ8.png"),
   },
 ];

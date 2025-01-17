@@ -25,35 +25,49 @@
 }
 
 .update-card {
-  padding: 30px;
-  width: 30%;
-  /* background-color: #fff; */
-  border-radius: 8px;
-  overflow: hidden;
-  text-align: left;
+
+  border: 1px solid #c2c2c2;
+    border-radius: 10px;
+    padding: 20px;
+    transition: border-color .3s;
+    /* background-color: #fff; */
+    gap: 10px;
+    cursor: pointer;
+}
+.update-card span h4 {
+  margin-top: 25px;
+  background-color: #146ef5;
+    color: white;
+    border-radius: 5px;
+    padding: 9px 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    display: inline-block;
 }
 
 .update-card img {
   width: 100%;
-  height: auto;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
-.update-card h3 {
-  /* font-family: Inter; */
-  font-size: 23.1px;
-  font-weight: 700;
-  line-height: 36.14px;
-  text-align: left;
-  margin-top: 20px;
+.update-card h3 { 
+  margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    color: #04030b;
+  margin-top: 15px;
 }
 
 .update-card p {
   /* font-family: Inter; */
-  font-size: 16.28px;
-  font-weight: 400;
-  line-height: 28.91px;
-  text-align: left;
-  color: #555;
+  font-size: 18px;
+  line-height: 32px;
+  color: #2f2b44;
 }
 
 .navigation {
@@ -66,6 +80,10 @@
   font-size: 1.5em;
   cursor: pointer;
   margin: 0 10px;
+}
+.update-card:hover {
+  border-color: #146ef5;
+  cursor: pointer;
 }
 
 .next-arrow,
