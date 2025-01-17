@@ -35,7 +35,7 @@ const About: React.FC = () => {
 
         {/* Right Section */}
         <div className={style.textWrapper}>
-          <h2>About Company</h2>
+          <h2>About Us</h2>
           <h1>About Infranium</h1>
           <p>
           Led by a team of visionary leaders, Infranium draws upon decades of experience in real estate, architecture, marketing, and administration. Each director brings a wealth of expertise, ensuring that every project reflects the highest standards of luxury and innovation. From our Director
@@ -44,22 +44,18 @@ const About: React.FC = () => {
           </p>
           <ul>
             <span>
-              <img src="/right-arrow.png" alt="" />
+              <img src="/svg/first.svg" alt="" />
             <li>Proactively pontificate client</li>
             </span>
             <span>
-              <img src="/right-arrow.png" alt="" />
+              <img src="/svg/second.svg" alt="" />
             <li>Is there a waiting list for desired</li>
-            </span>
-            <span>
-              <img src="/right-arrow.png" alt="" />
-            <li>Immediate 24/7 Emergency</li>
-            </span>
+            </span> 
           </ul> 
           <button className={style.exploreButton} 
           onClick={() => router.push("/about-us")}
           >
-            <span>🏠</span> Explore More
+              Learn More
           </button>
         </div>
       </div>

@@ -66,7 +66,7 @@ golf course, adding to its prestige and stately, old-world charm.
                   </>
                 );
               })}
-            </div>
+            </div> 
           </div>
 
           {/* Right Section */}

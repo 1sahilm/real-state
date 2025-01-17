@@ -4,7 +4,7 @@ import Banner from "../components/Banner/Banner";
 import About from "../components/About/About";
 import Welcome from "../components/Welcome/welcome";
 import Story2 from "../components/Story2";
-import Slider from "../pages/slidercard";
+// import Slider from "../pages/slidercard";
 import Dream from "../components/Dream";
 import Testimonial from "../components/Testomonial";
 import SocialMediaUpdates from "@/components/Social";
@@ -47,8 +47,8 @@ export default function Home() {
       <Banner bannerData={bannerData} />
       {/* <Propertiesslider /> */}
       {/* <Carousel /> */}
-      <Propertiesslider />
       <About />
+      <Propertiesslider />
       <AboutShimla />
 
       <AboutnewSection />

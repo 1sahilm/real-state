@@ -9,6 +9,7 @@ import Image5 from "@/assets/infranium-images/13.jpeg";
 import React from "react";
 import Slider from "react-slick";
 import Image from "next/image";
+import Collactions from "../Collaction/collactions";
 // import righticon from "@/assets/arrow-right-line.svg";
 // import lefticon from "@/assets/arrow-left-line.svg";
 
@@ -89,9 +90,10 @@ const Propertiesslider = () => {
     <>
       <section className="gallery">
         
-        <div className="max-w-[1366px] mr-auto ml-auto px-[50px] max-[500px]:px-[30px]">
+        <div className="max-w-[1366px] mr-auto ml-auto   max-[500px]:px-[30px]">
+        <h2 className="gallery-top">Gallery</h2>
         <h1 className="gallery-section">Featured Properties</h1>
-          <div className="Propertiescardslider">
+          {/* <div className="Propertiescardslider">
             <Slider {...settings}>
               {propertiesarry?.map((item, index) => {
                 return (
@@ -108,7 +110,9 @@ const Propertiesslider = () => {
                 );
               })}
             </Slider>
-          </div>
+          </div> */}
+      <Collactions />
+
         </div>
         {isOpen && (
         <div className="modal" onClick={closeModal}>

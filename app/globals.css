@@ -1,6 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+ 
+
+ 
+
 
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -17,6 +25,8 @@
 html,
 body {
   max-width: 100%;
+  font-family: "Urbanist", serif;
+  font-optical-sizing: auto;
   /* overflow-x: hidden; */
 }
 
@@ -139,17 +149,33 @@ html {
   flex-direction: row-reverse;
 }
 .gallery{
-  background: rgb(247, 247, 247);
-  padding: 20px 10px;
+  background: #f0f4fd;
+  padding: 130px 10px;
+}
+
+h2.gallery-top {
+  background-color: #146ef5;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  border-radius: 27px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .gallery-section{
   text-align: center;
   font-weight: 700;
-    font-size: 30px;
-    margin-bottom: 20px;
-    line-height: 50px;
-    color: #16243E;
+  font-size: 46px;
+  line-height: 60px;
+  color: #04030b;
+  margin-bottom: 70px;
 }
 
 .image-gallery img {

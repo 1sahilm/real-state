@@ -26,6 +26,15 @@ const ReadMore = ({ text, maxLength }: ReadMoreProps) => {
         <a
           onClick={handleReadMore}
           className="label-medium !tertiary-500 d-flex items-center simply-gap-8"
+          style={{
+            cursor: "pointer",
+            color: "#FFF",
+            fontSize: "18px",
+            textAlign: "center",
+            margin:"0 auto",
+            display:"block",
+            fontWeight: 700,
+          }}
         >
           {readMore ? "Read Less" : "Read More"}{" "}
           <Image
