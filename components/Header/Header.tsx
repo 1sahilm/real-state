@@ -61,7 +61,7 @@ const Header: React.FC = () => {
         <div className={styles.logoWrapper}>
           <Image
             // src={logo1}
-            src={"/Brandmark-logo.png"}
+            src={"/logo-updated_processed.jpeg"}
             alt="Real Estate"
             width={100}
             height={100}

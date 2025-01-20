@@ -6,23 +6,30 @@ import Header from '../Header/Header';
 import styles from './Banner.module.css';
 // import DroneVideo from '../../assets/banner-video/videos.mov';
 
-interface BannerItem {
-  id: number;
-  image: string;
-  heading: string;
-  description: string;
+// interface BannerItem {
+//   id: number;
+//   image: string;
+//   heading: string;
+//   description: string;
+//   commingSoon?: boolean;
+// }
+
+// interface BannerProps {
+//   bannerData: BannerItem[];
+//   commingSoon?: boolean;
+// }
+
+interface BannerProposData {
+  commingSoon?: boolean;
+
 }
 
-interface BannerProps {
-  bannerData: BannerItem[];
-}
-
-const Banner: React.FC<BannerProps> = ({ bannerData }) => {
+const Banner: React.FC<any> = ({ commingSoon }:BannerProposData) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleBannerClick = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
-  };
+  // const handleBannerClick = () => {
+  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
+  // };
 
   const handleBannerDotsClick = (event: React.MouseEvent<HTMLSpanElement, MouseEvent>, index: number) => {
     event.stopPropagation()
@@ -58,6 +65,15 @@ const Banner: React.FC<BannerProps> = ({ bannerData }) => {
     <>
       <Header />
       <section className={styles.bannerSection} >
+        {commingSoon && (
+          <>
+           <div className={styles.commingText}>
+
+<h2>Comming Soon</h2>
+  </div>
+          </>
+        )}
+       
       <video
         // ref={videoRef}
         className={styles.bannerVideo}

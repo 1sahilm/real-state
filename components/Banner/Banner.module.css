@@ -11,6 +11,20 @@
   /* margin-bottom: 32px; */
 
   /* padding: 3rem; */
+ 
+}
+
+.commingText{
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bannerVideo {
   width: 100%;
