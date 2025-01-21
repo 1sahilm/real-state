@@ -6,7 +6,11 @@ import logo1 from "../../assets/Logo/output-onlinepngtools 1.png";
 import logo from "../../assets/Logo/output-onlinepngtools 2.png";
 import Image from "next/image";
 
-const Header: React.FC = () => {
+interface HeaderProps {
+  isTrue?: boolean;
+}
+
+const Header= ({isTrue}:HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -54,9 +58,12 @@ const Header: React.FC = () => {
 
   return (
     <header className={styles.header}>
-      <button onClick={toggleMenu} className={styles.button}>
-        ☰
-      </button>
+      {isTrue && (
+ <button onClick={toggleMenu} className={styles.button}>
+ ☰
+</button>
+      )}
+     
       <Link href="/" data-cursor="pointer2" className={styles.logoLink}>
         <div className={styles.logoWrapper}>
           <Image

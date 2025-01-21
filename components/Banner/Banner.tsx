@@ -63,7 +63,7 @@ const Banner: React.FC<any> = ({ commingSoon }:BannerProposData) => {
 
   return (
     <>
-      <Header />
+      <Header isTrue={false} />
       <section className={styles.bannerSection} >
         {commingSoon && (
           <>
