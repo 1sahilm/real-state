@@ -1,0 +1,84 @@
+.section {
+  background: #222f47;
+  padding: 120px 0px 80px 0px;
+  .container {
+    // display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    .row {
+      position: relative;
+      width: 100%;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      .innersection {
+        padding: 0% 0% 0% 4.5%;
+        .box3 {
+          display: flex;
+          padding: 0 0 48px;
+          .qodefinfo {
+            width: 25%;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .topsc {
+              position: relative;
+              span {
+                font-size: 12px;
+                line-height: 1.16667em;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                font-family: "DM Sans", sans-serif;
+                display: inline-flex;
+                align-items: center;
+                flex-wrap: wrap;
+                color: #fff;
+                &::before {
+                  content: "";
+                  position: relative;
+                  width: 5px;
+                  height: 5px;
+                  background-color: currentColor;
+                  border-radius: 50%;
+                  top: 50%;
+                  margin-right: 13px;
+                  background: #fff;
+                }
+              }
+            }
+          }
+          .thumbs {
+            .content {
+              h4 {
+                font-size: 22px;
+                line-height: 1.22727em;
+                font-family: "DM Sans", sans-serif;
+                margin: 0 0 3px;
+                color: #fff;
+              }
+              h3 {
+                font-size: 12px;
+                line-height: 1.16667em;
+                font-weight: 400;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                font-family: "DM Sans", sans-serif;
+                display: inline-flex;
+                align-items: center;
+                flex-wrap: wrap;
+                color: #fff;
+              }
+            }
+          }
+          .qodefimage {
+            width: 75%;
+            display: block;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+.box {
+  padding: 50px 50px;
+
+  .boxstyle {
+    display: flex;
+    position: relative;
+
+    transition: 0.8s ease;
+    width: 248px;
+    overflow: hidden;
+    .wrapper {
+      position: relative;
+    }
+    .headingbox {
+      display: flex;
+      width: 100%;
+      max-width: 248px;
+      justify-content: flex-start;
+      align-items: flex-end;
+      border-left: 1px solid #e7e7da;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 50;
+      cursor: pointer;
+      max-width: 100px;
+
+      h3 {
+        left: 10px;
+        bottom: -87px;
+        height: 90px;
+        font-size: 32px;
+        font-weight: 300;
+        line-height: 42px;
+        font-family: "DM Sans", sans-serif;
+        color: #000;
+        display: flex;
+        transform: rotate(270deg);
+        transform-origin: 0 5%;
+        white-space: nowrap;
+        align-items: center;
+        position: relative;
+      }
+    }
+    .tabinactive::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 11px;
+      position: absolute;
+      right: -45px;
+      top: 17px;
+      background-color: #000;
+      opacity: 1;
+    }
+    .tabinactive::before {
+      content: "";
+      display: block;
+      width: 29px;
+      height: 1px;
+      position: absolute;
+      right: -60px;
+      top: 22px;
+      background-color: #000;
+      -webkit-clip-path: inset(-1px 0);
+      clip-path: inset(-1px 0);
+      transition: opacity 0.35s, -webkit-clip-path 0.35s;
+      transition: clip-path 0.35s, opacity 0.35s;
+      transition: clip-path 0.35s, opacity 0.35s, -webkit-clip-path 0.35s;
+    }
+    .tabactive::after {
+      content: "";
+      display: block;
+      width: 29px;
+      height: 1px;
+      position: absolute;
+      right: 33px;
+      top: 22px;
+      background-color: #000;
+      clip-path: inset(-1px 0);
+      transition: clip-path 0.35s, opacity 0.35s;
+    }
+    .blockbox {
+      position: relative;
+      height: 100%;
+      display: flex;
+      justify-content: stretch;
+      transition: 0.8s ease;
+      width: calc(939px);
+      right: -100px;
+      .active {
+        display: flex;
+      }
+      .inactive {
+        display: none;
+      }
+      .outercontent {
+        position: relative;
+        display: flex;
+        max-width: 60%;
+        z-index: 10;
+        flex-direction: column;
+        padding: 40px 80px;
+        justify-content: flex-end;
+
+        p {
+          font-size: 15px;
+          color: #000;
+          line-height: 1.5;
+          font-family: "DM Sans", sans-serif;
+        }
+        .link {
+          a {
+            text-decoration: underline;
+            color: #000;
+            font-size: 1rem;
+            font-family: "Nunito Sans", sans-serif;
+          }
+        }
+      }
+    }
+    .outerimages {
+      position: relative;
+
+      .imagebox {
+        position: relative;
+        display: flex;
+        max-width: 40%;
+        flex: 0 1 auto;
+        img {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+.boxiner {
+  height: 100%;
+  display: flex;
+}

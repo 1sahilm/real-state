@@ -4,6 +4,9 @@ import HomeMenu from "@/components/Banner/homemenu/pages";
 import Banner from "../components/Banner/Banner";
 import Ourstory from "@/components/Homepagesecction/Ourstory/pages";
 import ThreeColumnSection from "@/components/Homepagesecction/ThreeColumnSection/pages";
+import FourColumnSection from "@/components/Homepagesecction/FourColumnSection/pages";
+import Fivesection from "@/components/Homepagesecction/Fivesection/pages";
+import Latestproject from "@/components/Latestproject/pages";
 export default function Home() {
   const bannerData = [
     {
@@ -37,6 +40,9 @@ export default function Home() {
       <Banner bannerData={bannerData} commingSoon={true} />
       <Ourstory />
       <ThreeColumnSection />
+      <FourColumnSection />
+      <Fivesection />
+      <Latestproject />
     </div>
   );
 }

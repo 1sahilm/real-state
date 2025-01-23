@@ -30,7 +30,7 @@
     "sass": "^1.80.5",
     "sharp": "^0.33.5",
     "slick-carousel": "^1.8.1",
-    "swiper": "^11.1.14"
+    "swiper": "^11.2.1"
   },
   "devDependencies": {
     "@types/aos": "^3.0.7",
