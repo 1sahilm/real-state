@@ -1,0 +1,40 @@
+/* styles/Header.module.css */
+.header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 10;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+  }
+  .nav {
+    flex: 1;
+    justify-content: center;
+    display: flex;
+  }
+  
+  .nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  
+  .nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
