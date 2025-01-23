@@ -25,7 +25,7 @@ const Latestproject = () => {
 
                 <div className={style.thumbs}>
                   <Swiper
-                    onSwiper={setThumbsSwiper}
+                    // onSwiper={setThumbsSwiper}
                     loop={true}
                     spaceBetween={10}
                     slidesPerView={1}
