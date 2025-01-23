@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'; 
+import React from 'react'; 
 import styles from './Banner.module.css';
 // import DroneVideo from '../../assets/banner-video/videos.mov';
 
@@ -15,19 +15,9 @@ import styles from './Banner.module.css';
 //   bannerData: BannerItem[];
 //   commingSoon?: boolean;
 // }
+  
 
-interface BannerProposData {
-  commingSoon?: boolean;
-
-}
-
-const Banner: React.FC<any> = ({ commingSoon }:BannerProposData) => {
-  const [currentIndex, setCurrentIndex] = useState<any>(0);
-
-  // const handleBannerClick = () => {
-  //   setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
-  // };
-
+const Banner= () => { 
  
 
   const videoRef = React.useRef<HTMLVideoElement>(null);
