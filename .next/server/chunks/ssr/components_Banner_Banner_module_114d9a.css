@@ -1,0 +1,121 @@
+/* [project]/components/Banner/Banner.module.css [app-client] (css) */
+.Banner-module__cR4NDG__bannerSection {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  height: 100vh;
+}
+
+.Banner-module__cR4NDG__commingText {
+  font-size: 60px;
+  font-weight: 600;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Banner-module__cR4NDG__bannerVideo {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.Banner-module__cR4NDG__bannerImageContainer {
+  position: absolute;
+  inset: 0;
+}
+
+.Banner-module__cR4NDG__bannerOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: #0000004d;
+}
+
+.Banner-module__cR4NDG__bannerContent {
+  height: 100%;
+  width: 100%;
+  padding: 10rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.Banner-module__cR4NDG__bannerText {
+  text-align: center;
+  color: #fff;
+  line-height: 1.5;
+  max-width: 48rem;
+}
+
+.Banner-module__cR4NDG__bannerHeading {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 80.17px;
+  text-align: center;
+}
+
+.Banner-module__cR4NDG__bannerDescription {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 40.06px;
+  text-align: center;
+}
+
+.Banner-module__cR4NDG__bannerDots {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.Banner-module__cR4NDG__dot {
+  display: inline-block;
+  width: .75rem;
+  height: .75rem;
+  border-radius: 50%;
+  margin: 0 .25rem;
+  background-color: #f6f4f4;
+  cursor: pointer;
+}
+
+.Banner-module__cR4NDG__activeDot {
+  background-color: #000;
+}
+
+@media (width <= 500px) {
+  .Banner-module__cR4NDG__bannerSection {
+    height: 30vh;
+    min-height: 30vh;
+  }
+
+  .Banner-module__cR4NDG__bannerHeading {
+    font-size: 25.9px;
+    font-weight: 700;
+    line-height: 32.44px;
+    text-align: center;
+  }
+
+  .Banner-module__cR4NDG__bannerDescription {
+    font-size: 9.71px;
+    font-weight: 600;
+    line-height: 12.17px;
+    text-align: center;
+  }
+
+  .Banner-module__cR4NDG__bannerContent {
+    justify-content: space-between;
+  }
+}
+
+
+/*# sourceMappingURL=components_Banner_Banner_module_114d9a.css.map*/
