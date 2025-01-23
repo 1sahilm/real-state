@@ -1,22 +1,24 @@
-'use client'
-import React, { useState } from 'react'; 
-import styles from '../Banner/banner.module.css';
+"use client";
+import React, { useState } from "react";
+import styles from "../Banner/Banner.module.css";
 interface BannerProposData {
   commingSoon?: boolean;
-
 }
 
-const Banner: React.FC<any> = ({ commingSoon }:BannerProposData) => {
+const Banner: React.FC<any> = ({ commingSoon }: BannerProposData) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // const handleBannerClick = () => {
   //   setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
   // };
 
-  const handleBannerDotsClick = (event: React.MouseEvent<HTMLSpanElement, MouseEvent>, index: number) => {
-    event.stopPropagation()
-    setCurrentIndex(index)
-  }
+  const handleBannerDotsClick = (
+    event: React.MouseEvent<HTMLSpanElement, MouseEvent>,
+    index: number
+  ) => {
+    event.stopPropagation();
+    setCurrentIndex(index);
+  };
 
   const videoRef = React.useRef<HTMLVideoElement>(null);
 
@@ -33,35 +35,35 @@ const Banner: React.FC<any> = ({ commingSoon }:BannerProposData) => {
     if (video) {
       video.currentTime = 60; // Start at 1:00
       video.play(); // Autoplay after seeking
-      video.addEventListener('timeupdate', handleTimeUpdate);
+      video.addEventListener("timeupdate", handleTimeUpdate);
     }
 
     return () => {
       if (video) {
-        video.removeEventListener('timeupdate', handleTimeUpdate);
+        video.removeEventListener("timeupdate", handleTimeUpdate);
       }
     };
   }, []);
 
   return (
-    <> 
-      <section className={styles.bannerSection} >
-        
-      <video
-        // ref={videoRef}
-        className={styles.bannerVideo}
-        muted
-        autoPlay
-        loop
-        playsInline
-      >
-        {/* <source src={"../../assets/banner-video/videos.mov"} type="video/mp4" /> */}
-        <source src="/banner-video/Vvie-Villas-Website.mp4" type="video/mp4" />
-  {/* <source src="../../assets/banner-video/videos.mp4" type="video/quicktime" /> */}
-        Your browser does not support the video tag.
-      </video>
-
-      
+    <>
+      <section className={styles.bannerSection}>
+        <video
+          // ref={videoRef}
+          className={styles.bannerVideo}
+          muted
+          autoPlay
+          loop
+          playsInline
+        >
+          {/* <source src={"../../assets/banner-video/videos.mov"} type="video/mp4" /> */}
+          <source
+            src="/banner-video/Vvie-Villas-Website.mp4"
+            type="video/mp4"
+          />
+          {/* <source src="../../assets/banner-video/videos.mp4" type="video/quicktime" /> */}
+          Your browser does not support the video tag.
+        </video>
       </section>
     </>
   );
