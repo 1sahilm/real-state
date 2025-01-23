@@ -41,10 +41,6 @@ const Banner = ({ commingSoon })=>{
     // const handleBannerClick = () => {
     //   setCurrentIndex((prevIndex) => (prevIndex + 1) % bannerData.length);
     // };
-    const handleBannerDotsClick = (event, index)=>{
-        event.stopPropagation();
-        setCurrentIndex(index);
-    };
     const videoRef = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useRef(null);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"].useEffect({
         "Banner.useEffect": ()=>{
@@ -87,19 +83,19 @@ const Banner = ({ commingSoon })=>{
                         type: "video/mp4"
                     }, void 0, false, {
                         fileName: "[project]/components/Banner/Banner.tsx",
-                        lineNumber: 75,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, this),
                     "Your browser does not support the video tag."
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Banner/Banner.tsx",
-                lineNumber: 67,
+                lineNumber: 63,
                 columnNumber: 7
             }, this)
         }, void 0, false, {
             fileName: "[project]/components/Banner/Banner.tsx",
-            lineNumber: 64,
+            lineNumber: 60,
             columnNumber: 7
         }, this)
     }, void 0, false);

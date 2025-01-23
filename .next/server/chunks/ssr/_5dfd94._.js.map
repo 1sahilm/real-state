@@ -8,7 +8,7 @@
     {"offset": {"line": 29, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
     {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
     {"offset": {"line": 39, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
-    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/Nishantha/Desktop/sahil-projects/new/real-state/app/page.tsx"],"sourcesContent":["import Image from \"next/image\";\nimport styles from \"./page.module.css\";\nimport Banner from \"@/components/Banner/Banner\";\n\nexport default function Home() {\n  return (\n   <div>\n    <Banner/> \n   </div>\n  );\n}\n"],"names":[],"mappings":";;;;AAEA;;;AAEe,SAAS;IACtB,qBACC,8OAAC;kBACA,cAAA,8OAAC,+HAAA,CAAA,UAAM;;;;;;;;;;AAGX"}},
+    {"offset": {"line": 45, "column": 0}, "map": {"version":3,"sources":["file://C%3A/Users/Nishantha/Desktop/sahil-projects/new/real-state/app/page.tsx"],"sourcesContent":["\nimport Banner from \"@/components/Banner/Banner\";\n\nexport default function Home() {\n  return (\n   <div>\n    <Banner/> \n   </div>\n  );\n}\n"],"names":[],"mappings":";;;;AACA;;;AAEe,SAAS;IACtB,qBACC,8OAAC;kBACA,cAAA,8OAAC,+HAAA,CAAA,UAAM;;;;;;;;;;AAGX"}},
     {"offset": {"line": 65, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
     {"offset": {"line": 76, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":""}},
     {"offset": {"line": 76, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
