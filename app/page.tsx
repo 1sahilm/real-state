@@ -1,6 +1,9 @@
 "use client";
 
-import Banner from "../components/Banner/Banner"; 
+import HomeMenu from "@/components/Banner/homemenu/pages";
+import Banner from "../components/Banner/Banner";
+import Ourstory from "@/components/Homepagesecction/Ourstory/pages";
+import ThreeColumnSection from "@/components/Homepagesecction/ThreeColumnSection/pages";
 export default function Home() {
   const bannerData = [
     {
@@ -28,8 +31,12 @@ export default function Home() {
 
   return (
     <div>
+      <div>
+        <HomeMenu />
+      </div>
       <Banner bannerData={bannerData} commingSoon={true} />
-     
+      <Ourstory />
+      <ThreeColumnSection />
     </div>
   );
 }

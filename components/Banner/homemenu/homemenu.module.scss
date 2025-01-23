@@ -1,0 +1,43 @@
+.header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  padding: 10px 50px;
+  top: 50px;
+  .innerbox {
+    position: relative;
+    display: flex;
+    .menulist {
+      position: relative;
+      .link {
+        position: relative;
+        padding-left: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        font-family: Arial, Helvetica, sans-serif;
+        a {
+          position: relative;
+          color: #fff;
+        }
+      }
+      .active {
+        position: relative;
+        border-left: 2px solid #fff;
+
+        a {
+          position: relative;
+        }
+      }
+    }
+    .logoimage {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      .logo {
+        position: relative;
+      }
+    }
+  }
+}
