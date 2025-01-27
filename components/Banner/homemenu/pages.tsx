@@ -27,8 +27,8 @@ const HomeMenu = () => {
         <div className={Style.logoimage}>
           <Image
             src={"/logo-updated_processed.jpeg"}
-            width={200}
-            height={200}
+            width={150}
+            height={150}
             alt="logo"
             className={Style.logo}
           />

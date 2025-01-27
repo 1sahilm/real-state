@@ -245,38 +245,14 @@ h2.gallery-top {
 
 
 
-
-/* 
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
- 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.swiper-slide {
-  width: 80%;
-}
-
-.swiper-slide:nth-child(2n) {
-  width: 60%;
-}
-
-.swiper-slide:nth-child(3n) {
-  width: 40%;
-} */
+ .testimonialsbox .swiper-pagination-bullet {
+  position: relative;
+  font-size: 0;
+  width: 30px;
+  height: 2px;
+  border-radius: 5px !important;
+ }
+ .testimonialsbox .swiper-pagination-bullet-active {
+  position: relative;
+  background: #000 !important;
+ }

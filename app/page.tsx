@@ -7,6 +7,9 @@ import ThreeColumnSection from "@/components/Homepagesecction/ThreeColumnSection
 import FourColumnSection from "@/components/Homepagesecction/FourColumnSection/pages";
 import Fivesection from "@/components/Homepagesecction/Fivesection/pages";
 import Latestproject from "@/components/Latestproject/pages";
+import Testimonials from "@/components/Testimonials/pages";
+import Blogssection from "@/components/Blogssection/pages";
+import Footer from "@/components/Footer/pages";
 export default function Home() {
   const bannerData = [
     {
@@ -43,6 +46,9 @@ export default function Home() {
       <FourColumnSection />
       <Fivesection />
       <Latestproject />
+      <Testimonials />
+      <Blogssection />
+      <Footer />
     </div>
   );
 }

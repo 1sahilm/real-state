@@ -1,0 +1,35 @@
+.cardbox {
+  position: relative;
+  .image {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .title {
+    position: relative;
+    font-size: 18px;
+    line-height: 1.27778em;
+    font-family: "DM Sans", sans-serif;
+    color: #000;
+    word-wrap: break-word;
+  }
+  .datecat {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 18px;
+    row-gap: 5px;
+    span {
+      position: relative;
+      font-size: 12px;
+      line-height: 1.16667em;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-family: "DM Sans", sans-serif;
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      color: #000;
+    }
+  }
+}

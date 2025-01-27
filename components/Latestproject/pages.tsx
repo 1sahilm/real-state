@@ -8,9 +8,12 @@ import { Navigation, Thumbs, FreeMode } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
+// import SwiperClass from "swiper/types/swiper-class";
 
 const Latestproject = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+  // const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  const [thumbsSwiper, setThumbsSwiper] = useState();
 
   return (
     <section className={style.section}>
@@ -32,7 +35,7 @@ const Latestproject = () => {
                     freeMode={true}
                     watchSlidesProgress={true}
                     modules={[FreeMode, Navigation, Thumbs]}
-                    className="mySwiper"
+                    // className="mySwiper"
                   >
                     {latestarry?.map((items, index) => {
                       return (
@@ -72,6 +75,7 @@ const Latestproject = () => {
                               width={1000}
                               height={500}
                               alt={items.name}
+                              objectFit="cover"
                             />
                           </div>
                         </SwiperSlide>
@@ -79,27 +83,27 @@ const Latestproject = () => {
                     );
                   })}
                 </Swiper>
-                <div>
+                <div className={style.navarrow}>
                   <div
-                    className={`review2-swiper-button-next newswiper3-button   `}
+                    className={`${style.prevarrow} review2-swiper-button-prev`}
                   >
                     <span className="line-height-0">
                       <Image
-                        src="/arrow-right-long-line.svg"
-                        width={20}
-                        height={20}
+                        src="/sliderarrow.svg"
+                        width={30}
+                        height={30}
                         alt="left1"
                       />
                     </span>
                   </div>
                   <div
-                    className={`review2-swiper-button-prev newswiper3-button  `}
+                    className={`${style.nextarrow} review2-swiper-button-next`}
                   >
                     <span className="line-height-0">
                       <Image
-                        src="/arrow-left-long-line.svg"
-                        width={20}
-                        height={20}
+                        src="/sliderarrow.svg"
+                        width={30}
+                        height={30}
                         alt="left1"
                         priority
                       />
