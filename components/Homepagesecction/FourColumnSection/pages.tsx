@@ -11,7 +11,7 @@ const FourColumnSection = () => {
         <div className={styles.fourbox}>
         <div className={styles.imageSection}>
           <img
-            src="/about-us/vive-2.jpg"
+            src="/about-us/new-v.jpg"
             alt="Architects working"
             className={styles.image}
           />
