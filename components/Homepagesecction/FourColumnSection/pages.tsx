@@ -6,9 +6,16 @@ const FourColumnSection = () => {
     <section className={styles.section}>
       <div className={styles.inerbox}>
         <div className={styles.subheadig}>
-          <h4>OUR ETHOS</h4>
+          <h4>ABOUT VVIE</h4>
         </div>
         <div className={styles.fourbox}>
+        <div className={styles.imageSection}>
+          <img
+            src="/about-us/vive-2.jpg"
+            alt="Architects working"
+            className={styles.image}
+          />
+        </div>
           {OURETHOSarry?.map((items, index) => {
             return (
               <>
@@ -31,26 +38,20 @@ export default FourColumnSection;
 const OURETHOSarry = [
   {
     id: ".01",
-    name: "Ethos",
+    name: "Vvie: Where Elegance and Modernity Breathe Life",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Inspired by the French word for ‘life,’ Vvie is where elegance meets modernity in the heart of nature. Vvie signifies life in its most luxurious and harmonious form.",
   },
   {
     id: ".02",
-    name: "Ethos",
+    name: "A Legacy of Exclusivity and Scenic Splendor",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Evoking exclusivity and celebrating life, our vision is to create exclusive estates that can be cherished by generations to come, in handpicked locations that promise unfettered, stunning vistas even for times to come. ",
   },
   {
     id: ".03",
-    name: "Ethos",
+    name: "Bespoke Luxury Estates: Crafted by Masters, Inspired by Nature",
     content:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    id: ".04",
-    name: "Ethos",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
+      "These managed estates and exclusive managed estates are thoughtfully crafted by world-renowned architects, offering bespoke luxury amidst nature, ensuring a unique living experience like no other. ",
+  }, 
 ];

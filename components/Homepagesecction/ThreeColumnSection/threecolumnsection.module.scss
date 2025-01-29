@@ -1,10 +1,12 @@
 .container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  padding: 0% 4.2% 0% 4.2%;
-  margin-top: 66px;
-  margin-bottom: 100px;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 0% 4.2% 50px 4.2%;
+      margin-top: 66px;
+      margin-bottom: 100px;
+      border-bottom: 1px solid #ddd;
+  
 }
 .leftSection {
   flex: 1;
@@ -40,4 +42,15 @@
   color: #000;
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
+}
+
+.imageSection {
+  // flex: 1;
+  display: flex;
+  justify-content: right;
+}
+.image {
+  // max-width: 100%;
+  width: 80%; 
+  // max-height: 300px;
 }
