@@ -1,6 +1,5 @@
 .section {
   padding: 2rem; 
-  background: #222f47;
 }
 
 .container {
@@ -18,7 +17,7 @@
 .subHeading {
   font-size: 10px;
   letter-spacing: 1px;
-  color: #fff;
+  color: #555;
   margin-bottom: 40px;
   position: relative;
   padding-left: 15px;
@@ -40,11 +39,10 @@
   margin-bottom: 15px;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 1.2px;
-  color: #fff;
 }
 .readMore {
   text-decoration: underline;
-  color: #fff;
+  color: #000;
   font-size: 1rem;
   font-family: "Nunito Sans", sans-serif;
 }
@@ -55,14 +53,24 @@
 }
 .image {
   max-width: 100%;
-  width: 60%;
+  width: 80%;
   height: 50%;
 }
 
 .text {
   font-size: 15px;
-  color: rgba(255, 255, 255, 0.8);
+  color: #000;
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
   margin-bottom: 15px;
+}
+
+.listing{
+  list-style-type: disc;
+  padding: 10px 20px;
+  li {
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
 }

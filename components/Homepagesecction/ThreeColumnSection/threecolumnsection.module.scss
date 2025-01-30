@@ -2,10 +2,11 @@
   display: flex;
       align-items: flex-start;
       justify-content: space-between;
-      padding: 0% 4.2% 50px 4.2%;
-      margin-top: 66px;
-      margin-bottom: 100px;
+      padding: 66px 4.2% 50px 4.2%;
+      margin-top: 0px;
+      margin-bottom: 7px;
       border-bottom: 1px solid #ddd;
+      background: #222f47;
   
 }
 .leftSection {
@@ -19,7 +20,7 @@
   text-decoration: underline;
   font-size: 22px;
   line-height: 1.22727em;
-  color: #000;
+  color: #fff;
   cursor: pointer;
   font-family: "DM Sans", sans-serif;
 }
@@ -36,10 +37,11 @@
   font-weight: 500;
   margin-bottom: 0.5rem;
   font-family: "DM Sans", sans-serif;
+  color: #fff;
 }
 .text {
   font-size: 15px;
-  color: #000;
+  color: #ffffffcc;
   line-height: 1.5;
   font-family: "DM Sans", sans-serif;
 }

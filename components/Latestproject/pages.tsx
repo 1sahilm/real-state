@@ -21,37 +21,7 @@ const Latestproject = () => {
         <div className={style.row}>
           <div className={style.innersection}>
             <div className={style.box3}>
-              <div className={style.qodefinfo}>
-                <div className={style.topsc}>
-                  <span>LATEST PROJECTS</span>
-                </div>
-
-                <div className={style.thumbs}>
-                  <Swiper
-                    // onSwiper={setThumbsSwiper}
-                    // loop={true}
-                    spaceBetween={10}
-                    slidesPerView={1}
-                    freeMode={true}
-                    watchSlidesProgress={true}
-                    modules={[FreeMode, Navigation, Thumbs]}
-                    // className="mySwiper"
-                  >
-                    {latestarry?.map((items, index) => {
-                      return (
-                        <>
-                          <SwiperSlide key={index}>
-                            <div className={style.content}>
-                              {/* <h4> {items.name}</h4>
-                              <h3>{items.subname}</h3> */}
-                            </div>
-                          </SwiperSlide>
-                        </>
-                      );
-                    })}
-                  </Swiper>
-                </div>
-              </div>
+              
               <div className={style.qodefimage}>
                 <Swiper
                   slidesPerView={1.5}

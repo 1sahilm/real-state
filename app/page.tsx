@@ -11,6 +11,7 @@ import Testimonials from "@/components/Testimonials/pages";
 import Blogssection from "@/components/Blogssection/pages";
 import Footer from "@/components/Footer/pages";
 import Ourstory2 from "@/components/Homepagesecction/Ourstory2/pages";
+import Ourstory3 from "@/components/Homepagesecction/Ourstory3/pages";
 export default function Home() {
   const bannerData = [
     {
@@ -47,10 +48,11 @@ export default function Home() {
       {/* <FourColumnSection /> */}
 
 
+      <Ourstory3 />
       <Ourstory2 />
-      <Fivesection />
+      {/* <Fivesection /> */}
       <Latestproject />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Blogssection />
       <Footer />
     </div>
