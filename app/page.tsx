@@ -10,6 +10,7 @@ import Latestproject from "@/components/Latestproject/pages";
 import Testimonials from "@/components/Testimonials/pages";
 import Blogssection from "@/components/Blogssection/pages";
 import Footer from "@/components/Footer/pages";
+import Ourstory2 from "@/components/Homepagesecction/Ourstory2/pages";
 export default function Home() {
   const bannerData = [
     {
@@ -43,7 +44,10 @@ export default function Home() {
       <Banner bannerData={bannerData} commingSoon={true} />
       <Ourstory />
       <ThreeColumnSection />
-      <FourColumnSection />
+      {/* <FourColumnSection /> */}
+
+
+      <Ourstory2 />
       <Fivesection />
       <Latestproject />
       <Testimonials />

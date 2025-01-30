@@ -77,7 +77,8 @@
             display: block;
             overflow: hidden;
              .img {
-              height: 500px;
+              height: 350px;
+              object-fit: cover;
              }
           }
         }
