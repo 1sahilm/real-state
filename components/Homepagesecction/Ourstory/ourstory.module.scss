@@ -36,7 +36,7 @@
 .heading {
   font-size: 38px;
   line-height: 38px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-family: "DM Sans", sans-serif;
   letter-spacing: 1.2px;
 }
@@ -53,5 +53,14 @@
 }
 .image {
   max-width: 100%;
-  height: auto;
+  width: 60%;
+  height: 50%;
+}
+
+.text {
+  font-size: 15px;
+  color: #000;
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+  margin-bottom: 15px;
 }

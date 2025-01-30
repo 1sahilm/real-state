@@ -42,27 +42,27 @@ export default HomeMenu;
 
 const menuarry = [
   {
-    manuname: "home",
+    manuname: "Home",
     manulink: "#",
   },
   {
-    manuname: "about",
+    manuname: "About",
+    manulink: "/about-us",
+  },
+  {
+    manuname: "Projects",
     manulink: "#",
   },
   {
-    manuname: "projects",
+    manuname: "Faqs",
     manulink: "#",
   },
+  // {
+  //   manuname: "blog",
+  //   manulink: "#",
+  // },
   {
-    manuname: "faqs",
-    manulink: "#",
-  },
-  {
-    manuname: "blog",
-    manulink: "#",
-  },
-  {
-    manuname: "get in touch",
+    manuname: "Get in touch",
     manulink: "#",
   },
 ];

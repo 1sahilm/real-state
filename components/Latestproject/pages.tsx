@@ -21,37 +21,7 @@ const Latestproject = () => {
         <div className={style.row}>
           <div className={style.innersection}>
             <div className={style.box3}>
-              <div className={style.qodefinfo}>
-                <div className={style.topsc}>
-                  <span>LATEST PROJECTS</span>
-                </div>
-
-                <div className={style.thumbs}>
-                  <Swiper
-                    // onSwiper={setThumbsSwiper}
-                    loop={true}
-                    spaceBetween={10}
-                    slidesPerView={1}
-                    freeMode={true}
-                    watchSlidesProgress={true}
-                    modules={[FreeMode, Navigation, Thumbs]}
-                    // className="mySwiper"
-                  >
-                    {latestarry?.map((items, index) => {
-                      return (
-                        <>
-                          <SwiperSlide key={index}>
-                            <div className={style.content}>
-                              <h4> {items.name}</h4>
-                              <h3>{items.subname}</h3>
-                            </div>
-                          </SwiperSlide>
-                        </>
-                      );
-                    })}
-                  </Swiper>
-                </div>
-              </div>
+              
               <div className={style.qodefimage}>
                 <Swiper
                   slidesPerView={1.5}
@@ -69,13 +39,14 @@ const Latestproject = () => {
                     return (
                       <>
                         <SwiperSlide key={index}>
-                          <div>
+                          <div >
                             <Image
                               src={items.image}
                               width={1000}
                               height={500}
                               alt={items.name}
                               objectFit="cover"
+                              className={style.img}
                             />
                           </div>
                         </SwiperSlide>
@@ -124,19 +95,37 @@ export default Latestproject;
 const latestarry = [
   {
     id: 1,
-    image: "/h1-port-img-01.jpg",
+    image: "/render-image/1.png",
     name: "Museum of Fado Lisbon",
     subname: "ARCHITECTURE | HERITAGE",
   },
   {
     id: 1,
-    image: "/h1-port-img-02.jpg",
+    image: "/render-image/2.png",
     name: "Museum of Fado Lisbon",
     subname: "ARCHITECTURE | HERITAGE",
   },
   {
     id: 1,
-    image: "/h1-port-img-03-1.jpg",
+    image: "/render-image/3.png",
+    name: "Museum of Fado Lisbon",
+    subname: "ARCHITECTURE | HERITAGE",
+  },
+  {
+    id: 1,
+    image: "/render-image/4.png",
+    name: "Museum of Fado Lisbon",
+    subname: "ARCHITECTURE | HERITAGE",
+  },
+  {
+    id: 1,
+    image: "/render-image/6.JPEG",
+    name: "Museum of Fado Lisbon",
+    subname: "ARCHITECTURE | HERITAGE",
+  },
+  {
+    id: 1,
+    image: "/render-image/8.JPG",
     name: "Museum of Fado Lisbon",
     subname: "ARCHITECTURE | HERITAGE",
   },

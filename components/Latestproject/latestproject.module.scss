@@ -1,5 +1,5 @@
 .section {
-  background: #222f47;
+  // background: #222f47;
   padding: 120px 0px 80px 0px;
   .container {
     // display: flex;
@@ -73,9 +73,13 @@
             }
           }
           .qodefimage {
-            width: 75%;
+            width: 90%;
             display: block;
             overflow: hidden;
+             .img {
+              height: 400px;
+              object-fit: cover;
+             }
           }
         }
       }
@@ -126,3 +130,5 @@
     }
   }
 }
+
+ 

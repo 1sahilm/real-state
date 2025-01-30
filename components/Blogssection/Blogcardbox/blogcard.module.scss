@@ -3,6 +3,8 @@
   .image {
     position: relative;
     margin-bottom: 30px;
+    height: 235px;
+    width: 100%;
   }
   .title {
     position: relative;
@@ -19,17 +21,15 @@
     margin-top: 18px;
     row-gap: 5px;
     span {
-      position: relative;
-      font-size: 12px;
-      line-height: 1.16667em;
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      font-family: "DM Sans", sans-serif;
+      position: relative;  
       display: inline-flex;
       align-items: center;
-      flex-wrap: wrap;
-      color: #000;
+      flex-wrap: wrap; 
+      font-size: 12px;
+  color: #000;
+  line-height: 1.5;
+  font-family: "DM Sans", sans-serif;
+      
     }
   }
 }
