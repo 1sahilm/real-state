@@ -178,5 +178,88 @@
     font-size: 16px;
     font-weight: bold;
   }
+
+
+
+  .teamsection {
+    background: #E7E7DA;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
+  }
   
-  
+  .teamsection .teamsinner {
+    display: flex
+    ;
+    }
+  .teamsection .teamsinner .teammember {
+    display: flex
+    ;
+        max-width: 40%;
+        width: 40%;
+      
+    }
+  .teamsection .teamsinner .teammember img {
+    width: 50%;
+    max-width: 50%;
+      
+    }
+  .teamsection .teamsinner .teammember .info {
+      
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6.2%;
+    }
+  .teamsection .teamsinner .teammember .info h3 {
+    font-size: 22px;
+        line-height: 1.22727em;
+        font-family: "DM Sans",sans-serif;
+        color: #000;
+        word-wrap: break-word;
+        margin: 0 0 9px;
+
+      
+    }
+  .teamsection .teamsinner .teammember .info p {
+      
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.16667em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-family: "DM Sans", sans-serif;
+    display: inline-flex
+;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #000;
+    }
+
+
+    .teammemberjoin {
+      display: flex
+      ;
+          max-width: 20%;
+          width: 20%;
+          border: 2px solid #000;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+    }
+    .teammemberjoin p {
+      font-size: 16px;
+      font-family: "DM Sans", sans-serif;
+      color: #000;
+     }
+    .teamsinner2 {
+      position: relative;
+      left: 20%;
+      width: fit-content;
+      max-width: max-content;
+
+    }

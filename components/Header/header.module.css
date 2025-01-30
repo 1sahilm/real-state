@@ -37,4 +37,14 @@
   .nav ul li a:hover {
     text-decoration: underline;
   }
+
+
+  .black .logo {
+   color: #000;
+  }
+  .black .nav a {
+   color: #000;
+  }
+
+ 
   

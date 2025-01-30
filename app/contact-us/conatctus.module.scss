@@ -1,0 +1,163 @@
+.contactpage {
+  margin-top: 70px;
+
+  padding: 100px 50px;
+  .container {
+    position: relative;
+    .row {
+      position: relative;
+      display: flex;
+      gap: 100px;
+      .col1 {
+        position: relative;
+        max-width: 50%;
+        width: 50%;
+        .conter {
+          p {
+            position: relative;
+            font-family: "Nunito Sans", sans-serif;
+            font-size: 16px;
+            line-height: 1.6875em;
+            font-weight: 400;
+            color: #000;
+            background-color: #fff;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+          }
+        }
+        .form {
+          position: relative;
+          margin-top: 70px;
+          .row1 {
+            position: relative;
+            display: flex;
+            gap: 15px;
+            input {
+              position: relative;
+              margin-bottom: 15px;
+              border-color: #acacac;
+              position: relative;
+              display: inline-block;
+              width: 100%;
+              vertical-align: top;
+              border-radius: 0;
+              border-style: solid;
+              border-width: 0 0 1px 0;
+              box-sizing: border-box;
+              cursor: pointer;
+              font-family: "DM Sans", sans-serif;
+              font-size: 11px;
+              font-weight: inherit;
+              line-height: 24px;
+              letter-spacing: 0.3em;
+              text-transform: uppercase;
+              margin: 0 0 11px;
+              outline: 0;
+              padding: 15px 0;
+              transition: color 0.2s ease-out, background-color 0.2s ease-out,
+                border-color 0.2s ease-out;
+            }
+          }
+          textarea {
+            position: relative;
+            margin-bottom: 15px;
+            border-color: #acacac;
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            vertical-align: top;
+            border-radius: 0;
+            border-style: solid;
+            border-width: 0 0 1px 0;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-family: "DM Sans", sans-serif;
+            font-size: 11px;
+            font-weight: inherit;
+            line-height: 24px;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            margin: 0 0 11px;
+            outline: 0;
+            padding: 15px 0;
+            transition: color 0.2s ease-out, background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+          }
+          button {
+            font-family: "Nunito Sans", sans-serif;
+            font-size: 16px;
+            line-height: 1.6875em;
+            font-weight: 400;
+            color: #000;
+            position: relative;
+            display: inline-flex;
+            vertical-align: middle;
+            width: auto;
+            margin: 0;
+            text-decoration: none;
+            text-transform: lowercase;
+            border-radius: 0;
+            outline: 0;
+            transition: color 0.2s ease-out, background-color 0.2s ease-out,
+              border-color 0.2s ease-out;
+            padding: 9px 68px;
+            color: #000;
+            background-color: transparent;
+            border: 1px solid #000;
+            z-index: 1;
+            transition-delay: 0.03s;
+            cursor: pointer;
+            margin-top: 40px;
+          }
+        }
+      }
+      .col2 {
+        position: relative;
+        max-width: 50%;
+        width: 50%;
+        .addres {
+          position: relative;
+          display: flex;
+          gap: 30px;
+          .addrlist {
+            position: relative;
+            h5 {
+              font-family: "DM Sans", sans-serif;
+              font-weight: 400;
+              color: #000;
+              font-size: 12px;
+              line-height: 1.16667em;
+              font-weight: 400;
+              text-transform: uppercase;
+              letter-spacing: 0.2em;
+              margin: 25px 0;
+              -ms-word-wrap: break-word;
+              word-wrap: break-word;
+            }
+            .box {
+              position: relative;
+              p {
+                position: relative;
+                margin: 10px 0px;
+                line-height: 22px;
+                font-family: "DM Sans", sans-serif;
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.map {
+  position: relative;
+
+  margin-bottom: 50px;
+  iframe {
+    height: 400px;
+    width: 100%;
+    filter: grayscale(1);
+  }
+}
