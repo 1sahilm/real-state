@@ -1,0 +1,36 @@
+.projectpage {
+  margin-top: 70px;
+
+  padding: 100px 50px;
+  .container {
+    position: relative;
+    .row {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      .box {
+        .blockcontent {
+          margin: 24px 0 30px 0px;
+          h3 {
+            font-family: "DM Sans", sans-serif;
+            font-size: 22px;
+            line-height: 1.22727em;
+          }
+          p {
+            font-size: 12px;
+            line-height: 1.16667em;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-family: "DM Sans", sans-serif;
+            display: inline-flex;
+            align-items: center;
+            flex-wrap: wrap;
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
