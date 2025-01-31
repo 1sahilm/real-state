@@ -1,4 +1,7 @@
+
+import Link from "next/link";
 import styles from "./header.module.css";
+import Image from "next/image";
 
 interface HeaderProp {
   headertheme?: boolean;
@@ -11,26 +14,47 @@ const Header = ({ headertheme }: HeaderProp) => {
         headertheme ? styles.black : styles.white
       }  `}
     >
-      <div className={styles.logo}>INFRANIUM</div>
+
+      <div className={styles.logo}>
+        <Link href="/">
+       
+        {headertheme ? <> 
+          <Image
+            src={"/new-logo.png"}
+            width={120}
+            height={120}
+            alt="logo" 
+            />
+        </> : <>
+        
+            <Image
+            src={"/logo-updated_processed.jpeg"}
+            width={120}
+            height={120}
+            alt="logo" 
+            />
+        </> }
+            </Link>
+        </div>
       <nav className={styles.nav}>
         <ul>
           <li>
-            <a href="#">Home</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a href="#">About</a>
+            <Link href="/about-us">About</Link>
           </li>
           <li>
-            <a href="#">Projects</a>
+            <a href="/project">Projects</a>
           </li>
           <li>
             <a href="#">Faqs</a>
           </li>
-          <li>
+          {/* <li>
             <a href="#">Blog</a>
-          </li>
+          </li> */}
           <li>
-            <a href="#">Get In Touch</a>
+            <a href="/contact-us">Get In Touch</a>
           </li>
         </ul>
       </nav>

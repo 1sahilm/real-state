@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./ourstory.module.scss"
 import Link from "next/link";
+import ModelBox from "@/components/ModelBox/page";
 
 const Ourstory2 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  
+      const togglePopup = () => {
+        setIsOpen(!isOpen);
+      };
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -28,7 +34,7 @@ bedrooms, dining, and living spaces. Enjoy the
 stunning landscape year-round, even in winter, 
 from your private rooftop jacuzzi.
           </p>
-          <span   className={styles.readMore}>
+          <span   className={styles.readMore} onClick={togglePopup}>
           CTA
           </span>
           
@@ -41,6 +47,10 @@ from your private rooftop jacuzzi.
           />
         </div>
       </div>
+      <ModelBox 
+      togglePopup={togglePopup}
+      isOpen={isOpen}
+      />
     </section>
   );
 };
