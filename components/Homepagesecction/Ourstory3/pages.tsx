@@ -1,8 +1,15 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import styles from "./ourstory.module.scss"
 import Link from "next/link";
+import ModelBox from "@/components/ModelBox/page";
 
 const Ourstory3 = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+    const togglePopup = () => {
+      setIsOpen(!isOpen);
+    };
   return (
     <section className={styles.section}>
       <div className={styles.container}>
@@ -37,7 +44,7 @@ morning sun, painting the landscape in hues of gold</li>
 <li>FLORA & FAUNA: Naldehra is a living canvas of biodiversity. Towering pines and ancient deodars stretch across
 the horizon, while vibrant rhododendrons and Himalayan oak create a tapestry of colours.</li>
           </ul>
-          <span   className={styles.readMore}>
+          <span   className={styles.readMore} onClick={togglePopup}>
           CTA
           </span>
           
@@ -50,6 +57,10 @@ the horizon, while vibrant rhododendrons and Himalayan oak create a tapestry of 
           />
         </div>
       </div>
+      <ModelBox 
+      togglePopup={togglePopup}
+      isOpen={isOpen}
+      />
     </section>
   );
 };

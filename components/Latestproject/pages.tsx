@@ -119,13 +119,13 @@ const latestarry = [
   },
   {
     id: 1,
-    image: "/render-image/6.JPEG",
+    image: "/render-image/6.jpeg",
     name: "Museum of Fado Lisbon",
     subname: "ARCHITECTURE | HERITAGE",
   },
   {
     id: 1,
-    image: "/render-image/8.JPG",
+    image: "/render-image/8.jpg",
     name: "Museum of Fado Lisbon",
     subname: "ARCHITECTURE | HERITAGE",
   },
