@@ -263,3 +263,56 @@
       max-width: max-content;
 
     }
+
+
+    .infranimTeams{
+      background: #E7E7DA;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      padding-left: 50px;
+      padding-right: 50px;
+      overflow: hidden; 
+      .infranimContainer{
+        display: flex;
+        gap: 20px;
+      }
+      .info{
+        padding: 50px 0px;
+        flex: 1;
+      } 
+      
+       .userAvatar{
+        width: 250px;
+        max-width: 250px;
+        height: 250px;
+        display: block;
+        margin-bottom: 20px;
+        object-fit: cover;
+        object-position: top;
+
+       }
+      
+    }
+
+    .info h3 {
+      font-size: 22px;
+      line-height: 1.22727em;
+      font-family: "DM Sans",sans-serif;
+      color: #000;
+      word-wrap: break-word;
+      margin: 0 0 9px;
+    }
+    .info h6 {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.22727em;
+      font-family: "DM Sans",sans-serif; 
+      word-wrap: break-word;
+      margin: 0 0 9px;
+    }
+
+
+
+    .infranimContainer:nth-last-of-type(even) {
+      flex-direction: row-reverse;
+    }

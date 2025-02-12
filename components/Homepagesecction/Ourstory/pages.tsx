@@ -32,7 +32,7 @@ to refined living
         </div>
         <div className={styles.imageSection}>
           <img
-            src="/about-us/about-infrinum.jpg"
+            src="/infranium-image.jpeg"
             alt="Architects working"
             className={styles.image}
           />

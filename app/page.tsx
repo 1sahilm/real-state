@@ -13,6 +13,7 @@ import Footer from "@/components/Footer/pages";
 import Ourstory2 from "@/components/Homepagesecction/Ourstory2/pages";
 import Ourstory3 from "@/components/Homepagesecction/Ourstory3/pages";
 import Footer2 from "@/components/NewFooter/page";
+import Header from "@/components/Header";
 export default function Home() {
   const bannerData = [
     {
@@ -41,7 +42,8 @@ export default function Home() {
   return (
     <div>
       <div>
-        <HomeMenu />
+        <Header isTrue={true} headertheme={false} />
+        {/* <HomeMenu /> */}
       </div>
       <Banner bannerData={bannerData} commingSoon={true} />
       <Ourstory />

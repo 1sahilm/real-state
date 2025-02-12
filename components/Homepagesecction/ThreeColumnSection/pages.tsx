@@ -11,10 +11,7 @@ const ThreeColumnSection = () => {
         </a>
         <a href="#brochure" className={styles.link}>
         A GLOBAL COMPARISON
-        </a>
-        <a href="#questions" className={styles.link}>
-          Ask us your questions
-        </a>
+        </a> 
       </div>
 
       {/* Right Section */}

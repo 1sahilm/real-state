@@ -45,13 +45,13 @@ morning sun, painting the landscape in hues of gold</li>
 the horizon, while vibrant rhododendrons and Himalayan oak create a tapestry of colours.</li>
           </ul>
           <span   className={styles.readMore} onClick={togglePopup}>
-          CTA
+          Download brochure
           </span>
           
         </div>
         <div className={styles.imageSection}>
           <img
-            src="/moon.jpg"
+            src="/five-banner.jpg"
             alt="Architects working"
             className={styles.image}
           />

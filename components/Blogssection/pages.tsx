@@ -8,6 +8,7 @@ const Blogssection = () => {
     <div className={styles.section}>
       <div className={styles.container}>
       <div className={styles.textSection}> 
+      <p className={styles.subHeading}>About Architect</p>
           <h1 className={styles.heading}>
           PSDA - PRADEEP SACHDEVA DESIGN ASSOCIATES
 <br />

@@ -7,7 +7,8 @@ import Footer from "@/components/Footer/pages";
 const ContactUs = () => {
   return (
     <>
-      <Header headertheme />
+            <Header headertheme={true} isLogo={true} />
+
 
       <section className={style.contactpage}>
         <div className={style.container}>

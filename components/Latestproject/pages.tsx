@@ -8,12 +8,18 @@ import { Navigation, Thumbs, FreeMode } from "swiper/modules";
 import Image from "next/image";
 import "swiper/css/free-mode";
 import "swiper/css/thumbs";
+import ModelBox from "../ModelBox/page";
 // import SwiperClass from "swiper/types/swiper-class";
 
 const Latestproject = () => {
   // const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
   const [thumbsSwiper, setThumbsSwiper] = useState();
+  const [isOpen, setIsOpen] = useState(false);
+  
+      const togglePopup = () => {
+        setIsOpen(!isOpen);
+      };
 
   return (
     <section className={style.section}>
@@ -24,7 +30,7 @@ const Latestproject = () => {
               
               <div className={style.qodefimage}>
                 <Swiper
-                  slidesPerView={1.5}
+                  slidesPerView={1.9}
                   spaceBetween={30}
                   loop={true}
                   modules={[FreeMode, Navigation, Thumbs]}
@@ -39,7 +45,10 @@ const Latestproject = () => {
                     return (
                       <>
                         <SwiperSlide key={index}>
-                          <div >
+                          
+                          <div className={style.qurge}
+                          
+                          >
                             <Image
                               src={items.image}
                               width={1000}
@@ -48,8 +57,17 @@ const Latestproject = () => {
                               objectFit="cover"
                               className={style.img}
                             />
+                         
+                          <div>
+                          <div className={style.qodeftitle} onClick={togglePopup}>
+                          <span>
+                          Read More
+                          </span>
                           </div>
+                        </div>
+                        </div>
                         </SwiperSlide>
+                        
                       </>
                     );
                   })}
@@ -86,6 +104,10 @@ const Latestproject = () => {
           </div>
         </div>
       </div>
+      <ModelBox 
+      togglePopup={togglePopup}
+      isOpen={isOpen}
+      />
     </section>
   );
 };

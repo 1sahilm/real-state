@@ -1,7 +1,9 @@
+"use client"
 import React, { useState } from "react";
 import styles from "./ourstory.module.scss"
 import Link from "next/link";
-import ModelBox from "@/components/ModelBox/page";
+import ModelBox from "@/components/ModelBox/page"; 
+import { useRouter } from "next/navigation";
 
 const Ourstory2 = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +11,13 @@ const Ourstory2 = () => {
       const togglePopup = () => {
         setIsOpen(!isOpen);
       };
+
+      const router = useRouter();
   return (
     <section className={styles.section}>
       <div className={styles.container}>
         <div className={styles.textSection}>
-          <p className={styles.subHeading}>ABOUT VVIE</p>
+          <p className={styles.subHeading}>About Vvie Villas, Naldehra Golf Hills</p>
           <h1 className={styles.heading}>
           Inspired by the French word for ‘life,’ Vvie  
           <br />
@@ -34,14 +38,14 @@ bedrooms, dining, and living spaces. Enjoy the
 stunning landscape year-round, even in winter, 
 from your private rooftop jacuzzi.
           </p>
-          <span   className={styles.readMore} onClick={togglePopup}>
-          CTA
+          <span   className={styles.readMore} onClick={()=>router.push("/project")}>
+          Read More
           </span>
           
         </div>
         <div className={styles.imageSection}>
           <img
-            src="/five-banner.jpg"
+            src="/vive-villa.jpeg"
             alt="Architects working"
             className={styles.image}
           />
