@@ -193,7 +193,7 @@ const userData = [
   {
     name: "Kushaan Puri",
     role: "Director, Marketing",
-    image: "/h1-team-img-01.jpg",
+    image: "/kushan-puri.jpeg",
     description: "A dynamic marketing professional with over 12 years of experience, Kushaan is a driving force behind Infranium’s strategic campaigns. His innovative marketing techniques and collaborative approach have set new benchmarks in Delhi NCR’s competitive real estate market. Passionate about staying ahead of trends, Kushaan ensures Infranium’s projects resonate with modern buyers, delivering impactful results through cutting-edge strategies."
   },
   {

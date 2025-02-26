@@ -23,9 +23,20 @@ const ProjectPage = () => {
             className={style.backgroundImage}
           />
         </div>
-        <div className={style.textOverlay}>
+        <div className={style.textOverlay}
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          flexDirection: "row",
+          width: "100%",
+          paddingRight: "5%",
+          alignItems: "center",
+        }}
+        >
           <h1>Vvie Villas, Naldehra Golf Hills</h1>
+<p className={style.project_para} >HPRERASHI2025125/P</p>
         </div>
+
       </section>
       {/* <section className={style.projectpage}>
         <div className={style.container}>
@@ -68,7 +79,7 @@ const ProjectPage = () => {
                 })}
               </div>
             </div>
-            <div className={style.contentblock}>
+            <div className={style.contentblock}> 
               <h1>Vvie Villas</h1>
               <p>
               Inspired by the French word for ‘life,’ Vvie is where elegance meets modernity in the heart of nature.

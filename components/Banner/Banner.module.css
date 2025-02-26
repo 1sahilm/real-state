@@ -127,3 +127,16 @@ text-align: center;
     justify-content: space-between;
   }
 }
+
+
+
+.bannerHs{
+  font-size: 20px;
+    font-weight: 600;
+    line-height: 40.06px;
+    position: absolute;
+    bottom: 21px;
+    z-index: 9999;
+    right: 26px;
+    color: white;
+}

@@ -111,7 +111,7 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
             <Link href="/about-us">About</Link>
           </li>
           <li>
-            <a href="/project">Projects</a>
+            <a href="/project">Vvie Villas</a>
           </li>
           <li>
             <a href="#">Faqs</a>

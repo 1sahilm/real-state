@@ -64,7 +64,13 @@ const Banner: React.FC<any> = ({ commingSoon }: BannerProposData) => {
           {/* <source src="../../assets/banner-video/videos.mp4" type="video/quicktime" /> */}
           Your browser does not support the video tag.
         </video>
+      
+
+<p className={styles.bannerHs}>HPRERASHI2025125/P</p>
+ 
+
       </section>
+     
     </>
   );
 };

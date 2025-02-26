@@ -78,7 +78,7 @@ const Latestproject = () => {
                   >
                     <span className="line-height-0">
                       <Image
-                        src="/sliderarrow.svg"
+                        src="/arrow-right-line.png"
                         width={30}
                         height={30}
                         alt="left1"
@@ -90,7 +90,7 @@ const Latestproject = () => {
                   >
                     <span className="line-height-0">
                       <Image
-                        src="/sliderarrow.svg"
+                        src="/arrow-right-line.png"
                         width={30}
                         height={30}
                         alt="left1"
@@ -117,19 +117,19 @@ export default Latestproject;
 const latestarry = [
   {
     id: 1,
-    image: "/render-image/1.png",
+    image: "/Master.png",
     name: "Museum of Fado Lisbon",
     subname: "ARCHITECTURE | HERITAGE",
   },
   {
     id: 1,
-    image: "/render-image/2.png",
+    image: "/Lobby-3.png",
     name: "Museum of Fado Lisbon",
     subname: "ARCHITECTURE | HERITAGE",
   },
   {
     id: 1,
-    image: "/render-image/3.png",
+    image: "/Dinning.png",
     name: "Museum of Fado Lisbon",
     subname: "ARCHITECTURE | HERITAGE",
   },

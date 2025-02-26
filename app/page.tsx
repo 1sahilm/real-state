@@ -47,12 +47,12 @@ export default function Home() {
       </div>
       <Banner bannerData={bannerData} commingSoon={true} />
       <Ourstory />
-      <ThreeColumnSection />
+      <Ourstory2 />
       {/* <FourColumnSection /> */}
 
 
       <Ourstory3 />
-      <Ourstory2 />
+      <ThreeColumnSection />
       {/* <Fivesection /> */}
       <Latestproject />
       {/* <Testimonials /> */}

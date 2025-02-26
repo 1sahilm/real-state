@@ -35,7 +35,7 @@ const Menu: React.FC = () => {
             <span className={styles.icon}>
               {/* <Image src={projectsIcon} alt="Projects" width={20} height={20} /> */}
             </span>{" "}
-            Projects
+            Vvie Villas
           </Link>
         </li>
         <li>
