@@ -54,9 +54,18 @@ const Footer2 = () => {
             <div className="footer-section">
               <h3>Location</h3>
               <ul> 
-                <li>12 Tera Street, ND</li>
-                <li>+91 9234 56768</li>
-                <li>info@infranium.com</li> 
+              <li>
+                    15, LSC, First Floor, <br />
+                    Panchsheel Park, New Delhi-110017 
+                  </li>
+
+                  <li>
+                    <a href="tel:+91 8471002002">+91 8471002002</a>
+                  </li>
+
+                  <li>
+                    <a href="emailto:Info@infranium.in">Info@infranium.in</a>
+                  </li>
               </ul>
             </div>
           </div>

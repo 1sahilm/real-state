@@ -38,7 +38,8 @@
       .box {
         cursor: pointer;
         .blockcontent {
-          margin: 24px 0 30px 0px;
+          margin: 0px 0 30px 0px;
+          text-align: center;
           h3 {
             font-family: "DM Sans", sans-serif;
             font-size: 22px;
@@ -171,10 +172,11 @@
       gap: 20px;
       .box {
         .blockcontent {
-          margin: 24px 0 30px 0px;
+          margin: 0px 0 30px 0px;
+          text-align: center;
           h3 {
             font-family: "DM Sans", sans-serif;
-            font-size: 22px;
+            font-size: 16px;
             line-height: 1.22727em;
           }
           p {

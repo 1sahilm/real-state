@@ -59,15 +59,16 @@ const Footer = () => {
                 <div className={style.title}>Location</div>
                 <ul>
                   <li>
-                    <a href="">12 Tera Street, ND</a>
+                    <a href="">15, LSC, First Floor,
+                    Panchsheel Park, New Delhi-110017</a>
                   </li>
 
                   <li>
-                    <a href="">+91 9234 56768</a>
+                    <a href="tel:+91 8471002002">+91 8471002002</a>
                   </li>
 
                   <li>
-                    <a href="">info@infranium.com</a>
+                    <a href="emailto:Info@infranium.in">Info@infranium.in</a>
                   </li>
                 </ul>
               </div>

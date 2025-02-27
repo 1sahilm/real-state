@@ -18,7 +18,7 @@ const ProjectPage = () => {
       <section className={style.aboutSection}>
         <div className={style.imageWrapper}>
           <img
-            src="/project-render.png"
+            src="/project-render-min.png"
             alt="Architectural design"
             className={style.backgroundImage}
           />
@@ -34,7 +34,7 @@ const ProjectPage = () => {
         }}
         >
           <h1>Vvie Villas, Naldehra Golf Hills</h1>
-<p className={style.project_para} >HPRERASHI2025125/P</p>
+{/* <p className={style.project_para} >HPRERASHI2025125/P</p> */}
         </div>
 
       </section>
@@ -150,8 +150,7 @@ meets the tranquility of the mountains
                       <img src={item.image} alt={item.title} className={style.unitImage} />
                     </div>
                     <div className={style.blockcontent}>
-                      <h3>{item.title}</h3>
-                      <p>{item.subtitle}</p>
+                      <h3>{item.title}</h3> 
                     </div>
                   </div>
                 </>
@@ -159,9 +158,6 @@ meets the tranquility of the mountains
             })}
           </div>
         </div>
-
-
-
       </section>
       <Footer />
     </>
@@ -237,54 +233,48 @@ export default ProjectPage;
 
 const villaArray = [
   {
-    image: "/units/unit-1.png",
-    title: "Project Name",
-    subtitle: "FACADES, LANDSCAPING",
+    image: "/units/site-plan.jpg",
+    title: "Site Plan",
   },
   {
-    image: "/units/unit-2.png",
-    title: "Project Name",
-    subtitle: "FACADES, LANDSCAPING",
+    image: "/units/fir.jpg",
+    title: "The Fairway Club and Spa",
   },
   {
-    image: "/units/unit-3.png",
-    title: "Project Name",
-    subtitle: "FACADES, LANDSCAPING",
+    image: "/units/cedar.jpg",
+    title: "Cedar", 
   },
   {
-    image: "/units/unit-4.png",
-    title: "Project Name",
-    subtitle: "FACADES, LANDSCAPING",
+    image: "/units/aspen.jpg",
+    title: "Aspen", 
   },
   {
-    image: "/units/unit-5.jpeg",
-    title: "Project Name",
-    subtitle: "FACADES, LANDSCAPING",
+    image: "/units/maple.jpg",
+    title: "Maple",  
   },
   {
-    image: "/units/unit-6.png",
-    title: "Project Name",
-    subtitle: "FACADES, LANDSCAPING",
+    image: "/units/oak.jpg",
+    title: "Oak", 
   },
 ];
 const projectarray = [
   {
-    image: "/project-render/project-first.png",
+    image: "/project-render/project-first-min.png",
     title: "Project Name",
     subtitle: "FACADES, LANDSCAPING",
   },
   {
-    image: "/project-render/project-second.png",
+    image: "/project-render/project-second-min.png",
     title: "Project Name",
     subtitle: "FACADES, LANDSCAPING",
   },
   {
-    image: "/project-render/project-third.png",
+    image: "/project-render/project-third-min.png",
     title: "Project Name",
     subtitle: "FACADES, LANDSCAPING",
   },
   {
-    image: "/project-render/project-fourth.png",
+    image: "/project-render/project-fourth-min.png",
     title: "Project Name",
     subtitle: "FACADES, LANDSCAPING",
   },
