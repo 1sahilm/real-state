@@ -147,7 +147,7 @@ meets the tranquility of the mountains
                 <>
                   <div className={style.box} key={index}>
                     <div className={style.image}>
-                      <img src={item.image} alt={item.title} className={style.unitImage} />
+                      <img src={item.image} alt={item.title} className={style.unitImage}  />
                     </div>
                     <div className={style.blockcontent}>
                       <h3>{item.title}</h3> 
@@ -233,27 +233,27 @@ export default ProjectPage;
 
 const villaArray = [
   {
-    image: "/units/site-plan.jpg",
+    image: "/units/site-plan-min.jpg",
     title: "Site Plan",
   },
   {
-    image: "/units/fir.jpg",
+    image: "/units/fir-min.jpg",
     title: "The Fairway Club and Spa",
   },
   {
-    image: "/units/cedar.jpg",
+    image: "/units/cedar-min.jpg",
     title: "Cedar", 
   },
   {
-    image: "/units/aspen.jpg",
+    image: "/units/aspen-min.jpg",
     title: "Aspen", 
   },
   {
-    image: "/units/maple.jpg",
+    image: "/units/maple-min.jpg",
     title: "Maple",  
   },
   {
-    image: "/units/oak.jpg",
+    image: "/units/oak-min.jpg",
     title: "Oak", 
   },
 ];

@@ -44,7 +44,7 @@ community, fostering a refined and sophisticated lifestyle.
         <div className={styles.column}>
         <div className={styles.imageSection}>
           <img
-            src="/club-house.jpg"
+            src="/club-house-min.jpg"
             alt="Architects working"
             className={styles.image}
           />
@@ -52,7 +52,7 @@ community, fostering a refined and sophisticated lifestyle.
         <br />
         <div className={styles.imageSection}>
           <img
-            src="/club-house-second.jpg"
+            src="/club-house-second-min.jpg"
             alt="Architects working"
             className={styles.image}
           />
