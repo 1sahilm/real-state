@@ -107,6 +107,7 @@ const Latestproject = () => {
       <ModelBox 
       togglePopup={togglePopup}
       isOpen={isOpen}
+      setIsOpen={setIsOpen}
       />
     </section>
   );

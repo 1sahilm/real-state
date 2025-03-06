@@ -60,6 +60,8 @@ the horizon, while vibrant rhododendrons and Himalayan oak create a tapestry of 
       <ModelBox 
       togglePopup={togglePopup}
       isOpen={isOpen}
+      setIsOpen={setIsOpen}
+
       />
     </section>
   );

@@ -13,10 +13,16 @@ import ModelBox from "@/components/ModelBox/page";
 const ProjectPage = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const [currentImage , setCurrentImage] = useState('')
   
       const togglePopup = () => {
         setIsOpen(!isOpen);
       };
+
+      const handleOpenPop = (itemImage:any) => {
+        setCurrentImage(itemImage)
+        setIsOpen(true);
+      }
   return (
     <>
             <Header headertheme={true} />
@@ -204,8 +210,8 @@ the horizon, while vibrant rhododendrons and Himalayan oak create a tapestry of 
  
 
         <div className={style.linkContainer}>
-          <span  className={style.link} onClick={togglePopup}>
-            KNOW MORE
+          <span  className={style.link} onClick={()=>handleOpenPop(item.image)}>
+            Read More
           </span>
         </div>
       </div>
@@ -221,6 +227,9 @@ the horizon, while vibrant rhododendrons and Himalayan oak create a tapestry of 
       <ModelBox 
       togglePopup={togglePopup}
       isOpen={isOpen} 
+      setIsOpen={setIsOpen}
+      currentImage={currentImage}
+
       />
       <Footer />
     </>

@@ -54,6 +54,8 @@ from your private rooftop jacuzzi.
       <ModelBox 
       togglePopup={togglePopup}
       isOpen={isOpen}
+      setIsOpen={setIsOpen}
+
       />
     </section>
   );
