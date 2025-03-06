@@ -131,12 +131,13 @@ text-align: center;
 
 
 .bannerHs{
-  font-size: 20px;
-    font-weight: 600;
+  font-size: 14px;
+    font-weight: 400;
     line-height: 40.06px;
     position: absolute;
-    bottom: 21px;
+    bottom: 0px;
     z-index: 9999;
-    right: 26px;
+    right: 7px;
     color: white;
+    font-style: italic;
 }

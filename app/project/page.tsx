@@ -1,16 +1,22 @@
 "use client";
 import Footer from "@/components/Footer/pages";
 import Header from "@/components/Header";
-import React from "react";
+import React, { useState } from "react";
 import style from "./project.module.scss";
 import Image from "next/image";
 import { link } from "fs";
 import { useRouter } from "next/navigation";
 import ThreeColumnSection from "@/components/Homepagesecction/ThreeColumnSection/pages";
 import ProjectPageSection from "@/components/Homepagesecction/projectPageSection/pages";
+import ModelBox from "@/components/ModelBox/page";
 
 const ProjectPage = () => {
   const router = useRouter();
+  const [isOpen, setIsOpen] = useState(false);
+  
+      const togglePopup = () => {
+        setIsOpen(!isOpen);
+      };
   return (
     <>
             <Header headertheme={true} />
@@ -94,7 +100,7 @@ world-renowned architects, offering bespoke luxury
 amidst nature, ensuring a unique living experience like
 no other. 
               </p>
-              <p>
+              {/* <p>
               Nestled within the scenic Naldehra Golf Hills, Vvie by
 Infranium offers six limited-edition luxury villas, thoughtfully
 designed as expansive 4.5 and 5.5 BHK residences.
@@ -107,7 +113,18 @@ seasons from your rooftop jacuzzi or unwind in beautifully
 designed living and dining spaces that open up to
 breathtaking landscapes—Vvie is where bespoke luxury
 meets the tranquility of the mountains
-              </p>
+              </p> */}
+
+<ul className={style.listing}>
+            <li>THE LOCATION: Perched 24 kilometres from Shimla, Naldehra feels like a world apart, yet
+            remains connected to modern conveniences</li>
+            <li>HEIGHT: At an altitude of 6,706 feet, Naldehra shares the skies with some of the world’s most renowned luxury destinations. 
+</li>
+<li>SUN DIRECTIONS: With its eastward-facing slopes, Naldehra enjoys the first kiss of the
+morning sun, painting the landscape in hues of gold</li>
+<li>FLORA & FAUNA: Naldehra is a living canvas of biodiversity. Towering pines and ancient deodars stretch across
+the horizon, while vibrant rhododendrons and Himalayan oak create a tapestry of colours.</li>
+          </ul>
 
               {/* <div className={style.qodefportfolioinfo}>
                 <div className={style.info}>
@@ -137,28 +154,74 @@ meets the tranquility of the mountains
         </div>
       </section>
       <ProjectPageSection />
-
+      
+      <div className={style.mapSection}>
+      <section className={style.map}>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7009.742037470674!2d77.20927719112142!3d28.543596327672116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2177772b113%3A0xe0b92f108d24abf1!2sPanchsheel%20Park%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1740646953037!5m2!1sen!2sin" width="600" height="450"   loading="lazy" ></iframe>
+      </section>
+      <section className={style.map}>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7009.742037470674!2d77.20927719112142!3d28.543596327672116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2177772b113%3A0xe0b92f108d24abf1!2sPanchsheel%20Park%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1740646953037!5m2!1sen!2sin" width="600" height="450"   loading="lazy" ></iframe>
+      </section>
+      </div>
 
       <section className={style.projectpage}>
         <div className={style.container}>
+        <h1>Villas in Naldehra Golf Hills</h1>
+
           <div className={style.row}>
             {villaArray?.map((item, index) => {
               return (
                 <>
-                  <div className={style.box} key={index}>
-                    <div className={style.image}>
-                      <img src={item.image} alt={item.title} className={style.unitImage}  />
-                    </div>
-                    <div className={style.blockcontent}>
-                      <h3>{item.title}</h3> 
-                    </div>
-                  </div>
+
+<div className={style.card} key={index}> 
+      <div className={style.imageContainer}>
+        <Image
+          src={item.image}  
+          alt="Property Image"
+          layout="fill"
+          objectFit="cover"
+          className={style.cardImage}
+        /> 
+      </div>
+ 
+      <div className={style.cardContent}>
+        <h2 className={style.title}>{item.title}</h2>
+        <p className={style.location}>Woodvilla, Kasauli</p>
+
+        <div className={style.details}>
+          <span>Plot Size: ~494 sq. m.</span>
+          <span>|</span>
+          <span>Built Area: ~319 sq. m.</span>
+          <span>|</span>
+          <span>Bedrooms: 4.5</span>
+        </div>
+
+        <p className={style.description}>
+          Alder Manor features a living and dining area with panoramic valley
+          views and a conservatory. The master bedroom connects to a living
+          deck.
+        </p>
+ 
+
+        <div className={style.linkContainer}>
+          <span  className={style.link} onClick={togglePopup}>
+            KNOW MORE
+          </span>
+        </div>
+      </div>
+    </div>
                 </>
               );
             })}
           </div>
         </div>
       </section>
+
+     
+      <ModelBox 
+      togglePopup={togglePopup}
+      isOpen={isOpen} 
+      />
       <Footer />
     </>
   );

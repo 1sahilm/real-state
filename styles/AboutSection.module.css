@@ -316,3 +316,6 @@
     .infranimContainer:nth-last-of-type(even) {
       flex-direction: row-reverse;
     }
+    .infranimContainer img{
+      filter: grayscale(100%)
+    }

@@ -5,9 +5,10 @@ import styles from "./PopupForm.module.scss";
 interface ModelBoxProps {
     togglePopup: () => void;
     isOpen: boolean;
+    item?: any;
     }
 
-const ModelBox = ({togglePopup , isOpen}:ModelBoxProps) => {
+const ModelBox = ({togglePopup , isOpen , item}:ModelBoxProps) => {
     
   return (
     <div> 
@@ -34,6 +35,7 @@ const ModelBox = ({togglePopup , isOpen}:ModelBoxProps) => {
         </div>
       </div>
     )}
+    
   </div>
   )
 }

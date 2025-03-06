@@ -86,8 +86,8 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
 {isLogo ? <> 
           <Image
             src={"/new-logo.png"}
-            width={120}
-            height={120}
+            width={150}
+            height={150}
             alt="logo" 
             />  
         </> : <>

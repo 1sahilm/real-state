@@ -66,6 +66,10 @@
   }
 .logoLink{
   position: absolute;
-    left: 50%;
+    left: 47%;
+}
+.logoLink img{
+  width: 170px;
+  margin-top: 50px;
 }
  

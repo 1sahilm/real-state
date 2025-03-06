@@ -66,7 +66,7 @@
 
 .featureImg {
   max-width: 100%;
-  height: 100% !important;
+  height: 463px !important;
 }
 .unitImage{
   width: 100%;
@@ -162,13 +162,13 @@
 .projectpage {
   margin-top: 0;
 
-  padding: 100px 50px;
+  padding: 10px 50px;
   .container {
     position: relative;
     .row {
       position: relative;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
       gap: 20px;
       .box {
         .blockcontent {
@@ -202,4 +202,121 @@
   font-size: 20px;
     font-weight: 600; 
     color: white;
+}
+
+.listing{
+  list-style-type: disc;
+  padding: 10px 14px;
+  li {
+    font-size: 14px;
+    font-weight: 400;
+    padding-bottom: 5px;
+  }
+}
+
+.mapSection {
+  display: flex;
+  gap: 20px;
+  padding: 50px 50px;
+  padding-bottom: 10px;
+}
+.map {
+  position: relative;
+  flex: 1;
+  margin-bottom: 50px;
+  iframe {
+    height: 400px;
+    width: 100%;
+    // filter: grayscale(1);
+  }
+}
+
+
+
+
+.container h1{
+  font-size: 35px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.card {
+  display: flex;
+  max-width: 800px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.imageContainer {
+  position: relative;
+  width: 50%;
+  height: 300px;
+}
+
+.cardImage {
+  border-radius: 12px 0 0 12px;
+}
+
+.badge {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: #0056b3;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.cardContent {
+  width: 50%;
+  padding: 20px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.location {
+  font-size: 14px;
+  color: gray;
+}
+
+.details {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  color: #777;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.note {
+  font-size: 12px;
+  font-style: italic;
+  color: gray;
+}
+
+.linkContainer {
+  margin-top: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: #b5892b;
+  font-weight: bold;
+  cursor: pointer;
 }
