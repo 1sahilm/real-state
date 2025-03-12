@@ -15,6 +15,7 @@ interface ModelBoxProps {
 
 const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:ModelBoxProps) => {
   const [loader, setLoader] = useState(false);
+  const [mailResponse, setMailResponse] = useState(false);
   
   const [inputValue, setInputValue] = useState({
     firstName: "",
@@ -48,7 +49,7 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:Model
         work_experience: inputValue?.description,
       });
       console.log("emailRes", emailRes);
-
+ 
       if (emailRes) {
         setInputValue({
           firstName: "",
@@ -57,11 +58,13 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:Model
           email: "",
           description: "",
         });
+        setMailResponse(true)
         setLoader(false);
         setIsOpen(false);
         // setTimeout(() => {
         //   window.location.reload();
         // }, 100);
+
       }
     } catch (error) {
       console.log(error);
@@ -79,7 +82,7 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:Model
     {isOpen && (
       <div className={styles.popupOverlay}>
         <div className={styles.popupContent}>
-          <button className={styles.closeButton} onClick={togglePopup}>×</button>
+          <button className={styles.closeButton} onClick={handleCLose}>×</button>
           <h2>Contact Us</h2>
           <span className={styles.form}  >
             <label>Name:</label>
@@ -130,8 +133,9 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:Model
         </div>
       </div>
     )}
-   
-    {currentImage && isOpen === false && (
+  {mailResponse && (
+    <>
+     {currentImage && isOpen === false && (
       <>
     <div className={styles.popupOverlay}>
         {/* <div className={styles.popupContent}> */}
@@ -148,6 +152,9 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:Model
       
       </>
     )}
+    </>
+  )}
+   
     
   </div>
   )

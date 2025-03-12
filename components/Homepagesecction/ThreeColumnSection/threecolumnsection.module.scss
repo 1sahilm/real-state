@@ -74,3 +74,23 @@
     color: #ffffff;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 2rem;
+    // padding: 66px 4.2% 50px 4.2%;
+  }
+  .rightSection {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .imageSection {
+    width: 100%;
+    height: auto;
+  }
+  .image {
+    width: 100%;
+    height: auto;
+  }
+}

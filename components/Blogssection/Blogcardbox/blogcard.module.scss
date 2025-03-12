@@ -33,3 +33,15 @@
     }
   }
 }
+
+@media (max-width:768px){
+  .cardbox {
+    position: relative;
+    .image {
+      position: relative;
+      margin-bottom: 30px;
+      height: 150px;
+      width: 100%;
+    }
+}
+}

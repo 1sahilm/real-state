@@ -172,3 +172,21 @@
 }
 
  
+
+@media (max-width: 768px){
+  .section{
+    padding: 40px 0px 40px 0px;
+  }
+  .qodefimage {
+    width: 100% !important;
+    display: block;
+    overflow: hidden;
+     .img {
+      height: 200px !important;
+      object-fit: cover;
+      filter: blur(5px);
+     } 
+
+
+  }
+}

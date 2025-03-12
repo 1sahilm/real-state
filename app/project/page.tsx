@@ -122,14 +122,16 @@ meets the tranquility of the mountains
               </p> */}
 
 <ul className={style.listing}>
-            <li>THE LOCATION: Perched 24 kilometres from Shimla, Naldehra feels like a world apart, yet
-            remains connected to modern conveniences</li>
-            <li>HEIGHT: At an altitude of 6,706 feet, Naldehra shares the skies with some of the world’s most renowned luxury destinations. 
+            <li>Nestled in the picturesque Naldehra Golf Hills</li>
+            <li>Fully furnished, expansive, and professionally managed 4.5 and 5.5 BHK villas 
 </li>
-<li>SUN DIRECTIONS: With its eastward-facing slopes, Naldehra enjoys the first kiss of the
-morning sun, painting the landscape in hues of gold</li>
-<li>FLORA & FAUNA: Naldehra is a living canvas of biodiversity. Towering pines and ancient deodars stretch across
-the horizon, while vibrant rhododendrons and Himalayan oak create a tapestry of colours.</li>
+<li> Plot sizes ranging from 418 sq. yds. to 576 sq. yds., offering ample space and privacy</li>
+<li>Valley-facing bedrooms for breathtaking views</li>
+<li>Indoor and outdoor dining areas</li>
+<li>Spacious, landscaped lawns with fire pits</li>
+<li>Two-side open villas for ample natural light and ventilation</li>
+<li>Rooftop jacuzzi with a spa-like ambiance and an indulgent sauna experience</li>
+<li>Exclusive private clubhouse featuring an indoor heated swimming pool, a state-of-the-art gym, a luxurious spa, and a multi-cuisine restaurant</li>
           </ul>
 
               {/* <div className={style.qodefportfolioinfo}>

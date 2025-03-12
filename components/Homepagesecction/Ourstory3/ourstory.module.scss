@@ -76,3 +76,30 @@
     padding-bottom: 5px;
   }
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .textSection {
+    margin-bottom: 20px;
+  }
+  .imageSection {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    flex: 0;
+    justify-content: center;
+  }
+  .imageSection img {
+    width: 100%;
+  }
+  .subHeading {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .heading {
+    font-size: 30px;
+    line-height: 33px;
+  }
+}

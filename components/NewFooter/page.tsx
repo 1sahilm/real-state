@@ -5,6 +5,7 @@ import Image from "next/image";
 import logo1 from "../../assets/Logo/Black_logo_1.png";
 import logo from "../../assets/Logo/Blakc_logo_2.png";
 import Link from "next/link";
+// import style from "./Footer.module.scss";
 
 const Footer2 = () => {
   return (
@@ -12,7 +13,7 @@ const Footer2 = () => {
       <footer className="footerContainer">
         <div className="footer md:w-1/2 relative">
           <div className="blur-bg" />
-          <div className=" footer-2 flex items-center md:justify-normal w-full space-x-4 ml-14 md:ml-8 mb-4">
+          <div className={`footer-2 flex items-center md:justify-normal w-full space-x-4 ml-14 md:ml-8 mb-4 logo`}>
             
             <div>
               <Image
