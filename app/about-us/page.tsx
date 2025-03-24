@@ -187,7 +187,7 @@ const userData = [
   {
     name: "Tithi",
     role: "Director, People & Culture",
-    image: "/h1-team-img-01.jpg",
+    image: "/tithi.jpeg",
     description:"As a Director, People and Culture at Infranium, Tithi brings her MBA expertise from Symbiosis and over 10 years of leadership experience to ensure smooth administrative operations. Her focus on real estate management and marketing has been vital in building the brand’s reputation. Tithi’s commitment to operational efficiency and her proactive approach to client relations solidify her role as a cornerstone of the Infranium ecosystem."
   },
   {

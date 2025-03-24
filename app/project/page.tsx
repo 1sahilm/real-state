@@ -165,7 +165,14 @@ meets the tranquility of the mountains
       
       <div className={style.mapSection}>
       <section className={style.map}>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7009.742037470674!2d77.20927719112142!3d28.543596327672116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2177772b113%3A0xe0b92f108d24abf1!2sPanchsheel%20Park%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1740646953037!5m2!1sen!2sin" width="600" height="450"   loading="lazy" ></iframe>
+      {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7009.742037470674!2d77.20927719112142!3d28.543596327672116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2177772b113%3A0xe0b92f108d24abf1!2sPanchsheel%20Park%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1740646953037!5m2!1sen!2sin" width="600" height="450"   loading="lazy" ></iframe> */}
+      <Image
+          src={"/firstmap.jpeg"}  
+          alt="Property Image"
+          layout="fill"
+          objectFit="cover"
+          className={style.cardImage}
+        /> 
       </section>
       <section className={style.map}>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7009.742037470674!2d77.20927719112142!3d28.543596327672116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2177772b113%3A0xe0b92f108d24abf1!2sPanchsheel%20Park%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1740646953037!5m2!1sen!2sin" width="600" height="450"   loading="lazy" ></iframe>
@@ -194,20 +201,18 @@ meets the tranquility of the mountains
  
       <div className={style.cardContent}>
         <h2 className={style.title}>{item.title}</h2>
-        <p className={style.location}>Woodvilla, Kasauli</p>
+        <p className={style.location}>FLOOR PLANS</p>
 
         <div className={style.details}>
-          <span>Plot Size: ~494 sq. m.</span>
+          <span>{item?.groundFloor}</span>
           <span>|</span>
-          <span>Built Area: ~319 sq. m.</span>
+          <span>{item?.firstFloor}</span>
           <span>|</span>
-          <span>Bedrooms: 4.5</span>
+          <span>{item?.secondFloor}</span>
         </div>
 
         <p className={style.description}>
-          Alder Manor features a living and dining area with panoramic valley
-          views and a conservatory. The master bedroom connects to a living
-          deck.
+          {item?.desc}
         </p>
  
 
@@ -306,29 +311,57 @@ export default ProjectPage;
 // ];
 
 const villaArray = [
-  {
-    image: "/units/site-plan-min.jpg",
-    title: "Site Plan",
-  },
-  {
-    image: "/units/fir-min.jpg",
-    title: "The Fairway Club and Spa",
-  },
+  
   {
     image: "/units/cedar-min.jpg",
-    title: "Cedar", 
+    title: "Unit 1 - Cedar", 
+    desc:"Embodying the essence of tranquillity, Cedar is crafted to provide a quiet refuge amidst beautiful landscapes. With its unique three-side openness, the villa ensures abundant natural light and ventilation, creating a seamless transition between indoor and outdoor spaces. Every corner is designed to evoke a sense of calm, where refined interiors meet expansive views, offering a sanctuary for both solitude and gatherings.",
+    groundFloor: "Ground Floor: 132 sqm 1420 sqft",
+    firstFloor: "First Floor: 152 sqm 1635 sqft",
+    secondFloor: "Second Floor: 104 sqm 1120 sqft",
   },
   {
     image: "/units/aspen-min.jpg",
-    title: "Aspen", 
+    title: "Unit 2 - Aspen", 
+    desc:"Aspen is named after the graceful Aspen tree, known for its vibrant beauty and connection to the outdoors, reflecting the villa’s panoramic views and modern design. Expansive glass windows and thoughtful layouts ensure every corner is bathed in sunlight, seamlessly blending indoor luxury with Shimla’s natural grandeur.",
+    groundFloor: "Ground Floor: 150 sqm 1614 sqft",
+    firstFloor: "First Floor: 142 sqm 1528 sqft",
+    secondFloor: "Second Floor: 98 sqm 1055 sqft",
   },
   {
     image: "/units/maple-min.jpg",
-    title: "Maple",  
+    title: "Unit 3 - Maple",
+    desc:"Named after the Maple tree, symbolising elegance and warmth, this villa blends sophistication with a sense of intimacy. Its bright interiors and clean design lines create a welcoming space that feels both upscale and homey.",
+    groundFloor: "Ground Floor: 155 sqm 1668 sqft",
+    firstFloor: "First Floor: 147 sqm 1582 sqft",
+    secondFloor: "Second Floor: 98 sqm 1054 sqft",
+
   },
   {
     image: "/units/oak-min.jpg",
-    title: "Oak", 
+    title: "Unit 4 - Oak",
+    desc:"Oak, a symbol of strength and grandeur, reflects this villa’s modern design and expansive layouts. With floor-to-ceiling windows and a focus on space, it creates an environment of elegance and vitality",
+    groundFloor: "Ground Floor: 170 sqm 1830 sqft",
+    firstFloor: "First Floor: 150 sqm 1615 sqft",
+    secondFloor: "Second Floor: 98 sqm 1055 sqft",
+  },
+  {
+    image: "/units/unit-5-pine-min.jpg",
+    title: "Unit 5 - Pine",
+    desc:"The name Pine reflects the villa’s connection to Shimla’s pristine natural surroundings. Combining elegance and functionality, it provides an inviting yet luxurious environment for refined living.",
+    groundFloor: "Ground Floor: 170 sqm 1830 sqft",
+    firstFloor: "First Floor: 150 sqm 1614 sqft",
+    secondFloor: "Second Floor: 98 sqm 1054 sqft",
+
+  },
+  {
+    image: "/units/unit-6-fir-min.jpg",
+    title: "Unit 6 - Fir",
+    desc:"Fir offers an exclusive retreat at the height of luxury. Its unique three-side openness enhances the flow of natural light and air, connecting the interiors seamlessly with the surrounding natural beauty. Crafted with high ceilings and an expansive layout, it’s a space where design meets nature, offering an unparalleled living experience.",
+    groundFloor: "Ground Floor: 173 sqm 1862 sqft",
+    firstFloor: "First Floor: 140 sqm 1506 sqft",
+    secondFloor: "Second Floor: 92 sqm 990 sqft",
+
   },
 ];
 const projectarray = [

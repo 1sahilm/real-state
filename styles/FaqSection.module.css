@@ -1,0 +1,321 @@
+
+.container {
+    padding: 20px 60px; 
+    line-height: 1.6;
+  }
+.aboutSection {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  .imageWrapper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .backgroundImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .textOverlay {
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+  }
+  
+  
+  .heading {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    margin-top: 60px;
+    line-height: 40px;
+
+  }
+  
+  .paragraph {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #313131;
+  }
+  
+  .subSection {
+    margin-top: 40px;
+  }
+
+ 
+  
+  .section {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 10.5rem;
+    margin-top: 80px;
+  }
+  
+  .textBlock {
+    flex: 1;
+  }
+  
+  .textBlock h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .textBlock p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .imageBlock {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .imageBlock img {
+    max-width: 100%;
+    height: auto; 
+  }
+
+  .imageBlockRight {
+    display: flex;
+    justify-content: flex-end;
+
+  }
+  .thirdsection{
+    display: flex;
+    width: 100%;
+    padding: 0px;
+    background: url('/about-us/third-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    height: 80vh;
+    position: relative;
+    align-items: end;
+    margin-top: 80px;
+  }
+  .thirdsection:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #202545d4; 
+    z-index: 1;
+  } 
+  
+  .thirdsection .container {
+    position: relative;
+    z-index: 9;
+  }
+  .thirdsection h1 {
+    color: white; 
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 40px;
+  }
+  .thirdsection p{
+    color: white; 
+    z-index: 9999;
+    font-size: 14px; 
+    width: 80%;
+    line-height: 22px;
+    margin-bottom: 30px;
+    
+  }
+ 
+
+
+
+  .team-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 10px;
+  }
+  
+  .team-member img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+  }
+  
+  .team-member .info h3 {
+    margin: 10px 0 5px;
+    font-size: 16px;
+  }
+  
+  .team-member .info p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .join-team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+
+
+  .teamsection {
+    background: #E7E7DA;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
+  }
+  
+  .teamsection .teamsinner {
+    display: flex
+    ;
+    }
+  .teamsection .teamsinner .teammember {
+    display: flex
+    ;
+        max-width: 40%;
+        width: 40%;
+      
+    }
+  .teamsection .teamsinner .teammember img {
+    width: 50%;
+    max-width: 50%;
+      
+    }
+  .teamsection .teamsinner .teammember .info {
+      
+    display: flex
+;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 6.2%;
+    }
+  .teamsection .teamsinner .teammember .info h3 {
+    font-size: 22px;
+        line-height: 1.22727em;
+        font-family: "DM Sans",sans-serif;
+        color: #000;
+        word-wrap: break-word;
+        margin: 0 0 9px;
+
+      
+    }
+  .teamsection .teamsinner .teammember .info p {
+      
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.16667em;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-family: "DM Sans", sans-serif;
+    display: inline-flex
+;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #000;
+    }
+
+
+    .teammemberjoin {
+      display: flex
+      ;
+          max-width: 20%;
+          width: 20%;
+          border: 2px solid #000;
+          align-content: center;
+          justify-content: center;
+          align-items: center;
+    }
+    .teammemberjoin p {
+      font-size: 16px;
+      font-family: "DM Sans", sans-serif;
+      color: #000;
+     }
+    .teamsinner2 {
+      position: relative;
+      left: 20%;
+      width: fit-content;
+      max-width: max-content;
+
+    }
+
+
+    .infranimTeams{
+      background: #E7E7DA;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      padding-left: 50px;
+      padding-right: 50px;
+      overflow: hidden; 
+      .infranimContainer{
+        display: flex;
+        gap: 20px;
+      }
+      .info{
+        padding: 50px 0px;
+        flex: 1;
+      } 
+      
+       .userAvatar{
+        width: 250px;
+        max-width: 250px;
+        height: 250px;
+        display: block;
+        margin-bottom: 20px;
+        object-fit: cover;
+        object-position: top;
+
+       }
+      
+    }
+
+    .info h3 {
+      font-size: 22px;
+      line-height: 1.22727em;
+      font-family: "DM Sans",sans-serif;
+      color: #000;
+      word-wrap: break-word;
+      margin: 0 0 9px;
+    }
+    .info h6 {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.22727em;
+      font-family: "DM Sans",sans-serif; 
+      word-wrap: break-word;
+      margin: 0 0 9px;
+    }
+
+
+
+    .infranimContainer:nth-last-of-type(even) {
+      flex-direction: row-reverse;
+    }
+    .infranimContainer img{
+      filter: grayscale(100%)
+    }

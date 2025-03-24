@@ -16,9 +16,7 @@ const ContactUs = () => {
             <div className={style.col1}>
               <div className={style.conter}>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim.
+                Feel free to fill out the form below, and one of our luxury property specialists will reach out to you shortly. Your dream home in the hills awaits!
                 </p>
               </div>
               <div className={style.form}>
