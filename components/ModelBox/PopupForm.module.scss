@@ -82,4 +82,12 @@
       background-color: #222f47;
     }
   }
+
+  @media (max-width:500px) {
+    .closeButton {
+      right: 36px;
+      top: 53px;
+      font-size: 30px;
+    }
+  }
   

@@ -140,7 +140,7 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
           alt="Real Estate"
           width={100}
           height={100}
-          className={`${styles.logoImage} ${styles.logoSmall} hidden md:block`}
+          className={`${styles.logoImage} ${styles.logoSmall} md:block`}
           priority
         />
 

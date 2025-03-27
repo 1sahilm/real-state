@@ -12,7 +12,12 @@ const Faq = () => {
     };
   return (
     <>
-    <Header headertheme={true} />
+    <div className={styles.desktopHeader}>
+      <Header headertheme={true} />
+    </div>
+    <div className={styles.mobileHeader}>
+    <Header isTrue={true} headertheme={false}  />
+    </div>
     <section className={styles.aboutSection}>
       <div className={styles.imageWrapper}>
         <img

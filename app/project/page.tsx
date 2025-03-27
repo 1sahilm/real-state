@@ -25,7 +25,12 @@ const ProjectPage = () => {
       }
   return (
     <>
-            <Header headertheme={true} />
+             <div className={style.desktopHeader}>
+      <Header headertheme={true} />
+    </div>
+    <div className={style.mobileHeader}>
+    <Header isTrue={true} headertheme={false}  />
+    </div>
 
       <section className={style.aboutSection}>
         <div className={style.imageWrapper}>

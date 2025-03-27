@@ -161,3 +161,33 @@
     // filter: grayscale(1);
   }
 }
+
+.desktopHeader{
+  display: block;
+}
+.mobileHeader{
+  display: none;
+}
+
+@media (max-width:500px) {
+  .contactpage {
+    margin-top: 70px;
+  
+    padding: 100px 20px;
+  }
+  .desktopHeader{
+    display: none;
+  }
+  .mobileHeader{
+    display: block;
+  } 
+
+  .row { 
+    display: block !important;
+  }
+  .col1 {
+    position: relative;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+}

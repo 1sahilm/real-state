@@ -7,9 +7,10 @@ import Footer from "@/components/Footer/pages";
 const ContactUs = () => {
   return (
     <>
+            {/* <Header headertheme={true} isLogo={true} /> */}
+            <div className={style.desktopHeader}>
             <Header headertheme={true} isLogo={true} />
-
-
+    </div> 
       <section className={style.contactpage}>
         <div className={style.container}>
           <div className={style.row}>

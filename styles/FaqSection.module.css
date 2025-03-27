@@ -319,3 +319,20 @@
     .infranimContainer img{
       filter: grayscale(100%)
     }
+
+    .desktopHeader{
+      display: block;
+    }
+    .mobileHeader{
+      display: none;
+    }
+
+    @media (max-width:500px) {
+
+      .desktopHeader{
+        display: none;
+      }
+      .mobileHeader{
+        display: block;
+      } 
+    }

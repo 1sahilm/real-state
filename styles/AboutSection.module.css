@@ -319,3 +319,43 @@
     .infranimContainer img{
       filter: grayscale(100%)
     }
+    .desktopHeader{
+      display: block;
+    }
+    .mobileHeader{
+      display: none;
+    }
+
+    @media (max-width:500px) {
+      .container {
+        padding: 10px 30px; 
+        line-height: 1.6;
+      }
+      .desktopHeader{
+        display: none;
+      }
+      .mobileHeader{
+        display: block;
+      } 
+      .aboutSection { 
+        height: 72vh; 
+      }
+      .paragraph { 
+        margin-bottom: 0px; 
+      }
+      .thirdsection{
+        height: 59vh;
+      }
+      .infranimTeams{
+        width: 100%;
+        .infranimContainer{
+          display: block;
+          gap: 20px;
+          text-align: center;
+        }  
+      }
+      .userAvatar{
+        margin: 0 auto;
+
+       }
+    }
