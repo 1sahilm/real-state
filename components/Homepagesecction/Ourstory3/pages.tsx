@@ -17,7 +17,6 @@ const Ourstory3 = () => {
           <p className={styles.subHeading}>ABOUT NALDEHRA</p>
           <h1 className={styles.heading}>
           NALDEHRA: A TAPESTRY OF NATURE AND 
-          <br />
           TRANQUILITY
  
           </h1>

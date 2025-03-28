@@ -32,7 +32,8 @@
         font-size: 25px;
         font-weight: 200;    
         line-height: 42px;
-        font-family: "DM Sans", sans-serif;
+        font-family: "Cinzel", serif;
+
         color: #000;
         display: flex;
         transform: rotate(270deg);
@@ -107,14 +108,16 @@
           font-size: 15px;
           color: #000;
           line-height: 1.5;
-          font-family: "DM Sans", sans-serif;
+          font-family: "Cinzel", serif;
+
         }
         .link {
           a {
             text-decoration: underline;
             color: #000;
             font-size: 1rem;
-            font-family: "Nunito Sans", sans-serif;
+            font-family: "Cinzel", serif;
+
           }
         }
       }

@@ -217,7 +217,8 @@
   .teamsection .teamsinner .teammember .info h3 {
     font-size: 22px;
         line-height: 1.22727em;
-        font-family: "DM Sans",sans-serif;
+        font-family: "Cinzel", serif;
+
         color: #000;
         word-wrap: break-word;
         margin: 0 0 9px;
@@ -232,7 +233,8 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .2em;
-    font-family: "DM Sans", sans-serif;
+    font-family: "Cinzel", serif;
+
     display: inline-flex
 ;
     align-items: center;
@@ -253,7 +255,8 @@
     }
     .teammemberjoin p {
       font-size: 16px;
-      font-family: "DM Sans", sans-serif;
+      font-family: "Cinzel", serif;
+
       color: #000;
      }
     .teamsinner2 {
@@ -297,7 +300,8 @@
     .info h3 {
       font-size: 22px;
       line-height: 1.22727em;
-      font-family: "DM Sans",sans-serif;
+      font-family: "Cinzel", serif;
+
       color: #000;
       word-wrap: break-word;
       margin: 0 0 9px;
@@ -306,7 +310,8 @@
       font-size: 14px;
       color: #555;
       line-height: 1.22727em;
-      font-family: "DM Sans",sans-serif; 
+      font-family: "Cinzel", serif;
+
       word-wrap: break-word;
       margin: 0 0 9px;
     }

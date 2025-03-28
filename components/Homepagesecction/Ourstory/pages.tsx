@@ -9,7 +9,7 @@ const Ourstory = () => {
         <div className={styles.textSection}>
           <p className={styles.subHeading}>ABOUT INFRANIUM</p>
           <h1 className={styles.heading}>
-          Infranium leads the way in luxury real  <br />
+          Infranium leads the way in luxury real
           estate by blending innovation with timeless elegance.
            <br /> 
  
