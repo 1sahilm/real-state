@@ -172,7 +172,7 @@ meets the tranquility of the mountains
       <section className={style.map}>
       {/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7009.742037470674!2d77.20927719112142!3d28.543596327672116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2177772b113%3A0xe0b92f108d24abf1!2sPanchsheel%20Park%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1740646953037!5m2!1sen!2sin" width="600" height="450"   loading="lazy" ></iframe> */}
       <Image
-          src={"/firstmap.jpeg"}  
+          src={"/new-map-image.jpeg"}  
           alt="Property Image"
           layout="fill"
           objectFit="cover"
@@ -180,7 +180,7 @@ meets the tranquility of the mountains
         /> 
       </section>
       <section className={style.map}>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7009.742037470674!2d77.20927719112142!3d28.543596327672116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2177772b113%3A0xe0b92f108d24abf1!2sPanchsheel%20Park%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1740646953037!5m2!1sen!2sin" width="600" height="450"   loading="lazy" ></iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3413.3955571879715!2d77.15644397505557!3d31.182043963780387!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905770043b8beab%3A0xf5858b1a26d236b3!2sVvie%20Villas%20Naldehra%20Golf%20Hills!5e0!3m2!1sen!2sin!4v1743158109435!5m2!1sen!2sin" width="600" height="450"  loading="lazy"></iframe>
       </section>
       </div>
 

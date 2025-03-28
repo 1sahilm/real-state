@@ -54,7 +54,7 @@ export default function Home() {
       <Ourstory3 />
       <ThreeColumnSection />
       {/* <Fivesection /> */}
-      <Latestproject />
+      {/* <Latestproject /> */}
       {/* <Testimonials /> */}
       <Blogssection />
       {/* <Footer /> */}
