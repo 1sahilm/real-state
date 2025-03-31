@@ -75,7 +75,7 @@ const Footer2 = () => {
               Follow us
             </div>
             <div className="social-icons">
-              <a href="#">
+              {/* <a href="#">
                 <svg
                   width="55"
                   height="55"
@@ -119,8 +119,8 @@ const Footer2 = () => {
                     fill="white"
                   />
                 </svg>
-              </a>
-              <a href="#">
+              </a> */}
+              <a href="https://www.youtube.com/channel/UCuqTq73yKraH7SSfbxauPJw">
                 <svg
                   width="55"
                   height="55"
@@ -135,7 +135,7 @@ const Footer2 = () => {
                   />
                 </svg>
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/profile.php?id=61574736810936">
                 <svg
                   width="55"
                   height="55"
@@ -150,7 +150,7 @@ const Footer2 = () => {
                   />
                 </svg>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/infraniumhomes/">
                 <svg
                   width="55"
                   height="55"

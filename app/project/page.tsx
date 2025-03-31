@@ -193,7 +193,9 @@ meets the tranquility of the mountains
               return (
                 <>
 
-<div className={style.card} key={index}> 
+<div className={style.card} key={index} onClick={()=>handleOpenPop(item.image)} style={{
+  cursor:"pointer"
+}}> 
       <div className={style.imageContainer}>
         <Image
           src={item.image}  

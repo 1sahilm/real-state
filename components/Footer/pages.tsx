@@ -23,33 +23,33 @@ const Footer = () => {
                 <div className={style.title}>Social</div>
                 <ul>
                   <li>
-                    <a href="">Instagram</a>
+                    <a href="https://www.instagram.com/infraniumhomes/">Instagram</a>
                   </li>
 
                   <li>
-                    <a href="">Behance</a>
+                    <a href="https://www.youtube.com/channel/UCuqTq73yKraH7SSfbxauPJw">Youtube</a>
                   </li>
 
                   <li>
-                    <a href="">LinkedIn</a>
+                    <a href="https://www.facebook.com/profile.php?id=61574736810936">Facebook</a>
                   </li>
                 </ul>
               </div>
             </div>
             <div className={style.qodefgriditem2}>
               <div className={style.widget}>
-                <div className={style.title}>Social</div>
+                <div className={style.title}>Quick Links</div>
                 <ul>
                   <li>
-                    <a href="">Contact</a>
+                    <a href="/contact-us">Contact</a>
                   </li>
 
                   <li>
-                    <a href="">Terms of service</a>
+                    <a href="/faq">Terms of service</a>
                   </li>
 
                   <li>
-                    <a href="">Privacy Policy</a>
+                    <a href="/faq">Privacy Policy</a>
                   </li>
                 </ul>
               </div>
