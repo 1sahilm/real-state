@@ -16,8 +16,7 @@ export async function POST(request: NextRequest) {
         pass: process.env.NEXT_EMAIL_PASS,  
       },
     });
-
-    // ✅ Send both emails in parallel to avoid timeouts
+ 
     const [info, recipient] = await Promise.all([
       transporter.sendMail({
         from: email,
