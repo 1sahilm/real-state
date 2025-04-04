@@ -38,9 +38,9 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:Model
 
     try {
       setLoader(true);
-     
+      // const response = await axios.post("/api/inquiry", nesteddata);
 
-      const emailRes = await axios.post( `${process.env.NEXT_BASE_URL}/api/sendemail`, {
+      const emailRes = await axios.post("/api/sendemail", {
         firstName: inputValue?.firstName,
         lastName: inputValue?.lastName,
         email: inputValue?.email,
