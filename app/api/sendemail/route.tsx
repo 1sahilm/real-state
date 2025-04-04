@@ -22,7 +22,7 @@ export async function POST(request: NextRequest, response: NextResponse) {
         to: "nalderavillas@gmail.com",
         subject: `Inquiry from Nalderavillas`,
   
-        text: "RQL Consultancy Contact Form",
+        text: "Inquiry from Nalderavillas",
         html: `<b> Firstname: ${firstName} <br> Email: ${email} <br> Phone: ${phone} <br> Message: ${work_experience}  </b>`,
       });
       const recipient = await transporter.sendMail({
