@@ -15,11 +15,11 @@ const Ourstory3 = () => {
       <div className={styles.container}>
         <div className={styles.textSection}>
           <p className={styles.subHeading}>ABOUT NALDEHRA</p>
-          <h1 className={styles.heading}>
+          <h3 className={styles.heading}>
           NALDEHRA: A TAPESTRY OF NATURE AND 
           TRANQUILITY
  
-          </h1>
+          </h3>
           <p className={styles.text}>
           Nestled at 6,706 feet in altitude,
 Naldehra offers an unparalleled

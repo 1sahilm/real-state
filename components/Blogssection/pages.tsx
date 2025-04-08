@@ -9,13 +9,13 @@ const Blogssection = () => {
       <div className={styles.container}>
       <div className={styles.textSection}> 
       <p className={styles.subHeading}>About Architect</p>
-          <h1 className={styles.heading}>
+          <h4 className={styles.heading}>
           PSDA - PRADEEP SACHDEVA DESIGN ASSOCIATES
 <br />
 THE VISIONARIES BEHIND VVIE
            <br /> 
  
-          </h1>
+          </h4>
           <p className={styles.text}>
           Our commitment is to
 create residences that integrate seamlessly with nature,

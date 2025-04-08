@@ -18,11 +18,11 @@ const Ourstory2 = () => {
       <div className={styles.container}>
         <div className={styles.textSection}>
           <p className={styles.subHeading}>About Vvie Villas, Naldehra Golf Hills</p>
-          <h1 className={styles.heading}>
+          <h2 className={styles.heading}>
           Inspired by the French word for ‘life,’ Vvie  
           is where elegance meets modernity in the heart of nature.
  
-          </h1>
+          </h2>
           <p className={styles.text}>
           Evoking exclusivity and celebrating life, our 
 vision is to create exclusive estates that can 
