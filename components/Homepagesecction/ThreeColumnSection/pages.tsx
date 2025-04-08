@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../ThreeColumnSection/threecolumnsection.module.scss";
+import Image from "next/image";
 
 const ThreeColumnSection = () => {
   return (
@@ -38,10 +39,13 @@ community, fostering a refined and sophisticated lifestyle.
         </div>
         <div className={styles.column}>
         <div className={styles.imageSection}>
-          <img
+          <Image
             src="/about-us/shimla.jpg"
             alt="Architects working"
             className={styles.image}
+            width={500}
+            height={500}
+            priority={true}
           />
         </div>
         </div>
