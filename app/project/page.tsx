@@ -373,22 +373,22 @@ const villaArray = [
 ];
 const projectarray = [
   {
-    image: "/project-render/project-first-min.png",
+    image: "/project-render/1.jpg",
     title: "Project Name",
     subtitle: "FACADES, LANDSCAPING",
   },
   {
-    image: "/project-render/project-second-min.png",
+    image: "/project-render/2.jpg",
     title: "Project Name",
     subtitle: "FACADES, LANDSCAPING",
   },
   {
-    image: "/project-render/project-third-min.png",
+    image: "/project-render/3.jpg",
     title: "Project Name",
     subtitle: "FACADES, LANDSCAPING",
   },
   {
-    image: "/project-render/project-fourth-min.png",
+    image: "/project-render/5.jpg",
     title: "Project Name",
     subtitle: "FACADES, LANDSCAPING",
   },
