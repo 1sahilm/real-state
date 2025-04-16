@@ -11,11 +11,14 @@ interface ModelBoxProps {
     item?: any;
     setIsOpen?: any;
     currentImage?: any;
+    setWasClosed?: any;
+    wasClosed?: boolean;
     }
 
-const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:ModelBoxProps) => {
+const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setWasClosed , wasClosed}:ModelBoxProps) => {
   const [loader, setLoader] = useState(false);
   const [mailResponse, setMailResponse] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
   
   const [inputValue, setInputValue] = useState({
     firstName: "",
@@ -61,6 +64,7 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:Model
         setMailResponse(true)
         setLoader(false);
         setIsOpen(false);
+        setIsOpen2(true);
         // setTimeout(() => {
         //   window.location.reload();
         // }, 100);
@@ -73,9 +77,11 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:Model
 
   const handleCLose = () => {
     setIsOpen(false);
-    setTimeout(() => {
-      window.location.reload();
-    }, 100);
+    // setTimeout(() => {
+    //   window.location.reload();
+    // }, 100);
+    wasClosed && setWasClosed(true)
+    
   };
   return (
     <div> 
@@ -133,15 +139,44 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage}:Model
         </div>
       </div>
     )}
+
+{isOpen2 && (
+      <div className={styles.popupOverlay} >
+        <div className={styles.popupContent} style={{
+        height:"490px",
+        display:"flex",
+        alignItems:"center",
+      }}>
+          <button className={styles.closeButton} onClick={()=> setIsOpen2(false)}>×</button>
+          <h2>Thank you for reaching out. We've received your message and will be in touch with you shortly. </h2>
+        
+        </div>
+      </div>
+    )}
+
+
+
+
+
+
+
   {mailResponse && (
     <>
      {currentImage && isOpen === false && (
       <>
     <div className={styles.popupOverlay}>
         {/* <div className={styles.popupContent}> */}
-          <button className={styles.closeButton} onClick={handleCLose}>×</button> 
+          <button className={styles.closeButton} onClick={
+ 
+            () => {
+              
+              setTimeout(() => {
+                window.location.reload();
+              }, 100);
+            }
+          }>×</button> 
           <div>
-        <Image src={currentImage} alt="image" width={800} height={800} />
+        <Image src={currentImage} alt="image" width={600} height={600} />
         <button onClick={handleCLose}>Close</button>
       </div>
         {/* </div> */}

@@ -14,7 +14,11 @@ import Ourstory2 from "@/components/Homepagesecction/Ourstory2/pages";
 import Ourstory3 from "@/components/Homepagesecction/Ourstory3/pages";
 import Footer2 from "@/components/NewFooter/page";
 import Header from "@/components/Header";
+import ModelBox from "@/components/ModelBox/page";
+import React, { useState } from "react";
 export default function Home() {
+    const [wasClosed, setWasClosed] = React.useState(false); 
+  
   const bannerData = [
     {
       id: 1,
@@ -39,6 +43,29 @@ export default function Home() {
     },
   ];
 
+   const [isOpen, setIsOpen] = useState(false);
+  
+      const togglePopup = () => {
+        setIsOpen(!isOpen);
+        setWasClosed(true);  
+      };
+ 
+      // React.useEffect(() => {
+      //   const timer = setTimeout(() => {
+      //     setIsOpen(true);
+      //   }, 5000);
+      //   return () => clearTimeout(timer);
+      // },[isOpen]);
+     
+ React.useEffect(() => {
+        if (!wasClosed) {
+          const timer = setTimeout(() => {
+            setIsOpen(true);
+          }, 5000);
+    
+          return () => clearTimeout(timer);
+        }
+      }, [wasClosed]);
   return (
     <div>
       <div>
@@ -59,6 +86,12 @@ export default function Home() {
       <Blogssection />
       {/* <Footer /> */}
       <Footer2 />
+      <ModelBox
+      togglePopup={togglePopup}
+      isOpen={isOpen}
+      setIsOpen={setIsOpen}
+      setWasClosed={setWasClosed}
+      />
     </div>
   );
 }
