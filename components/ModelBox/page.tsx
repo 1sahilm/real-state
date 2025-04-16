@@ -148,7 +148,7 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setW
         alignItems:"center",
       }}>
           <button className={styles.closeButton} onClick={()=> setIsOpen2(false)}>×</button>
-          <h2>Thank you for reaching out. We've received your message and will be in touch with you shortly. </h2>
+          <h2>Thank you for reaching out. We&apos;ve received your message and will be in touch with you shortly. </h2>
         
         </div>
       </div>
