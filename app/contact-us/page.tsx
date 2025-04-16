@@ -38,7 +38,7 @@ const ContactUs = () => {
                     <p>15, LSC, First Floor,<br />
                     Panchsheel Park, New Delhi-110017</p>
                     <p>+91 8471002002</p>
-                    <p>Info@infranium.in</p>
+                    <p>Sales@infranium.in</p>
                   </div>
                 </div>
                 <div className={style.addrlist}>

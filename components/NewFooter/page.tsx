@@ -65,7 +65,7 @@ const Footer2 = () => {
                   </li>
 
                   <li>
-                    <a href="emailto:Info@infranium.in">Info@infranium.in</a>
+                    <a href="emailto:sales@infranium.in">Sales@infranium.in</a>
                   </li>
               </ul>
             </div>
