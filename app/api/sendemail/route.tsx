@@ -20,7 +20,7 @@ export async function POST(request: NextRequest) {
     const [info, recipient] = await Promise.all([
       transporter.sendMail({
         from: email,
-        to: "nalderavillas@gmail.com",
+        to: "sales@infranium.in",
         subject: `Inquiry from Nalderavillas`,
         text: "Inquiry from Nalderavillas",
         html: `<b>Firstname: ${firstName} <br> Email: ${email} <br> Phone: ${phone} <br> Message: ${work_experience}</b>`,
@@ -30,9 +30,18 @@ export async function POST(request: NextRequest) {
         to: email,
         subject: `Nalderavillas`,
         text: "Nalderavillas",
-        html: `<b>We will contact you soon</b> <br/> <b>Contact no: +91 95824 64822 <br> ${work_experience ? `Message: ${work_experience}` : `University name: ${work_experience}`}</b>`,
+        html: `
+          <p>Dear Sir/Ma’am</p>
+          <p>Greetings from Infranium.</p>
+          <p>Thank you for your interest in Vvie Villas.</p>
+          <p>We at Infranium Homes appreciate your inquiry. A member of our team will be in touch with you shortly to assist further.</p>
+          <p>Warm regards,<br/>Team Infranium</p>
+          <br/>
+          <p>Regards<br/>Team Infranium<br/>Contact No. 91 8471002002</p>
+        `,
       }),
     ]);
+    
 
     console.log("Message sent: %s", info.messageId);
     console.log("Message sent: %s", recipient.messageId);
