@@ -30,7 +30,7 @@ const ProjectPage = () => {
         if (!wasClosed) {
           const timer = setTimeout(() => {
             setIsOpen2(true);
-          }, 5000);
+          }, 10000);
     
           return () => clearTimeout(timer);
         }

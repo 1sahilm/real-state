@@ -30,7 +30,7 @@ be cherished by generations to come, in
 handpicked locations that promise unfettered, 
 stunning vistas even for times to come. 
 Experience uninterrupted valley views from 
-every corner at Vive by Infranium, where 
+every corner at Vvie by Infranium, where 
 each limited villa offers expansive lawns, two 
 and three side open villas, and valley-facing 
 bedrooms, dining, and living spaces. Enjoy the 

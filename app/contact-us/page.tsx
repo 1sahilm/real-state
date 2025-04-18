@@ -1,15 +1,84 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import style from "./conatctus.module.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer/pages";
+import axios from "axios";
 
 const ContactUs = () => {
+  const [loader, setLoader] = useState(false);
+    const [isOpen2, setIsOpen2] = useState(false);
+  
+
+  const [inputValue, setInputValue] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    mobile: "",
+    description: "",
+  });
+
+  console.log("inputValue", { inputValue });
+
+  const handleSendInquiry = async () => {
+    const nesteddata = {
+      firstName: inputValue?.firstName,
+      lastName: inputValue?.lastName,
+      email: inputValue?.email,
+      phone: inputValue?.mobile,
+      description: inputValue?.description,
+    };
+
+    try {
+      setLoader(true);
+      // const response = await axios.post("/api/inquiry", nesteddata);
+
+      const emailRes = await axios.post("/api/sendemail", {
+        firstName: inputValue?.firstName,
+        lastName: inputValue?.lastName,
+        email: inputValue?.email,
+        message: inputValue?.description,
+        phone: inputValue?.mobile,
+        work_experience: inputValue?.description,
+      });
+      console.log("emailRes", emailRes);
+ 
+      if (emailRes) {
+        setInputValue({
+          firstName: "",
+          lastName: "",
+          mobile: "",
+          email: "",
+          description: "",
+        });
+        setLoader(false);
+        setIsOpen2(true);
+      
+
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <>
             {/* <Header headertheme={true} isLogo={true} /> */}
             <div className={style.desktopHeader}>
             <Header headertheme={true} isLogo={true} />
+            {isOpen2 && (
+      <div className={style.popupOverlay} >
+        <div className={style.popupContent} style={{
+        height:"370px",
+        display:"flex",
+        alignItems:"center",
+      }}>
+          <button className={style.closeButton} onClick={()=> setIsOpen2(false)}>×</button>
+          <h2>Thank you for reaching out. We&apos;ve received your message and will be in touch with you shortly. </h2>
+        
+        </div>
+      </div>
+    )}
     </div> 
       <section className={style.contactpage}>
         <div className={style.container}>
@@ -22,11 +91,50 @@ const ContactUs = () => {
               </div>
               <div className={style.form}>
                 <div className={style.row1}>
-                  <input type="text" placeholder="Name" />
-                  <input type="email" placeholder="Email" />
+                <input type="text" name="name" required 
+                placeholder="Name"
+             value={inputValue.firstName}
+             onChange={(e) =>
+               setInputValue({
+                 ...inputValue,
+                 firstName: e.target.value,
+               })
+             }
+            />
+                  <input type="email" name="email" required
+            placeholder="Email"
+            value={inputValue.email}
+            onChange={(e) =>
+              setInputValue({ ...inputValue, email: e.target.value })
+            }
+            />
+            <input type="tel" name="mobile" required 
+            placeholder="Mobile Number"
+            value={inputValue.mobile}
+            onChange={(e) =>
+              setInputValue({ ...inputValue, mobile: e.target.value })
+            }
+            />
                 </div>
-                <textarea name="" id="" placeholder="Message"></textarea>
-                <button>send</button>
+                <textarea name="message" required 
+            placeholder="Message"
+             value={inputValue.description}
+             onChange={(e: any) =>
+               setInputValue({
+                 ...inputValue,
+                 description: e.target.value,
+               })
+             }
+            ></textarea>
+               
+
+                {
+              loader ? 
+               <button type="submit">Loading ....</button>
+              
+              :             <button type="submit" onClick={handleSendInquiry}>Send</button>
+
+            }
               </div>
             </div>
             <div className={style.col2}>
@@ -44,8 +152,7 @@ const ContactUs = () => {
                 <div className={style.addrlist}>
                   <h5>ADMINISTRATIVE HOURS</h5>
                   <div className={style.box}>
-                    <p>Monday to Friday, 9AM - 5PM</p>
-                    <p>Weekend Closed</p>
+                    <p>Monday to Saturday, 9AM - 6PM.</p>
                   </div>
                 </div>
               </div>

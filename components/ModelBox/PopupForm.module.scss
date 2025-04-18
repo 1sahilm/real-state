@@ -21,6 +21,7 @@
     width: 520px;
     max-width: 90%;
     text-align: center;
+    position: relative;
     h2{
       font-size: 25px;
       font-family: "Cinzel", serif;
@@ -44,13 +45,13 @@
   
   .closeButton {
     background: none;
-    border: none;
-    font-size: 40px;
-    position: absolute;
-    right: 258px;
-    top: 82px;
-    cursor: pointer;
-    color: red;
+  border: none;
+  font-size: 40px;
+  position: absolute; 
+  top: -9px;
+  right: 20px;
+  cursor: pointer;
+  color: black;
   }
   
   .form {
