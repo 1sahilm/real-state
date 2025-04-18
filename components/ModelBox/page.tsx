@@ -2,7 +2,8 @@
 import React, { useState } from 'react'
 import styles from "./PopupForm.module.scss";
 import axios from 'axios';
-import Image from 'next/image';
+import Image from 'next/image'; 
+import { useRouter } from 'next/navigation';
 
 
 interface ModelBoxProps {
@@ -19,6 +20,7 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setW
   const [loader, setLoader] = useState(false);
   const [mailResponse, setMailResponse] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
+  const router = useRouter()
   
   const [inputValue, setInputValue] = useState({
     firstName: "",
@@ -64,7 +66,8 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setW
         setMailResponse(true)
         setLoader(false);
         setIsOpen(false);
-        setIsOpen2(true);
+        router.push("/thank-you") 
+        // setIsOpen2(true);
         // setTimeout(() => {
         //   window.location.reload();
         // }, 100);

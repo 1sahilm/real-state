@@ -85,9 +85,9 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
 
 {isLogo ? <> 
           <Image
-            src={"/new-logo.png"}
-            width={150}
-            height={150}
+            src={"/new-logo-image.png"}
+            width={120}
+            height={100}
             alt="logo" 
             />  
         </> : <>
@@ -97,7 +97,7 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
             width={120}
             height={120}
             alt="logo" 
-            />
+            />dscfsd
         </> }
          
             </Link>

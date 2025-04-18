@@ -5,10 +5,12 @@ import style from "./conatctus.module.scss";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer/pages";
 import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const ContactUs = () => {
   const [loader, setLoader] = useState(false);
     const [isOpen2, setIsOpen2] = useState(false);
+    const router = useRouter()
   
 
   const [inputValue, setInputValue] = useState({
@@ -52,9 +54,8 @@ const ContactUs = () => {
           email: "",
           description: "",
         });
-        setLoader(false);
-        setIsOpen2(true);
-      
+        setLoader(false); 
+        router.push("/thank-you")
 
       }
     } catch (error) {
