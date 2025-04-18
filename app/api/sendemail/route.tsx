@@ -28,16 +28,15 @@ export async function POST(request: NextRequest) {
       transporter.sendMail({
         from: email,
         to: email,
-        subject: `Nalderavillas`,
-        text: "Nalderavillas",
+        subject: `Thank You for Your Interest in Vvie Villas, Naldehra Golf Hills.`,
+        text: "Thank You for Your Interest in Vvie Villas, Naldehra Golf Hills.",
         html: `
-          <p>Dear Sir/Ma’am</p>
-          <p>Greetings from Infranium.</p>
-          <p>Thank you for your interest in Vvie Villas.</p>
-          <p>We at Infranium Homes appreciate your inquiry. A member of our team will be in touch with you shortly to assist further.</p>
-          <p>Warm regards,<br/>Team Infranium</p>
+          <p>Dear Sir/Ma’am</p> 
+          <p>Thank you for reaching out to us and expressing interest in our ultra-luxury development Vvie Villas at Naldehra Golf Hills. We’re thrilled to connect with you!
+Our team at Infranium will reach out shortly with more details. In the meantime, feel free to contact us at +91-8471002002 or sales@infranium.in for any immediate queries.</p>
+          <p>Your dream home in the hills awaits!</p>
           <br/>
-          <p>Regards<br/>Team Infranium<br/>Contact No. 91 8471002002</p>
+          <p>Best Regards,<br/>Team Infranium<br/>+91-8471002002</p>
         `,
       }),
     ]);
