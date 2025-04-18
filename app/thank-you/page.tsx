@@ -26,7 +26,7 @@ const ThankYou = () => {
         Thanks for using our contact form!
         </h1>
         <p className={styles.paragrapgh}>
-        We've received your message and will get back to you ASAP.
+        We&apos;ve received your message and will get back to you ASAP.
         </p>
          
 
