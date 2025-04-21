@@ -97,7 +97,7 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
             width={120}
             height={120}
             alt="logo" 
-            />dscfsd
+            />
         </> }
          
             </Link>
