@@ -35,6 +35,14 @@ const ContactUs = () => {
     try {
       setLoader(true);
       // const response = await axios.post("/api/inquiry", nesteddata);
+      const sendLeadRes = await axios.post("/api/send-leads", {
+        firstName: inputValue?.firstName, 
+        email: inputValue?.email,
+        phone: inputValue?.mobile,
+        message: inputValue?.description, 
+      });
+      console.log("sendLeadRes", sendLeadRes);
+
 
       const emailRes = await axios.post("/api/sendemail", {
         firstName: inputValue?.firstName,
@@ -45,6 +53,9 @@ const ContactUs = () => {
         work_experience: inputValue?.description,
       });
       console.log("emailRes", emailRes);
+
+   
+
  
       if (emailRes) {
         setInputValue({

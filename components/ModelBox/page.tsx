@@ -45,6 +45,14 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setW
       setLoader(true);
       // const response = await axios.post("/api/inquiry", nesteddata);
 
+      const sendLeadRes = await axios.post("/api/send-leads", {
+        firstName: inputValue?.firstName, 
+        email: inputValue?.email,
+        phone: inputValue?.mobile,
+        message: inputValue?.description, 
+      });
+      console.log("sendLeadRes", sendLeadRes);
+
       const emailRes = await axios.post("/api/sendemail", {
         firstName: inputValue?.firstName,
         lastName: inputValue?.lastName,
