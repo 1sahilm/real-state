@@ -35,12 +35,29 @@ const ContactUs = () => {
     try {
       setLoader(true);
       // const response = await axios.post("/api/inquiry", nesteddata);
-      const sendLeadRes = await axios.post("/api/send-leads", {
-        firstName: inputValue?.firstName, 
+
+      console.log("Payload sent from frontend:", {
+        firstName: inputValue?.firstName,
+        lastName: inputValue?.lastName || '',
         email: inputValue?.email,
         phone: inputValue?.mobile,
-        message: inputValue?.description, 
+        message: inputValue?.description,
+        project: "Project Name",
       });
+      const sendLeadRes = await axios.post("/api/send-leads", {
+        firstName: inputValue?.firstName,
+        // lastName: inputValue?.lastName || '', // optional
+        email: inputValue?.email,
+        phone: inputValue?.mobile,
+        message: inputValue?.description,
+        project: "Infranium",
+      });
+    
+      if (sendLeadRes.data.success) {
+        console.log("✅ Lead sent successfully", sendLeadRes.data.data);
+      } else {
+        console.error("❌ Lead API responded with error:", sendLeadRes.data.error);
+      } 
       console.log("sendLeadRes", sendLeadRes);
 
 

@@ -1,20 +1,34 @@
-// app/api/send-leads/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
 
-  console.log("Incoming request:", body);
+  const { firstName, lastName, email, phone, message, project } = body;
 
-  const { firstName, lastName, email, phone, message , project } = body;
-
-  const payload = {
-    notes: message || 'I am Interested in this project.Please call me',
+  const payload: Record<string, string> = {
+    channel_id: 'Contact_Us',
+    subject: 'Lead from Contact_Us',
+    rep_id: 'kavitharajagopal@rgstructures.in',
+    notes: message || 'I am Interested in this project. Please call me',
     f_name: firstName || '',
+    // l_name: lastName || '',
     email: email || '',
     phonefax: phone || '',
-    project: 'Infranium',
+    project: project || 'Infranium',
+    alert_client: '0',
+    alert_rep: '0',
+    USOURCE: 'GSource',
+    UMEDIUM: 'GMedium',
+    utm_campaign: 'Google',
+    utm_ad_group: 'GGroup',
+    utm_term: 'Gterm',
+    utm_device: 'GDevice',
+    utm_gclid: 'Glid',
+    utm_placement: 'GPlacement',
+    utm_ad_name: 'GAdname',
   };
+
+  console.log("Payload sent to Paramanta:", payload);
 
   const apiKey = 'zD10E4ptFMHuuJz63pKFuBHM1E';
   const appName = 'L51yC';
@@ -27,19 +41,30 @@ export async function POST(req: NextRequest) {
         'X-API-KEY': apiKey,
         'ACTION-ON': appName,
         'Content-Type': 'application/x-www-form-urlencoded',
+        'Authorization': 'Basic ' + Buffer.from(apiKey + ':').toString('base64'),
       },
-      body: new URLSearchParams(
-        Object.entries(payload).reduce((acc, [key, value]) => {
-          acc[key] = String(value);
-          return acc;
-        }, {} as Record<string, string>)
-      ).toString(),
+      body: new URLSearchParams(payload).toString(),
     });
 
     const data = await response.json();
+    console.log("Response from Paramanta API:", data);
+
+    console.log("API Key:", apiKey);
+console.log("App Name:", appName);
+
+    if (!response.ok) {
+      return NextResponse.json(
+        { success: false, error: data?.error || 'Unknown error' },
+        { status: response.status }
+      );
+    }
+
     return NextResponse.json({ success: true, data });
   } catch (error) {
     console.error('Lead submission error:', error);
-    return NextResponse.json({ success: false, message: 'Failed to send lead' }, { status: 500 });
+    return NextResponse.json(
+      { success: false, message: 'Failed to send lead' },
+      { status: 500 }
+    );
   }
 }
