@@ -43,14 +43,20 @@ const ContactUs = () => {
         phone: inputValue?.mobile,
         message: inputValue?.description,
         project: "Project Name",
+        channel_id:"Contact_Us",
+        subject: "Lead from Contact_Us",
+        rep_id: "rohit@infranium.in",
       });
       const sendLeadRes = await axios.post("/api/send-leads", {
         firstName: inputValue?.firstName,
-        // lastName: inputValue?.lastName || '', // optional
+        // lastName: inputValue?.lastName || '',
         email: inputValue?.email,
         phone: inputValue?.mobile,
         message: inputValue?.description,
-        project: "Infranium",
+        project: "Project Name",
+        channel_id:"Contact_Us",
+        subject: "Lead from Contact_Us",
+        rep_id: "rohit@infranium.in",
       });
     
       if (sendLeadRes.data.success) {

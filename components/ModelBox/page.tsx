@@ -46,10 +46,15 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setW
       // const response = await axios.post("/api/inquiry", nesteddata);
 
       const sendLeadRes = await axios.post("/api/send-leads", {
-        firstName: inputValue?.firstName, 
+        firstName: inputValue?.firstName,
+        // lastName: inputValue?.lastName || '',
         email: inputValue?.email,
         phone: inputValue?.mobile,
-        message: inputValue?.description, 
+        message: inputValue?.description,
+        project: "Project Name",
+        channel_id:"Contact_Us",
+        subject: "Lead from Contact_Us",
+        rep_id: "rohit@infranium.in",
       });
       console.log("sendLeadRes", sendLeadRes);
 

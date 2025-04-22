@@ -3,12 +3,12 @@ import { NextRequest, NextResponse } from 'next/server';
 export async function POST(req: NextRequest) {
   const body = await req.json();
 
-  const { firstName, lastName, email, phone, message, project } = body;
+  const { firstName, lastName, email, phone, message, project , channel_id , subject , rep_id } = body;
 
   const payload: Record<string, string> = {
-    channel_id: 'Contact_Us',
-    subject: 'Lead from Contact_Us',
-    rep_id: 'kavitharajagopal@rgstructures.in',
+    channel_id: channel_id || 'Contact_Us',
+    subject: subject || 'Lead from Contact_Us',
+    rep_id: rep_id || 'rohit@infranium.in',
     notes: message || 'I am Interested in this project. Please call me',
     f_name: firstName || '',
     // l_name: lastName || '',
@@ -30,8 +30,8 @@ export async function POST(req: NextRequest) {
 
   console.log("Payload sent to Paramanta:", payload);
 
-  const apiKey = 'zD10E4ptFMHuuJz63pKFuBHM1E';
-  const appName = 'L51yC';
+  const apiKey = 'M56FGBJ6rDADGsMxwKKD6oHuNA';
+  const appName = 'GB0oN';
   const url = 'https://cloud.paramantra.com/paramantra/api/data/new/format/json';
 
   try {
