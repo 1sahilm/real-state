@@ -131,13 +131,15 @@ text-align: center;
 
 
 .bannerHs{
-  font-size: 14px;
+      font-size: 14px;
     font-weight: 400;
     line-height: 40.06px;
     position: absolute;
-    bottom: 0px;
+    bottom: 66px;
     z-index: 9999;
-    right: 7px;
-    color: white;
+    right: -41px;
+    color: #fff;
     font-style: italic;
+    display: inline-block;
+    transform: rotate(89deg);
 }
