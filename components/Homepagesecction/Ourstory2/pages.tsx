@@ -37,7 +37,7 @@ bedrooms, dining, and living spaces. Enjoy the
 stunning landscape year-round, even in winter, 
 from your private rooftop jacuzzi.
           </p>
-          <span   className={styles.readMore} onClick={()=>router.push("/project")}>
+          <span   className={styles.readMore} onClick={()=>router.push("/vvievillas")}>
           Read More
           </span>
           

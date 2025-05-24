@@ -51,7 +51,7 @@ const menuarry = [
   },
   {
     manuname: "Projects",
-    manulink: "/project",
+    manulink: "/vvievillas",
   },
   {
     manuname: "Faqs",

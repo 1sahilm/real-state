@@ -29,7 +29,7 @@ const Footer2 = () => {
             <div className="footer-section">
               <h3>Product</h3>
               <ul>
-                <Link href="/project">
+                <Link href="/vvievillas">
                 <li>Projects</li>
                 </Link>
                 <Link href="/singleproject">
