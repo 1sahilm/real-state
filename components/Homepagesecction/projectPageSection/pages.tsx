@@ -57,8 +57,8 @@ provide you with the utmost exclusivity and refinement.
         <div className={styles.column}>
         <div className={styles.imageSection}>
           <img
-            src="/club-house-min.jpg"
-            alt="Architects working"
+            src="/4-5-BHK-luxury-villa-Naldehra.jpg"
+            alt="4 & 5 BHK villas for sale in Shimla Naldehra,,Himachal Pradesh"
             className={styles.image}
           />
         </div>

@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import React, { useState } from "react";
 import style from "./project.module.scss";
 import Image from "next/image";
+import Head from "next/head";
 import { link } from "fs";
 import { useRouter } from "next/navigation";
 import ThreeColumnSection from "@/components/Homepagesecction/ThreeColumnSection/pages";
@@ -37,6 +38,10 @@ const ProjectPage = () => {
       }, [wasClosed]);
   return (
     <>
+    <Head>
+        <title>Vvie Villas: Luxury 4 & 5 BHK villas for sale in Shimla, Himachal Pradesh. Your dream home awaits.</title>
+        <meta name="description" content="Find your dream Villa at Vvie Villas: luxury 4 & 5 BHK villas for sale in the heart of Shimla, Himachal Pradesh. Enjoy a serene lifestyle surrounded by natural beauty. Contact us for details." />
+      </Head>
              <div className={style.desktopHeader}>
       <Header headertheme={true} />
     </div>
@@ -62,7 +67,7 @@ const ProjectPage = () => {
           alignItems: "center",
         }}
         >
-          <h1>Vvie Villas, Naldehra Golf Hills</h1>
+          <h2>Vvie Villas, Naldehra Golf Hills</h2>
 {/* <p className={style.project_para} >HPRERASHI2025125/P</p> */}
         </div>
 
@@ -109,7 +114,8 @@ const ProjectPage = () => {
               </div>
             </div>
             <div className={style.contentblock}> 
-              <h1>Vvie Villas</h1>
+              <h2 className={style.h1style}>Vvie Villas</h2>
+              <h1>Luxury 4 & 5 BHK villas for sale in Shimla</h1><br />
               <p>
               Inspired by the French word for ‘life,’ Vvie is where elegance meets modernity in the heart of nature.
 Vvie signifies life in its most luxurious and harmonious form. Each element within Vvie resonates with
@@ -198,7 +204,7 @@ meets the tranquility of the mountains
 
       <section className={style.projectpage}>
         <div className={style.container}>
-        <h1>Villas in Naldehra Golf Hills</h1>
+        <h2 className={style.h1style}>Villas in Naldehra Golf Hills</h2>
 
           <div className={style.row}>
             {villaArray?.map((item, index) => {

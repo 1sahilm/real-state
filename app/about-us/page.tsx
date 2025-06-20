@@ -3,7 +3,10 @@ import React from "react";
 import styles from "../../styles/AboutSection.module.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer/pages";
-
+export const metadata = {
+  title: "About Infranium - Luxury Villa Developers",
+  description: "About Infranium: Building luxury villas in Shimla & Naldehra, Himachal Pradesh.  See our vision, values, and dedication to creating dream homes. Contact us today.",
+};
 const About = () => {
   return (
     <>
@@ -27,9 +30,9 @@ const About = () => {
         </div>
       </section>
       <div className={styles.container}>
-        <h1 className={styles.heading}>
+        <h2 className={styles.h1style}>
         ABOUT INFRANIUM
-        </h1>
+        </h2>
         <p className={styles.paragraph}>
         Infranium leads the way in luxury real estate by blending
 innovation with timeless elegance. Our commitment is to
@@ -82,7 +85,7 @@ to refined living.
 
       <div className={styles.thirdsection}>
         <div className={styles.container}>
-          <h1>ABOUT THE TEAM</h1>
+          <h2>ABOUT THE TEAM</h2>
           <p>
           Led by a team of visionary leaders, Infranium
 draws upon decades of experience in
