@@ -18,6 +18,8 @@ import ModelBox from "@/components/ModelBox/page";
 import React, { useState } from "react";
 export default function Home() {
     const [wasClosed, setWasClosed] = React.useState(false); 
+
+    
   
   const bannerData = [
     {

@@ -8,12 +8,14 @@ const Ourstory = () => {
       <div className={styles.container}>
         <div className={styles.textSection}>
           <p className={styles.subHeading}>ABOUT INFRANIUM</p>
-          <h1 className={styles.heading}>
+          <h2 className={styles.heading}>
           Infranium leads the way in luxury real
           estate by blending innovation with timeless elegance.
            <br /> 
  
-          </h1>
+          </h2>
+          <h1>Luxury Villas in Shimla and Naldehra</h1>
+          <br />
           <p className={styles.text}>
           Our commitment is to
 create residences that integrate seamlessly with nature,
@@ -32,8 +34,8 @@ to refined living
         </div>
         <div className={styles.imageSection}>
           <img
-            src="/infranium-image.jpeg"
-            alt="Architects working"
+            src="/5-BHK-luxury-villa-Naldehra.jpeg"
+            alt="Buy Luxury Villas in Shimla & Naldehra, Himachal Pradesh"
             className={styles.image}
           />
         </div>

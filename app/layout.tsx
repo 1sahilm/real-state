@@ -7,8 +7,8 @@ import Script from "next/script";
 // const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Infranium | Pioneering Luxury Real Estate with Timeless Elegance​",
-  description: "Infranium leads the way in luxury real estate by blending innovation with timeless elegance, creating extraordinary living spaces that reflect sophistication and modern design.",
+  title: "Buy Luxury Villas in Shimla & Naldehra, Himachal Pradesh | Infranium",
+  description: "Infranium offers exclusive luxury villas in Shimla and Naldehra. Discover your dream home featuring stunning views and modern amenities. Contact us today!",
 };
 
 export default function RootLayout({
