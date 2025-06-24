@@ -116,9 +116,9 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
           <li>
             <a href="/faq">Faqs</a>
           </li>
-          {/* <li>
-            <a href="#">Blog</a>
-          </li> */}
+          <li>
+            <a href="/blog">Blog</a>
+          </li>
           <li>
             <a href="/contact-us">Get In Touch</a>
           </li>

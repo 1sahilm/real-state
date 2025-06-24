@@ -46,14 +46,14 @@ const Menu: React.FC = () => {
             FAQ
           </Link>
         </li>
-        {/* <li>
-          <Link href="/blogs" className={styles.menuItem}>
+        <li>
+          <Link href="/blog" className={styles.menuItem}>
             <span className={styles.icon}>
-              <Image src={blogIcon} alt="Blog" width={20} height={20} />
+              {/* <Image src={blogIcon} alt="Blog" width={20} height={20} /> */}
             </span>{" "}
             Blog
           </Link>
-        </li> */}
+        </li>
         <li>
           <Link href="/contact-us" className={styles.menuItem}>
             <span className={styles.icon}>

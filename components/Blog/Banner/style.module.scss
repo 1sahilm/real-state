@@ -1,0 +1,119 @@
+.section {
+    background: url("/about-us/baneer-about.jpg");
+    padding-top: 317px;
+    padding-bottom: 87px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 700px;
+    @media (max-width:768px) {  
+        padding-top: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background-size: 1590px;
+        background-position: right -160px top 0px;
+      }
+    .container {
+        max-width: 1248px;
+        margin-left: auto;
+        margin-right: auto;
+        .row {
+            position: relative;
+
+            .box {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                justify-content: center;
+                text-align: center;
+
+                .logo {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    @media (max-width:768px) { 
+                        display: none   ;
+                      }
+                    img {
+                        position: relative;
+                    }
+                }
+                h2 {
+        position: relative;
+         font-family: "Poppins", sans-serif;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-align: center;
+        vertical-align: bottom; 
+        color: #fff;
+        span {
+        color: #2BAAE2;
+        }
+
+
+        @media (max-width:768px) {   
+font-weight: 700;
+font-size: 36px;
+line-height: 1.4;
+letter-spacing: 0%;
+text-align: center; 
+        }
+                }
+                p{
+                    font-family: "Poppins", sans-serif;
+                    font-weight: 400;
+                    font-size: 24px;
+                    line-height: 30px;
+                    letter-spacing: 0%;
+                    text-align: center;
+                    vertical-align: bottom;
+                    color: #fff;
+                    max-width: 956px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    @media (max-width:768px) {   
+font-weight: 400;
+font-size: 16px;
+line-height: 1.4;
+letter-spacing: 0%;
+text-align: center; 
+
+                       } 
+                }
+            }
+
+
+            a {
+                margin-top: 40px;
+                background: #222f47;
+                font-family: "Poppins", sans-serif;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                padding-top: 12px;
+                padding-right: 24px;
+                padding-bottom: 12px;
+                padding-left: 24px;
+                border-radius: 12px;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                width: fit-content;
+                color: #fff;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover{
+                    background: linear-gradient(to right, #e0f2ff, #d1dae5);
+    color: #181818;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 12px;
+    padding-left: 24px;
+    box-shadow: inset 0 0 0 4px #fffc;
+                }
+                        }
+        }
+    }
+}

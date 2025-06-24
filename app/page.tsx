@@ -16,6 +16,8 @@ import Footer2 from "@/components/NewFooter/page";
 import Header from "@/components/Header";
 import ModelBox from "@/components/ModelBox/page";
 import React, { useState } from "react";
+import ContactUs from "@/components/ContactUs";
+import CallToAction from "@/components/CallToAction/page";
 export default function Home() {
     const [wasClosed, setWasClosed] = React.useState(false); 
 
@@ -86,7 +88,10 @@ export default function Home() {
       {/* <Latestproject /> */}
       {/* <Testimonials /> */}
       <Blogssection />
+      <ContactUs />  
+
       {/* <Footer /> */}
+      <CallToAction />
       <Footer2 />
       <ModelBox
       togglePopup={togglePopup}

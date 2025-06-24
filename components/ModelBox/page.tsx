@@ -1,9 +1,11 @@
 "use client";
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import styles from "./PopupForm.module.scss";
 import axios from 'axios';
 import Image from 'next/image'; 
 import { useRouter } from 'next/navigation';
+import ReCAPTCHA from "react-google-recaptcha";
+
 
 
 interface ModelBoxProps {
@@ -16,7 +18,10 @@ interface ModelBoxProps {
     wasClosed?: boolean;
     }
 
+    const SITE_KEY = process.env.NEXT_SITE_KEY as string || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; 
+
 const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setWasClosed , wasClosed}:ModelBoxProps) => {
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
   const [loader, setLoader] = useState(false);
   const [mailResponse, setMailResponse] = useState(false);
   const [isOpen2, setIsOpen2] = useState(false);
@@ -32,64 +37,124 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setW
 
   console.log("inputValue", { inputValue });
 
+  // const handleSendInquiry = async () => {
+  //   const nesteddata = {
+  //     firstName: inputValue?.firstName,
+  //     lastName: inputValue?.lastName,
+  //     email: inputValue?.email,
+  //     phone: inputValue?.mobile,
+  //     description: inputValue?.description,
+  //   };
+
+  //   try {
+  //     setLoader(true);
+  //     // const response = await axios.post("/api/inquiry", nesteddata);
+
+  //     const sendLeadRes = await axios.post("/api/send-leads", {
+  //       firstName: inputValue?.firstName,
+  //       // lastName: inputValue?.lastName || '',
+  //       email: inputValue?.email,
+  //       phone: inputValue?.mobile,
+  //       message: inputValue?.description,
+  //       project: "Project Name",
+  //       channel_id:"Contact_Us",
+  //       subject: "Lead from Contact_Us",
+  //       rep_id: "rohit@infranium.in",
+  //     });
+  //     console.log("sendLeadRes", sendLeadRes);
+
+  //     const emailRes = await axios.post("/api/sendemail", {
+  //       firstName: inputValue?.firstName,
+  //       lastName: inputValue?.lastName,
+  //       email: inputValue?.email,
+  //       message: inputValue?.description,
+  //       phone: inputValue?.mobile,
+  //       work_experience: inputValue?.description,
+  //     });
+  //     console.log("emailRes", emailRes);
+ 
+  //     if (emailRes) {
+  //       setInputValue({
+  //         firstName: "",
+  //         lastName: "",
+  //         mobile: "",
+  //         email: "",
+  //         description: "",
+  //       });
+  //       setMailResponse(true)
+  //       setLoader(false);
+  //       setIsOpen(false);
+  //       router.push("/thank-you") 
+  //       // setIsOpen2(true);
+  //       // setTimeout(() => {
+  //       //   window.location.reload();
+  //       // }, 100);
+
+  //     }
+  //   } catch (error) {
+  //     console.log(error);
+  //   }
+  // };
+
   const handleSendInquiry = async () => {
-    const nesteddata = {
+  const token = await recaptchaRef.current?.getValue();
+
+  if (!token) {
+    alert("Please complete the reCAPTCHA.");
+    return;
+  }
+
+  try {
+    setLoader(true);
+
+    // Optional: Send token to backend to verify with Google
+    const verifyRes = await axios.post("/api/verify-recaptcha", { token });
+    if (!verifyRes.data.success) {
+      alert("reCAPTCHA verification failed.");
+      setLoader(false);
+      return;
+    }
+
+    const sendLeadRes = await axios.post("/api/send-leads", {
+      firstName: inputValue?.firstName,
+      email: inputValue?.email,
+      phone: inputValue?.mobile,
+      message: inputValue?.description,
+      project: "Project Name",
+      channel_id: "Contact_Us",
+      subject: "Lead from Contact_Us",
+      rep_id: "rohit@infranium.in",
+    });
+
+    const emailRes = await axios.post("/api/sendemail", {
       firstName: inputValue?.firstName,
       lastName: inputValue?.lastName,
       email: inputValue?.email,
+      message: inputValue?.description,
       phone: inputValue?.mobile,
-      description: inputValue?.description,
-    };
+      work_experience: inputValue?.description,
+    });
 
-    try {
-      setLoader(true);
-      // const response = await axios.post("/api/inquiry", nesteddata);
-
-      const sendLeadRes = await axios.post("/api/send-leads", {
-        firstName: inputValue?.firstName,
-        // lastName: inputValue?.lastName || '',
-        email: inputValue?.email,
-        phone: inputValue?.mobile,
-        message: inputValue?.description,
-        project: "Project Name",
-        channel_id:"Contact_Us",
-        subject: "Lead from Contact_Us",
-        rep_id: "rohit@infranium.in",
+    if (emailRes) {
+      setInputValue({
+        firstName: "",
+        lastName: "",
+        mobile: "",
+        email: "",
+        description: "",
       });
-      console.log("sendLeadRes", sendLeadRes);
-
-      const emailRes = await axios.post("/api/sendemail", {
-        firstName: inputValue?.firstName,
-        lastName: inputValue?.lastName,
-        email: inputValue?.email,
-        message: inputValue?.description,
-        phone: inputValue?.mobile,
-        work_experience: inputValue?.description,
-      });
-      console.log("emailRes", emailRes);
- 
-      if (emailRes) {
-        setInputValue({
-          firstName: "",
-          lastName: "",
-          mobile: "",
-          email: "",
-          description: "",
-        });
-        setMailResponse(true)
-        setLoader(false);
-        setIsOpen(false);
-        router.push("/thank-you") 
-        // setIsOpen2(true);
-        // setTimeout(() => {
-        //   window.location.reload();
-        // }, 100);
-
-      }
-    } catch (error) {
-      console.log(error);
+      setMailResponse(true);
+      setLoader(false);
+      setIsOpen(false);
+      router.push("/thank-you");
     }
-  };
+  } catch (error) {
+    console.error("Inquiry Error", error);
+    setLoader(false);
+  } finally {
+    recaptchaRef.current?.reset(); // Reset reCAPTCHA for future submissions
+  }
+};
 
   const handleCLose = () => {
     setIsOpen(false);
@@ -103,57 +168,49 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setW
     <div> 
     {isOpen && (
       <div className={styles.popupOverlay}>
-        <div className={styles.popupContent}>
-          <button className={styles.closeButton} onClick={handleCLose}>×</button>
-          <h2>Contact Us</h2>
-          <span className={styles.form}  >
-            <label>Name:</label>
-            <input type="text" name="name" required 
-             value={inputValue.firstName}
-             onChange={(e) =>
-               setInputValue({
-                 ...inputValue,
-                 firstName: e.target.value,
-               })
-             }
-            />
-            
-            <label>Email:</label>
-            <input type="email" name="email" required
-            value={inputValue.email}
-            onChange={(e) =>
-              setInputValue({ ...inputValue, email: e.target.value })
-            }
-            />
-            
-            <label>Mobile:</label>
-            <input type="tel" name="mobile" required 
-            value={inputValue.mobile}
-            onChange={(e) =>
-              setInputValue({ ...inputValue, mobile: e.target.value })
-            }
-            />
-            
-            <label>Message:</label>
-            <textarea name="message" required 
-             value={inputValue.description}
-             onChange={(e: any) =>
-               setInputValue({
-                 ...inputValue,
-                 description: e.target.value,
-               })
-             }
-            ></textarea>
-            {
-              loader ? 
-               <button type="submit">Loading ....</button>
-              
-              :             <button type="submit" onClick={handleSendInquiry}>Submit</button>
+      <div className={styles.popupContent}>
+        <button className={styles.closeButton} onClick={handleCLose}>×</button>
+        <h2>Contact Us</h2>
+        <span className={styles.form}>
+          <label>Name:</label>
+          <input type="text" name="name" required 
+            value={inputValue.firstName}
+            onChange={(e) => setInputValue({ ...inputValue, firstName: e.target.value })}
+          />
 
-            }
-          </span>
-        </div>
+          <label>Email:</label>
+          <input type="email" name="email" required 
+            value={inputValue.email}
+            onChange={(e) => setInputValue({ ...inputValue, email: e.target.value })}
+          />
+
+          <label>Mobile:</label>
+          <input type="tel" name="mobile" required 
+            value={inputValue.mobile}
+            onChange={(e) => setInputValue({ ...inputValue, mobile: e.target.value })}
+          />
+
+          <label>Message:</label>
+          <textarea name="message" required 
+            value={inputValue.description}
+            onChange={(e) => setInputValue({ ...inputValue, description: e.target.value })}
+          ></textarea>
+
+          <div style={{ margin: "10px 0" }}>
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={SITE_KEY}
+            />
+          </div>
+
+          {
+            loader ? 
+              <button type="submit">Loading ....</button> :
+              <button type="submit" onClick={handleSendInquiry}>Submit</button>
+          }
+        </span>
       </div>
+    </div>
     )}
 
 {isOpen2 && (
