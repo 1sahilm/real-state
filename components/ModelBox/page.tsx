@@ -108,12 +108,12 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setW
     setLoader(true);
 
     // Optional: Send token to backend to verify with Google
-    const verifyRes = await axios.post("/api/verify-recaptcha", { token });
-    if (!verifyRes.data.success) {
-      alert("reCAPTCHA verification failed.");
-      setLoader(false);
-      return;
-    }
+    // const verifyRes = await axios.post("/api/verify-recaptcha", { token });
+    // if (!verifyRes.data.success) {
+    //   alert("reCAPTCHA verification failed.");
+    //   setLoader(false);
+    //   return;
+    // }
 
     const sendLeadRes = await axios.post("/api/send-leads", {
       firstName: inputValue?.firstName,
