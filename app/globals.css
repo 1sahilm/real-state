@@ -353,3 +353,7 @@ h2.gallery-top {
     font-size: 31px;
   }
 }
+
+div#rc-anchor-alert {
+    display: none !important;
+}

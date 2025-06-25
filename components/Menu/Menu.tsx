@@ -31,7 +31,7 @@ const Menu: React.FC = () => {
           </Link>
         </li>
         <li>
-          <Link href="/vvievillas" className={styles.menuItem}>
+          <Link href="/vvie-villas-luxury-villas-for-sale-shimla" className={styles.menuItem}>
             <span className={styles.icon}>
               {/* <Image src={projectsIcon} alt="Projects" width={20} height={20} /> */}
             </span>{" "}

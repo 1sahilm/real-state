@@ -65,7 +65,7 @@ export default function Home() {
         if (!wasClosed) {
           const timer = setTimeout(() => {
             setIsOpen(true);
-          }, 10000);
+          }, 15000);
     
           return () => clearTimeout(timer);
         }

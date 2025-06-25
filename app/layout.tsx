@@ -1,6 +1,8 @@
 import { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
+import CallButton from "@/components/CallButton/page";
+import QuickInquiryButton from "@/components/QuickInquiryButton/page";
 // import CustomCursor from "@/components/CustomCursor";
 // import { Inter } from "next/font/google";
 
@@ -65,6 +67,8 @@ height="0" width="0"   style={{ display: "none", visibility: "hidden" }}></ifram
  
         {children}
         {/* <CustomCursor /> */}
+         <CallButton />
+         <QuickInquiryButton />
       </body>
     </html>
   );

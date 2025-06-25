@@ -10,6 +10,7 @@ import { useRouter } from "next/navigation";
 import ThreeColumnSection from "@/components/Homepagesecction/ThreeColumnSection/pages";
 import ProjectPageSection from "@/components/Homepagesecction/projectPageSection/pages";
 import ModelBox from "@/components/ModelBox/page";
+import ContactUs from "@/components/ContactUs";
 
 const ProjectPage = () => {
   const router = useRouter();
@@ -17,6 +18,11 @@ const ProjectPage = () => {
   const [isOpen2, setIsOpen2] = useState(false);
   const [currentImage , setCurrentImage] = useState('')
   const [wasClosed, setWasClosed] = React.useState(false); 
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  
+      const toggleFAQ = (index: number) => {
+        setOpenIndex(openIndex === index ? null : index);
+      };
   
       const togglePopup = () => {
         setIsOpen(!isOpen);
@@ -31,7 +37,7 @@ const ProjectPage = () => {
         if (!wasClosed) {
           const timer = setTimeout(() => {
             setIsOpen2(true);
-          }, 10000);
+          }, 15000);
     
           return () => clearTimeout(timer);
         }
@@ -254,7 +260,25 @@ meets the tranquility of the mountains
           </div>
         </div>
       </section>
+         <div className="max-w-6xl mx-auto p-4 mt-8 mb-8">
+      <h2 className="text-2xl font-bold text-center mb-6">Frequently asked question</h2>
+      <div className="space-y-4">
+        {faqs.map((faq, index) => (
+          <div key={index} className="border-b pb-2">
+            <button
+              className="w-full text-left font-semibold py-2 flex justify-between items-center"
+              onClick={() => toggleFAQ(index)}
+            >
+              {faq.question}
+              <span>{openIndex === index ? "-" : "+"}</span>
+            </button>
+            {openIndex === index && <p className="mt-2 text-gray-600">{faq.answer}</p>}
+          </div>
+        ))}
+      </div>
+    </div>
 
+      <ContactUs/>  
      
       <ModelBox 
       togglePopup={togglePopup}
@@ -426,3 +450,9 @@ const projectarray = [
     subtitle: "FACADES, LANDSCAPING",
   },
 ];
+
+const faqs = [
+    { question: "Where is Vvie Villas located?", answer: "Vvie Villas is situated at Naldehra Golf Hills, Shimla, Himachal Pradesh, offering a serene Himalayan retreat." },
+    { question: "Who is the project architect?", answer: "The renowned Pradeep Sachdeva Design Associates is the architect behind Vvie Villas." },
+    { question: "Is Vvie Villas a drive-in property?", answer: "Yes, a proper metaled road leads directly to your doorstep for easy access." },
+  ];

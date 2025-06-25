@@ -1,8 +1,9 @@
 "use client"
-import { useState } from "react";
+import { useRef, useState } from "react";
 import  Style  from "./inquery.module.scss";
 import axios from "axios";
 import RotatingLoader from "../CustomLoader";
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 
@@ -11,7 +12,12 @@ interface InqueryBoxProp extends React.HTMLAttributes<HTMLDivElement> {
    boxcontainer?: "full" | "container"
 }
 
+  const SITE_KEY = process.env.NEXT_SITE_KEY as string || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"; 
+
+
 const InqueryBox = ({  boxcontainer , ...rest}:InqueryBoxProp) =>{
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+
     const [loader, setLoader] = useState(false);
   const [finalModel, setFinalModel] = useState(false);
 
@@ -156,10 +162,16 @@ const InqueryBox = ({  boxcontainer , ...rest}:InqueryBoxProp) =>{
                    ></textarea>
                 </div>
 
-                <div className={Style.checkbox}>
+                {/* <div className={Style.checkbox}>
                     <input type="checkbox"  id="I’m not a robot"/>
                     <label htmlFor="I’m not a robot">I’m not a robot</label>
-                </div>
+                </div> */}
+                <div style={{ margin: "10px 0" , width: "100%" }}>
+            <ReCAPTCHA
+              ref={recaptchaRef}
+              sitekey={SITE_KEY}
+            />
+          </div>
                 <div className={Style.button}> 
                 {loader ? (
                     <>
