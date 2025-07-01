@@ -61,15 +61,15 @@ export default function Home() {
       //   return () => clearTimeout(timer);
       // },[isOpen]);
      
- React.useEffect(() => {
-        if (!wasClosed) {
-          const timer = setTimeout(() => {
-            setIsOpen(true);
-          }, 15000);
+//  React.useEffect(() => {
+//         if (!wasClosed) {
+//           const timer = setTimeout(() => {
+//             setIsOpen(true);
+//           }, 15000);
     
-          return () => clearTimeout(timer);
-        }
-      }, [wasClosed]);
+//           return () => clearTimeout(timer);
+//         }
+//       }, [wasClosed]);
   return (
     <div>
       <div>

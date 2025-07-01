@@ -4,6 +4,7 @@ import  Style  from "./inquery.module.scss";
 import axios from "axios";
 import RotatingLoader from "../CustomLoader";
 import ReCAPTCHA from "react-google-recaptcha";
+import { useRouter } from "next/navigation";
 
 
 
@@ -17,7 +18,7 @@ interface InqueryBoxProp extends React.HTMLAttributes<HTMLDivElement> {
 
 const InqueryBox = ({  boxcontainer , ...rest}:InqueryBoxProp) =>{
   const recaptchaRef = useRef<ReCAPTCHA>(null);
-
+  const router = useRouter();
     const [loader, setLoader] = useState(false);
   const [finalModel, setFinalModel] = useState(false);
 
@@ -64,6 +65,7 @@ const InqueryBox = ({  boxcontainer , ...rest}:InqueryBoxProp) =>{
           description: "",
         });
         setLoader(false);
+        router.push("/thank-you");
         setFinalModel(true);
       }
     } catch (error) {

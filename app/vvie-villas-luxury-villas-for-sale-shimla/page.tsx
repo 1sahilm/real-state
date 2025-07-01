@@ -33,15 +33,15 @@ const ProjectPage = () => {
         setIsOpen(true);
       }
 
-      React.useEffect(() => {
-        if (!wasClosed) {
-          const timer = setTimeout(() => {
-            setIsOpen2(true);
-          }, 15000);
+      // React.useEffect(() => {
+      //   if (!wasClosed) {
+      //     const timer = setTimeout(() => {
+      //       setIsOpen2(true);
+      //     }, 15000);
     
-          return () => clearTimeout(timer);
-        }
-      }, [wasClosed]);
+      //     return () => clearTimeout(timer);
+      //   }
+      // }, [wasClosed]);
   return (
     <>
     <Head>
@@ -58,7 +58,7 @@ const ProjectPage = () => {
       <section className={style.aboutSection}>
         <div className={style.imageWrapper}>
           <img
-            src="/project-render-min.png"
+            src="/project-render-min.jpeg"
             alt="Architectural design"
             className={style.backgroundImage}
           />

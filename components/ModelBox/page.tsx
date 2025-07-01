@@ -143,7 +143,7 @@ const ModelBox = ({togglePopup , isOpen , item , setIsOpen , currentImage , setW
         email: "",
         description: "",
       });
-      setMailResponse(true);
+      // setMailResponse(true);
       setLoader(false);
       setIsOpen(false);
       router.push("/thank-you");
