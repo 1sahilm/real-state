@@ -88,7 +88,9 @@ export default function Home() {
       {/* <Latestproject /> */}
       {/* <Testimonials /> */}
       <Blogssection />
-      <ContactUs />  
+      <ContactUs 
+      background="#fff"
+      />  
 
       {/* <Footer /> */}
       <CallToAction />

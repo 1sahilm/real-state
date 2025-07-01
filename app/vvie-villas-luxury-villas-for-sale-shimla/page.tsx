@@ -278,7 +278,10 @@ meets the tranquility of the mountains
       </div>
     </div>
 
-      <ContactUs/>  
+      <ContactUs 
+      background="#222f47"
+      textColor="#fff"
+      />  
      
       <ModelBox 
       togglePopup={togglePopup}
