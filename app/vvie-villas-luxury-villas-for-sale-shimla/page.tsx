@@ -58,7 +58,7 @@ const ProjectPage = () => {
       <section className={style.aboutSection}>
         <div className={style.imageWrapper}>
           <img
-            src="/project-render-min.jpeg"
+            src="/vivle-villa-banner.webp"
             alt="Architectural design"
             className={style.backgroundImage}
           />
