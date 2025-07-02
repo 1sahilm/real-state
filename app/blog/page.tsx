@@ -7,8 +7,10 @@ import ContactUs from "@/components/ContactUs";
 import Header from "@/components/Header";
 import styles from "./style.module.scss";
 import Footer from "@/components/Footer/pages";
+import BaseballSlider from "@/components/Blog/constructionSlider/page";
 
 const BlogPage = ()=>{
+  
     return(
         <>
       <div className={styles.desktopHeader}>
@@ -19,9 +21,11 @@ const BlogPage = ()=>{
     </div>
         <BannerSection />
         <WeDesign />
+        <BaseballSlider />
         <FeaturedReads />
        {/* <Trustedby2 /> */}
       {/* <ManufacturingBlog  /> */}
+      
            <ContactUs />  
       <Footer />
            

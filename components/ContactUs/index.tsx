@@ -38,12 +38,7 @@ style={{
                     color:`${textColor}`
                 }}
                     >Time to break the ice? We’d love to hear from you! </h4>
-                    <p
-                    style={{
-                    color:`${textColor}`
-                }}
-                    >Whether you have a question, need expert advice, or are ready to transform your Salesforce experience, we’re here to help.</p>
-                </div>
+                  </div>
             </div>
             <div className={styles.frombox}>
                 <InqueryBox />

@@ -339,6 +339,36 @@ h2.gallery-top {
     padding: 1px 5px;
     cursor: pointer;
 }
+/* UN-BLUR the center slide */
+.slick-center .image {
+  filter: blur(0px);
+  transform: scale(1);
+}
+
+
+/* Optional: smoother dots */
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #fff;
+  opacity: 0.6;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #fff;
+}
+
+
+
+.blogsliderblur {
+
+}
+/* 
+.blogsliderblur .imageWrapper img {
+filter: blur(4px); 
+} */
+.slick-current .blogsliderblur  .imageWrapper img  {
+filter: blur(0px); 
+}
 
 @media (max-width: 600px){
   .popup{

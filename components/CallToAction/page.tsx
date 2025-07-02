@@ -17,7 +17,7 @@ const CallToAction = ()=>{
       <div className={Style.leftContent}>
         <h2>Let’s <span>Get In Touch.</span></h2>
         <p>
-          Your laboratory instruments should serve you, not the other way around. We’re happy to help you.
+          Feel free to fill out the form below, and one of our luxury property specialists will reach out to you shortly. Your dream home in the hills awaits!
         </p>
         <div className={Style.buttons}>
           <button className={Style.ctaButton} onClick={togglePopup}>Contact Us</button>
