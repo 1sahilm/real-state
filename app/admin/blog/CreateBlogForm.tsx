@@ -23,178 +23,178 @@ const CreateBlogfname = () => {
 
    const editor = useRef(null);
 
-  const config = React.useMemo(
-    () => ({
+//   const config = React.useMemo(
+//     () => ({
  
-      uploader: {
-  insertImageAsBase64URI: false, // Prevents base64 from being inserted
-  url: '/api/blog/upload-image', // Custom endpoint
+//       uploader: {
+//   insertImageAsBase64URI: false, // Prevents base64 from being inserted
+//   url: '/api/blog/upload-image', // Custom endpoint
 
-  // Check if upload is successful
-  isSuccess: (resp) => resp.success === true && typeof resp.fileURL === 'string',
+//   // Check if upload is successful
+//   isSuccess: (resp) => resp.success === true && typeof resp.fileURL === 'string',
 
-  // Process the response from your server
-  process: (resp) => ({
-    files: [resp.fileURL],
-  }),
+//   // Process the response from your server
+//   process: (resp) => ({
+//     files: [resp.fileURL],
+//   }),
 
-  // Convert pasted image to base64 and upload it
-  prepareData: async (formData) => {
-    const files = [];
+//   // Convert pasted image to base64 and upload it
+//   prepareData: async (formData) => {
+//     const files = [];
 
-    for (const pair of formData.entries()) {
-      const file = pair[1];
-      if (file instanceof File) {
-        files.push(file);
-      }
-    }
+//     for (const pair of formData.entries()) {
+//       const file = pair[1];
+//       if (file instanceof File) {
+//         files.push(file);
+//       }
+//     }
 
-    const uploadedURLs: string[] = [];
+//     const uploadedURLs: string[] = [];
 
-    for (const file of files) {
-      const reader = new FileReader();
+//     for (const file of files) {
+//       const reader = new FileReader();
 
-      const base64String: string = await new Promise((resolve, reject) => {
-        reader.onloadend = () => resolve(reader.result as string);
-        reader.onerror = reject;
-        reader.readAsDataURL(file);
-      });
+//       const base64String: string = await new Promise((resolve, reject) => {
+//         reader.onloadend = () => resolve(reader.result as string);
+//         reader.onerror = reject;
+//         reader.readAsDataURL(file);
+//       });
 
-      const res = await fetch("/api/blog/upload-image", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ base64String, fileName: file.name }),
-      });
+//       const res = await fetch("/api/blog/upload-image", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({ base64String, fileName: file.name }),
+//       });
 
-      const data = await res.json();
-      if (data.success && data.fileURL) {
-        uploadedURLs.push(data.fileURL);
-      }
-    }
+//       const data = await res.json();
+//       if (data.success && data.fileURL) {
+//         uploadedURLs.push(data.fileURL);
+//       }
+//     }
 
-    return { files: uploadedURLs };
-  },
-},
+//     return { files: uploadedURLs };
+//   },
+// },
 
 
 
-      toolbarSticky: false,
-      // height,
-      showCharsCounter: false,
-      showWordsCounter: false,
-      showXPathInStatusbar: false,
-      disablePlugins: [
-        'about',
-        'line-height',
-        'indent',
-        'symbols',
-        'print',
-        'preview',
-        'file',
-        'table',
-        'paragraph',
-      ],
-      buttons: [
-        'bold',
-        'italic',
-        'underline',
-        'strikethrough',
-        'ul',
-        'ol',
-        'outdent',
-        'indent',
-        'font',
-        'fontsize',
-        'brush',
-        'image',
-        'cut',
-        'copy',
-        'paste',
-        'selectall',
-        'link'
-      ],
-      iframe: false,
-      textIcons: false,
-      toolbarAdaptive: false,
-      removeButtons: ['brush', 'file', 'fullsize', 'about', 'dots', 'source'],
-      link: {
-        openInNewTabCheckbox: true,
-        noFollowCheckbox: false,
-        // Force all created links to have target="_blank"
-        processLink: (url) => ({
-          url,
-          target: '_blank',
-          rel: 'noopener noreferrer'
-        }),
-        // Alternative method for link creation
-        createLink: (url, text) => {
-          return `<a href="${url}" target="_blank" rel="noopener noreferrer">${text || url}</a>`;
-        }
-      },
-      placeholder:  "",
-      extraButtons: [
-        {
-          name: 'clear',
-          icon: 'eraser',
-          exec: (editor) => {
-            editor.value = '';
-            editor.events.fire('placeholderShow');
-          }
-        }
-      ],
-      image: {
-        editSrc: true,
-        resize: true,
-        editAlt: true,
-        editLink: true,
-        editTitle: true,
-        editSize: true,
-        editMargins: true,
-        editBorderRadius: true,
-        editAlign: true,
-        editSpacing: true
-      },
-      events: {
-        afterInit: (editorInstance) => {
-          // Function to process all links
-          const processLinks = () => {
-            const links = editorInstance.editor.querySelectorAll('a[href]');
-            links.forEach(link => {
-              if (!link.target || link.target !== '_blank') {
-                link.target = '_blank';
-                link.rel = 'noopener noreferrer';
-              }
-            });
-          };
+//       toolbarSticky: false,
+//       // height,
+//       showCharsCounter: false,
+//       showWordsCounter: false,
+//       showXPathInStatusbar: false,
+//       disablePlugins: [
+//         'about',
+//         'line-height',
+//         'indent',
+//         'symbols',
+//         'print',
+//         'preview',
+//         'file',
+//         'table',
+//         'paragraph',
+//       ],
+//       buttons: [
+//         'bold',
+//         'italic',
+//         'underline',
+//         'strikethrough',
+//         'ul',
+//         'ol',
+//         'outdent',
+//         'indent',
+//         'font',
+//         'fontsize',
+//         'brush',
+//         'image',
+//         'cut',
+//         'copy',
+//         'paste',
+//         'selectall',
+//         'link'
+//       ],
+//       iframe: false,
+//       textIcons: false,
+//       toolbarAdaptive: false,
+//       removeButtons: ['brush', 'file', 'fullsize', 'about', 'dots', 'source'],
+//       link: {
+//         openInNewTabCheckbox: true,
+//         noFollowCheckbox: false,
+//         // Force all created links to have target="_blank"
+//         processLink: (url) => ({
+//           url,
+//           target: '_blank',
+//           rel: 'noopener noreferrer'
+//         }),
+//         // Alternative method for link creation
+//         createLink: (url, text) => {
+//           return `<a href="${url}" target="_blank" rel="noopener noreferrer">${text || url}</a>`;
+//         }
+//       },
+//       placeholder:  "",
+//       extraButtons: [
+//         {
+//           name: 'clear',
+//           icon: 'eraser',
+//           exec: (editor) => {
+//             editor.value = '';
+//             editor.events.fire('placeholderShow');
+//           }
+//         }
+//       ],
+//       image: {
+//         editSrc: true,
+//         resize: true,
+//         editAlt: true,
+//         editLink: true,
+//         editTitle: true,
+//         editSize: true,
+//         editMargins: true,
+//         editBorderRadius: true,
+//         editAlign: true,
+//         editSpacing: true
+//       },
+//       events: {
+//         afterInit: (editorInstance) => {
+//           // Function to process all links
+//           const processLinks = () => {
+//             const links = editorInstance.editor.querySelectorAll('a[href]');
+//             links.forEach(link => {
+//               if (!link.target || link.target !== '_blank') {
+//                 link.target = '_blank';
+//                 link.rel = 'noopener noreferrer';
+//               }
+//             });
+//           };
 
-          // Process immediately
-          processLinks();
+//           // Process immediately
+//           processLinks();
 
-          // Process on these events
-          ['afterSetHTML', 'change', 'afterPaste'].forEach(event => {
-            editorInstance.events.on(event, processLinks);
-          });
+//           // Process on these events
+//           ['afterSetHTML', 'change', 'afterPaste'].forEach(event => {
+//             editorInstance.events.on(event, processLinks);
+//           });
 
-          // Global click handler as final safeguard
-          const clickHandler = (e) => {
-            const link = e.target.closest('a[href]');
-            if (link) {
-              e.preventDefault();
-              e.stopPropagation();
-              window.open(link.href, '_blank', 'noopener,noreferrer');
-            }
-          };
+//           // Global click handler as final safeguard
+//           const clickHandler = (e) => {
+//             const link = e.target.closest('a[href]');
+//             if (link) {
+//               e.preventDefault();
+//               e.stopPropagation();
+//               window.open(link.href, '_blank', 'noopener,noreferrer');
+//             }
+//           };
 
-          editorInstance.editor.addEventListener('click', clickHandler);
+//           editorInstance.editor.addEventListener('click', clickHandler);
 
-          return () => {
-            editorInstance.editor.removeEventListener('click', clickHandler);
-          };
-        }
-      }
-    }),
-    [] // Include placeholder in dependencies
-  );
+//           return () => {
+//             editorInstance.editor.removeEventListener('click', clickHandler);
+//           };
+//         }
+//       }
+//     }),
+//     [] // Include placeholder in dependencies
+//   );
 
 
   const [blogPopup, setBlogPopup] = React.useState(false);
@@ -330,8 +330,8 @@ const handleEditorChange = debounce((newContent: string) => {
 
      <JoditEditor
   ref={editor}
-  config={config}
-  defaultValue={state.content}
+  // config={config}
+  // defaultValue={state.content}
   onBlur={(newContent) => onChangeState("content", newContent)}
 />
 
