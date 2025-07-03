@@ -34,7 +34,7 @@ const Test = () => {
           <div
             className={Style.textblock} 
             >
-              <p>At Infranium Homes, we believe in transparency, consistency, and keeping our community informed at every stage of development. We're excited to share the June 2025 construction progress of our premium project – Vvie Villas, a collection of luxury villas nestled in the natural heartland of Coorg.
+              <p>At Infranium Homes, we believe in transparency, consistency, and keeping our community informed at every stage of development. We&apos;re excited to share the June 2025 construction progress of our premium project – Vvie Villas, a collection of luxury villas nestled in the natural heartland of Coorg.
 </p>
 <p>📍 Project Timeline So Far <br />
 🔹 December 2024
@@ -179,7 +179,7 @@ Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
   <li>Our on-site office is nearing completion.<br /></li>
 
   <li>
-    🛠️ <strong>What's Next?</strong><br />
+    🛠️ <strong>What&apos;s Next?</strong><br />
     As we move into the next phase of construction, the focus will shift towards:
     <ul>
       <li>Finishing works for Villas 5 & 6</li>
@@ -191,7 +191,7 @@ Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
 
   <li>
     🏡 <strong>A Vision Taking Shape</strong><br />
-    Vvie Villas is more than just a residential project — it’s a curated lifestyle experience amidst nature, designed with modern sensibilities and timeless aesthetics. Whether you're looking for a peaceful escape, an investment property, or a nature-wrapped primary home, Vvie Villas brings it all together.
+    Vvie Villas is more than just a residential project — it&apos;s a curated lifestyle experience amidst nature, designed with modern sensibilities and timeless aesthetics. Whether you're looking for a peaceful escape, an investment property, or a nature-wrapped primary home, Vvie Villas brings it all together.
   </li>
 
   <li>

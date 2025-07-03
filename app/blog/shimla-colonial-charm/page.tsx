@@ -34,7 +34,7 @@ const Test = () => {
           <div
             className={Style.textblock} 
             >
-              <p>Tucked away in the lap of the Himalayas, Shimla is more than just a picturesque hill station — it's a timeless symbol of colonial elegance, regal indulgence, and architectural grace. Once the summer capital of British India, Shimla was also the destination of choice for many Indian royal families who built their opulent summer homes here to escape the heat of the plains and soak in the serene mountain air.
+              <p>Tucked away in the lap of the Himalayas, Shimla is more than just a picturesque hill station — it&apos;s a timeless symbol of colonial elegance, regal indulgence, and architectural grace. Once the summer capital of British India, Shimla was also the destination of choice for many Indian royal families who built their opulent summer homes here to escape the heat of the plains and soak in the serene mountain air.
 </p>
 <p>The Colonial Soul of Shimla<br />
 Strolling through Shimla is like stepping into a living postcard from the past. Cobbled pathways, ivy-covered cottages, half-timbered buildings, and Gothic churches all echo the city’s British legacy. The Viceregal Lodge, Gaiety Theatre, Christ Church, and the Mall Road are more than tourist attractions—they are heritage monuments that narrate stories of a bygone era.</p>
@@ -190,7 +190,7 @@ Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
               <p><strong>The Legacy Today</strong></p>
               <ul>
   <li>Even today, Shimla retains its regal air. Heritage buildings continue to be preserved and restored, boutique hotels recreate colonial experiences, and luxury villas offer a taste of the old-world charm in a modern format. The blend of British sophistication and Indian heritage makes Shimla one of the most culturally rich hill stations in India.<br /> <br /></li>
-  <li>Whether you're a history lover, an architecture enthusiast, or simply someone seeking a serene vacation, Shimla offers more than a view — it offers a narrative.<br /></li>
+  <li>Whether you&apos;re a history lover, an architecture enthusiast, or simply someone seeking a serene vacation, Shimla offers more than a view — it offers a narrative.<br /></li>
    
  
 </ul>
