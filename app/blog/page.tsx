@@ -21,7 +21,7 @@ const BlogPage = ()=>{
     </div>
         <BannerSection />
         <WeDesign />
-        <BaseballSlider />
+        {/* <BaseballSlider /> */}
         <FeaturedReads />
        {/* <Trustedby2 /> */}
       {/* <ManufacturingBlog  /> */}
