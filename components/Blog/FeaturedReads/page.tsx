@@ -60,16 +60,16 @@ const FeaturedReads = () => {
                         </ul> */}
 
                         <div className={Style.blogbox}>
-                            {blog?.map((items:any, index:any) => {
+                            {blogsData?.map((items:any, index:any) => {
                                 console.log("items", { items })
                                 return (
                                     <>
                                         <SmallCard
                                             key={index}
-                                            image={items?.featureImage}
+                                            image={items?.image}
                                             title={items?.title}
-                                            description={items?.content}
-                                            readmore={`/blog/${items.slug}`}
+                                            description={items?.desc}
+                                            readmore={`${items.link}`}
                                         />
                                     </>
                                 )
@@ -93,6 +93,30 @@ export default FeaturedReads;
 
 const tabsarry = [
     { tabname: "Vvie Villas" }, 
+]
+
+const blogsData = [
+    {
+        id:1,
+        title:"Vvie Villas – Construction Update as of June 2025",
+        desc:"At Infranium Homes, we believe in transparency, consistency, and keeping our community informed at every stage of development....",
+        image:"/slider/first-slider.jpeg",
+        link:"/blog/vvievillasconstruction"
+    },
+    {
+        id:2,
+        title:"Naldehra Golf Course – A Timeless Gem in the Himalayas",
+        desc:"Nestled 23 km from Shimla at an elevation of about 2,200 m, Naldehra Golf Course is one of India’s....",
+        image:"/slider/second-slider.jpeg",
+        link:"/blog/naldehra-golf-course"
+    },
+    {
+        id:3,
+        title:"Shimla’s Colonial Charm: Why Royal Families Chose It as Their Summer Retreat",
+        desc:"Tucked away in the lap of the Himalayas, Shimla is more than just a picturesque hill station....",
+        image:"/slider/third-slider.jpeg",
+        link:"/blog/shimla-colonial-charm"
+    }
 ]
 
 

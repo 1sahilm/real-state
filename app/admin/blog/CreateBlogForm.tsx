@@ -17,31 +17,187 @@ const options = [
 const animatedComponents = makeAnimated();
 
 const CreateBlogfname = () => {
-  const router = useRouter();
-  //  const editor = useRef(null);
+  const router = useRouter(); 
+  const [loading, setLoading] = React.useState(false);
 
-  // const config = {
-  //   readonly: false,
-  //   uploader: {
-  //     insertImageAsBase64URI: false, // disable base64 images
-  //     url: 'https://your-server.com/upload', // your custom upload endpoint
-  //     filesVariableName: 'file', // key for file data
-  //   },
-  //   buttons: [
-  //     'bold', 'italic', 'underline', '|',
-  //     'ul', 'ol', '|',
-  //     'image', 'link', '|',
-  //     'undo', 'redo'
-  //   ],
-  //   events: {
-  //     afterFileUpload: function (response) {
-  //       console.log("Upload Response", response);
-  //     }
-  //   }
-  // };
+
+   const editor = useRef(null);
+
+  const config = React.useMemo(
+    () => ({
+ 
+      uploader: {
+  insertImageAsBase64URI: false, // Prevents base64 from being inserted
+  url: '/api/blog/upload-image', // Custom endpoint
+
+  // Check if upload is successful
+  isSuccess: (resp) => resp.success === true && typeof resp.fileURL === 'string',
+
+  // Process the response from your server
+  process: (resp) => ({
+    files: [resp.fileURL],
+  }),
+
+  // Convert pasted image to base64 and upload it
+  prepareData: async (formData) => {
+    const files = [];
+
+    for (const pair of formData.entries()) {
+      const file = pair[1];
+      if (file instanceof File) {
+        files.push(file);
+      }
+    }
+
+    const uploadedURLs: string[] = [];
+
+    for (const file of files) {
+      const reader = new FileReader();
+
+      const base64String: string = await new Promise((resolve, reject) => {
+        reader.onloadend = () => resolve(reader.result as string);
+        reader.onerror = reject;
+        reader.readAsDataURL(file);
+      });
+
+      const res = await fetch("/api/blog/upload-image", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ base64String, fileName: file.name }),
+      });
+
+      const data = await res.json();
+      if (data.success && data.fileURL) {
+        uploadedURLs.push(data.fileURL);
+      }
+    }
+
+    return { files: uploadedURLs };
+  },
+},
+
+
+
+      toolbarSticky: false,
+      // height,
+      showCharsCounter: false,
+      showWordsCounter: false,
+      showXPathInStatusbar: false,
+      disablePlugins: [
+        'about',
+        'line-height',
+        'indent',
+        'symbols',
+        'print',
+        'preview',
+        'file',
+        'table',
+        'paragraph',
+      ],
+      buttons: [
+        'bold',
+        'italic',
+        'underline',
+        'strikethrough',
+        'ul',
+        'ol',
+        'outdent',
+        'indent',
+        'font',
+        'fontsize',
+        'brush',
+        'image',
+        'cut',
+        'copy',
+        'paste',
+        'selectall',
+        'link'
+      ],
+      iframe: false,
+      textIcons: false,
+      toolbarAdaptive: false,
+      removeButtons: ['brush', 'file', 'fullsize', 'about', 'dots', 'source'],
+      link: {
+        openInNewTabCheckbox: true,
+        noFollowCheckbox: false,
+        // Force all created links to have target="_blank"
+        processLink: (url) => ({
+          url,
+          target: '_blank',
+          rel: 'noopener noreferrer'
+        }),
+        // Alternative method for link creation
+        createLink: (url, text) => {
+          return `<a href="${url}" target="_blank" rel="noopener noreferrer">${text || url}</a>`;
+        }
+      },
+      placeholder:  "",
+      extraButtons: [
+        {
+          name: 'clear',
+          icon: 'eraser',
+          exec: (editor) => {
+            editor.value = '';
+            editor.events.fire('placeholderShow');
+          }
+        }
+      ],
+      image: {
+        editSrc: true,
+        resize: true,
+        editAlt: true,
+        editLink: true,
+        editTitle: true,
+        editSize: true,
+        editMargins: true,
+        editBorderRadius: true,
+        editAlign: true,
+        editSpacing: true
+      },
+      events: {
+        afterInit: (editorInstance) => {
+          // Function to process all links
+          const processLinks = () => {
+            const links = editorInstance.editor.querySelectorAll('a[href]');
+            links.forEach(link => {
+              if (!link.target || link.target !== '_blank') {
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+              }
+            });
+          };
+
+          // Process immediately
+          processLinks();
+
+          // Process on these events
+          ['afterSetHTML', 'change', 'afterPaste'].forEach(event => {
+            editorInstance.events.on(event, processLinks);
+          });
+
+          // Global click handler as final safeguard
+          const clickHandler = (e) => {
+            const link = e.target.closest('a[href]');
+            if (link) {
+              e.preventDefault();
+              e.stopPropagation();
+              window.open(link.href, '_blank', 'noopener,noreferrer');
+            }
+          };
+
+          editorInstance.editor.addEventListener('click', clickHandler);
+
+          return () => {
+            editorInstance.editor.removeEventListener('click', clickHandler);
+          };
+        }
+      }
+    }),
+    [] // Include placeholder in dependencies
+  );
+
 
   const [blogPopup, setBlogPopup] = React.useState(false);
-  const [loading, setLoadig] = React.useState(false);
   const [category, setCategory] = React.useState([]);
 const [previewImage, setPreviewImage] = React.useState<string | null>(null);
 const [selectedFile, setSelectedFile] = React.useState<File | null>(null);
@@ -70,7 +226,7 @@ const handleRemoveImage = () => {
 };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    setLoadig(true);
+    setLoading(true);
     e.preventDefault();
     const form = e.currentTarget;
     const formData = new FormData(form);
@@ -83,7 +239,7 @@ const handleRemoveImage = () => {
     const response = await axios.post("/api/blog/create-blog", formData);
     console.log("response", response);
     router.refresh();
-    setLoadig(false);
+    setLoading(false);
     setBlogPopup(true);
   };
 
@@ -92,6 +248,18 @@ const handleRemoveImage = () => {
     setState((prev) => ({ ...prev, [key]: value }));
   };
 
+
+  const debounce = (fn: Function, delay = 300) => {
+  let timeout: NodeJS.Timeout;
+  return (...args: any[]) => {
+    clearTimeout(timeout);
+    timeout = setTimeout(() => fn(...args), delay);
+  };
+};
+
+const handleEditorChange = debounce((newContent: string) => {
+  onChangeState("content", newContent);
+}, 400);
   return (
     <>
       {blogPopup && (
@@ -156,44 +324,17 @@ const handleRemoveImage = () => {
                 <label className={styles.label}>Blog Content</label> 
                 <br />
                
-                {/* <JoditEditor
-                 ref={editor}
-                  value={state.content}
-                  config={{
-    readonly: false,
-    askBeforePasteFromWord: false,
-    askBeforePasteHTML: false,
-    defaultActionOnPaste: "insert_clear_html",
-    cleanHTML: {
-      removeEmptyElements: true,
-      removeAttributes: ['style', 'class'], // Remove Word garbage
-      fillEmptyParagraph: false,
-      removeTags: ['meta', 'script', 'style', 'title'],
-    },
-    pasteHTML: '',
-    events: {
-      onPaste: (event) => {
-        // optional: manipulate clipboard data
-        console.log("Pasted content:", event.clipboardData?.getData("text/html"));
-      }
-    },
-    toolbarSticky: false,
-  }}
-                  onChange={(newContent) => onChangeState("content", newContent)}
-                   
-                  tabIndex={1}  
-                  // onBlur={(newContent) => onChangeState("content", newContent)} 
-                /> */}
+                 
 
 
 
-                 <JoditEditor
-                  value={state.content}
-                  onChange={(newContent) => onChangeState("content", newContent)}
-                   
-                  tabIndex={1}  
-                  // onBlur={(newContent) => onChangeState("content", newContent)} 
-                />
+     <JoditEditor
+  ref={editor}
+  config={config}
+  defaultValue={state.content}
+  onBlur={(newContent) => onChangeState("content", newContent)}
+/>
+
               </div>
             </div>
 

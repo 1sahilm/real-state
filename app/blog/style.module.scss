@@ -49,14 +49,14 @@ text-transform: uppercase;
 font-weight: 400;
 font-size: 24px;
 line-height: 30px;
-letter-spacing: 0%;
-text-align: none;
+letter-spacing: 0%; 
 vertical-align: bottom;
 color: #253E90;
 max-width: 882px;
 width: 100%;
 margin-left: auto;
 margin-right: auto;
+text-align: center;
             }
         }
 
@@ -118,7 +118,7 @@ font-weight: 400;
 font-size: 24px;
 line-height: 30px;
 letter-spacing: 0%;
-text-align: none;
+text-align: center;
 vertical-align: bottom;
 color: #253E90;
 margin-bottom: 32px;
@@ -151,4 +151,13 @@ line-height: 25px;
 
 
 
-       
+       .twoimage{
+        display: flex;
+        gap: 20px;
+        @media (max-width:500px) {
+            display: block;
+            img{
+                padding-bottom: 10px;
+            }
+        }
+       }
