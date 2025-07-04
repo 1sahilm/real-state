@@ -23,7 +23,7 @@ const Test = () => {
         <div className={Style.content}>
           <div className={Style.img}>
             <Image
-              src="/slider/first-slider.jpeg"
+              src="/shimla-bloh-3.jpg"
               alt={"Vive villa"}
               width={775}
               height={460}
@@ -54,38 +54,38 @@ Strolling through Shimla is like stepping into a living postcard from the past. 
               priority
               />
 </div> */}
-<br />
+  
 <p>The British influence is visible in every corner. From architectural styles to leisurely traditions like high tea and ballroom dances, Shimla carries an air of aristocratic calm, making it irresistible to both colonial officers and Indian royals alike.</p>
-{/* <div className={Style.twoimage}>
+<div className={Style.twoimage}>
   <Image
-              src="/slider/third-slider.jpeg"
+              src="/shimla-blog-two.jpg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
               />
-              <Image
+              {/* <Image
               src="/slider/four-slider.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
-</div> */}
-<br />
+              /> */}
+</div>
+ 
 <p><strong>Why Royal Families Chose Shimla</strong> </p>
 <p>Climate Fit for Royalty</p>
  <ul>
   <li>With its cool climate and snow-capped surroundings, Shimla offered a refreshing retreat during the scorching Indian summers. The clean mountain air and temperate weather made it ideal for extended stays, where royals could enjoy comfort, privacy, and health benefits alike.</li>
-</ul> <br />
+</ul>
 <p>Proximity to Power</p>
  <ul>
   <li>Being the summer capital of the British Raj, Shimla naturally attracted Indian royalty who sought to maintain diplomatic and social ties with the British elite. Having a summer home here placed them at the center of seasonal political and social activity.</li>
-</ul><br />
+</ul> 
 <p>Architectural Freedom</p>
  <ul>
   <li>Shimla gave royals the opportunity to express their grandeur through magnificent estates and palaces. From Indo-Gothic to Tudor-style mansions, these summer homes were expressions of both Western influence and Indian opulence. Some of these palaces still stand today, converted into luxury hotels or private estates.</li>
-</ul><br />
+</ul> 
 <p>Social Prestige</p>
  <ul>
   <li>Owning a residence in Shimla became a status symbol. The who’s who of Indian royalty — from the Maharajas of Patiala and Kapurthala to princely families of Kashmir and Gwalior — made Shimla their summer address. It was not just about leisure; it was about being seen, known, and remembered.</li>
@@ -186,14 +186,17 @@ Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
 <br /> */}
  
               </div>
-              <br />
-              <p><strong>The Legacy Today</strong></p>
+              <br /> <br />
+              <div className={Style.under}>
+  <p><strong>The Legacy Today</strong></p>
               <ul>
   <li>Even today, Shimla retains its regal air. Heritage buildings continue to be preserved and restored, boutique hotels recreate colonial experiences, and luxury villas offer a taste of the old-world charm in a modern format. The blend of British sophistication and Indian heritage makes Shimla one of the most culturally rich hill stations in India.<br /> <br /></li>
   <li>Whether you&apos;re a history lover, an architecture enthusiast, or simply someone seeking a serene vacation, Shimla offers more than a view — it offers a narrative.<br /></li>
    
  
 </ul>
+              </div>
+            
 
         </div>
         

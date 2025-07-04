@@ -1,5 +1,5 @@
 .blogsingle {
-    background: #EAF9FF;
+    // background: #EAF9FF;
     padding: 0px;
     margin: 0px;
 
@@ -21,14 +21,14 @@ padding-right: 20px;
             gap: 24px;
             margin-bottom: 24px;
             h1 { 
+            margin-top: 57px;
 
 font-weight: 500;
-font-size: 48px;
+font-size: 38px;
 line-height: 100%;
 letter-spacing: 0%;
 text-align: center;
-vertical-align: bottom; 
-font-family: "Poppins", sans-serif;
+vertical-align: bottom;  
 color: #253E90;
 max-width: 882px;
 width: 100%;
@@ -44,8 +44,11 @@ vertical-align: bottom;
 text-transform: uppercase;
 }
             }
-            p {
-       font-family: "Poppins", sans-serif;
+            span {
+                text-align: center;
+            }
+            p { 
+           
 font-weight: 400;
 font-size: 24px;
 line-height: 30px;
@@ -83,6 +86,9 @@ text-align: center;
 }
 }
 .textblock { 
+    width: 80%;
+    margin: 0 auto;
+    
     span {
         width: 100% !important;
         height: auto !important;
@@ -90,7 +96,11 @@ text-align: center;
     img {
         width: 100% !important;
         box-sizing: border-box;
-        height: auto;
+        height: 400px;
+        object-fit: cover;
+        @media (max-width: 768px){
+            height: auto;
+        }
     }
     ul{
         li {
@@ -100,8 +110,7 @@ text-align: center;
         }
     }
 
-h4 {
- font-family: "Poppins", sans-serif;
+h4 { 
 font-weight: 400;
 font-size: 24px;
 line-height: 30px;
@@ -112,15 +121,15 @@ color: #253E90;
 margin-bottom: 12px;
 
 }
-p {
-font-family: "Poppins", sans-serif;
+p { 
+         margin-top: 60px;
 font-weight: 400;
-font-size: 24px;
+font-size: 20px;
 line-height: 30px;
 letter-spacing: 0%;
-text-align: center;
+// text-align: center;
 vertical-align: bottom;
-color: #253E90;
+color: #000;
 margin-bottom: 32px;
 background-color: transparent !important;
 
@@ -160,4 +169,12 @@ line-height: 25px;
                 padding-bottom: 10px;
             }
         }
+       }
+
+       .under{
+        width: 80%;
+        margin: 0 auto;
+        @media (max-width:768px){
+        width: 100%;
+    }
        }

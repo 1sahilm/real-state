@@ -17,7 +17,8 @@ const Test = () => {
     <div className={Style.blogsingle}>
       <div className={Style.innerblog}>
         <div className={Style.title}>
-          <h1>Vvie Villas – Construction Update as of June 2025</h1>
+          <h1>Vvie Villas – Construction Update</h1>
+          <span>June 2025</span>
         </div>
 
         <div className={Style.content}>
@@ -47,13 +48,13 @@ Site development officially kicked off.</p>
               height={400}
               priority
               />
-              <Image
+              {/* <Image
               src="/slider/first-slider.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
+              /> */}
 </div>
 <br />
 <p>🔹 January 2025 <br />
@@ -66,13 +67,13 @@ Foundation work began for Villa No. 5 & 6.</p>
               height={400}
               priority
               />
-              <Image
+              {/* <Image
               src="/slider/four-slider.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
+              /> */}
 </div>
 <br />
 <p>🔹 February 2025 <br />
@@ -85,13 +86,13 @@ Column work completed for Villa No. 5 & 6.</p>
               height={400}
               priority
               />
-              <Image
+              {/* <Image
               src="/slider/six-slider.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
+              /> */}
 </div>
 <br />
 <p>🔹 March 2025 <br />
@@ -104,13 +105,13 @@ Slab work executed for Villa No. 5 & 6.</p>
               height={400}
               priority
               />
-              <Image
+              {/* <Image
               src="/slider/nine.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
+              /> */}
 </div>
 <br />
 <p>🔹 April 2025 <br />
@@ -123,13 +124,13 @@ Second floor slab and roof work completed for Villa No. 5 & 6.</p>
               height={400}
               priority
               />
-              <Image
+              {/* <Image
               src="/slider/eleven.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
+              /> */}
 </div>
 <br />
 <p>🔹 May 2025 <br />
@@ -142,15 +143,15 @@ Superstructure completed for Villa No. 5 & 6.</p>
               height={400}
               priority
               />
-              <Image
+              {/* <Image
               src="/slider/thirteen.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
+              /> */}
 </div>
-<br />
+ 
 <p><strong>Foundation work for Villa No. 3 & 4 commenced.</strong></p>
 <p>🔹 June 2025 <br />
 Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
@@ -162,18 +163,18 @@ Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
               height={400}
               priority
               />
-              <Image
+              {/* <Image
               src="/slider/sixteen.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
+              /> */}
 </div>
 <br />
  
-              </div>
-              <ul>
+              </div> <br />
+              <ul className={Style.under}>
   <li>Second floor slab for Villas 3 & 4 poured.<br /></li>
   <li>Plastering and roof work for Villas 5 & 6 wrapped up.<br /></li>
   <li>Our on-site office is nearing completion.<br /></li>

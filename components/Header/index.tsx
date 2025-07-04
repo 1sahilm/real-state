@@ -5,6 +5,7 @@ import styles from "./header.module.css";
 import Image from "next/image";
 import React from "react";
 import Menu from "../Menu/Menu";
+import ModelBox from "../ModelBox/page";
 
 interface HeaderProp {
   headertheme?: boolean;
@@ -15,6 +16,11 @@ interface HeaderProp {
 const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+   const [isOpen, setIsOpen] = React.useState(false);
+    
+        const togglePopup = () => {
+          setIsOpen(!isOpen);
+        };
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -124,6 +130,12 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
           </li>
         </ul>
       </nav>
+
+      <div className={styles.buttonQuick}>
+        <a href="#" onClick={togglePopup}>
+          Quick Inquiry
+        </a>
+      </div>
     </header>
             </> : <>
             {isTrue && (
@@ -159,7 +171,23 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
           }
    
     {isMenuOpen && <Menu />}
+    {isTrue && (
+   <div className={styles.buttonQuick} 
+      
+     >
+        <a href="#" onClick={togglePopup}>
+          Quick Inquiry
+        </a>
+      </div>
+    ) }
+  
   </header>
+  <ModelBox 
+      togglePopup={togglePopup}
+      isOpen={isOpen}
+      setIsOpen={setIsOpen}
+
+      />
   </>
   );
 };

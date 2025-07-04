@@ -1,5 +1,5 @@
 .section {
-    background: url("/Frame427319081.png");
+    // background: url("/Frame427319081.png");
         padding-top: 122px;
     padding-bottom: 140px;
     background-size: 100%;
@@ -87,8 +87,7 @@ margin-bottom: 20px;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
-                p {
-                    font-family: "Poppins", sans-serif;
+                p { 
             font-weight: 300;
             font-size: 20px;
             line-height: 30px;

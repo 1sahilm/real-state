@@ -23,11 +23,15 @@ const Test = () => {
         <div className={Style.content}>
           <div className={Style.img}>
             <Image
-              src="/slider/first-slider.jpeg"
+              src="/blog2-naldera.jpg"
               alt={"Vive villa"}
               width={775}
               height={460}
               priority
+              style={{
+                height:"600px",
+                objectFit:"cover"
+              }}
               />
           </div>
 
@@ -39,61 +43,54 @@ const Test = () => {
 </p>
 <p>🏌️‍♀️ The Historic Legacy <br />
 Originally a 9‑hole course, Naldehra expanded to a full 18‑hole par‑68 layout—with 16 greens and 18 tees—evoking the charm of traditional Scottish links. It remains steeped in history and legend: Curzon, so captivated by its landscape, named his daughter Alexandra Naldehra as a tribute. </p>
-{/* <div className={Style.twoimage}>
+<div className={Style.twoimage}>
   <Image
-              src="/slider/second-slider.jpeg"
+              src="/nalender-blog-two.jpg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
               />
-              <Image
+              {/* <Image
               src="/slider/first-slider.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
-</div> */}
-<br />
+              /> */}
+</div>
+ 
 <p>🏞️ Nature’s Splendor & Layout<br />
 Picture playing amidst towering deodars, rolling meadows, and mist-wrapped peaks. The undulating terrain, bunkers cut into Himalayan slopes, and a thick forest canopy create a strategic, challenging, and breathtaking experience. </p>
 {/* <div className={Style.twoimage}>
   <Image
-              src="/slider/third-slider.jpeg"
+              src="/nalender-blog-two.jpg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
-              <Image
-              src="/slider/four-slider.jpeg"
-              alt={"Vive villa"}
-              width={400}
-              height={400}
-              priority
-              />
+              /> 
 </div> */}
-<br />
+ 
 <p>🛎️ What to Do Beyond the Fairways<br />
 Visit the ancient temples: Mahunag and Mahakali shrines within the grounds reflect local culture and spirituality. </p>
-{/* <div className={Style.twoimage}>
+<div className={Style.twoimage}>
   <Image
-              src="/slider/five-slider.jpeg"
+              src="/nalender-blog-three.jpg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
               />
-              <Image
+              {/* <Image
               src="/slider/six-slider.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              />
+              /> */}
 </div>
-<br /> */}
+<br />
 {/* <p>🔹 March 2025 <br />
 Slab work executed for Villa No. 5 & 6.</p>
 <div className={Style.twoimage}>
@@ -173,7 +170,7 @@ Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
 <br /> */}
  
               </div>
-              <ul>
+              <ul className={Style.under}>
   <li>Horse riding & nature walks: Serene trails and pony rides offer an alternative to golf.<br /></li>
   <li>Picnics & sip local refreshments: Enjoy Maggi, coffee, or chai while savouring the views.<br /></li>
    
