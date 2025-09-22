@@ -33,15 +33,13 @@ to refined living
        
           {blogsarry?.map((item, index) => {
             return (
-              <>
-                <BlogssectionCard
-                  key={index}
-                  image={item.image}
-                  title={item.title}
-                  // cat={item.cat}
-                  date={item.date}
-                />
-              </>
+              <BlogssectionCard
+                key={item.id}
+                image={item.image}
+                title={item.title}
+                // cat={item.cat}
+                date={item.date}
+              />
             );
           })}
         </div>

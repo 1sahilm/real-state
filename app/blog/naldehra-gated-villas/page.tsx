@@ -64,7 +64,7 @@ The peaceful Shimla hills surround you, and the famous Naldehra Golf Course is j
               <p>It’s an experience that you won’t find anywhere else. It’s one of a kind.</p>
 
               <p><strong>Design and Premium Living at Vvie Villas</strong></p>
-              <p>There are only six villas in this special community, making it truly exclusive. Each villa is built with great architecture and beautiful design. If you're looking for a 4 or 5 BHK villa near Naldehra Golf Course, Vvie Villas has exactly what you need.</p>
+              <p>There are only six villas in this special community, making it truly exclusive. Each villa is built with great architecture and beautiful design. If you&apos;re looking for a 4 or 5 BHK villa near Naldehra Golf Course, Vvie Villas has exactly what you need.</p>
               <p>These homes are perfect for anyone who wants to enjoy mountain life but still live in luxury. So you also get peace, serenity as well as tranquility both under one roof.</p>
 {/* <div className={Style.twoimage}>
   <Image
@@ -87,7 +87,7 @@ The peaceful Shimla hills surround you, and the famous Naldehra Golf Course is j
 
               <p><strong>Prime Location Near Naldehra Golf Course</strong></p>
               <p>Vvie Villas is located near the famous Naldehra Golf Course. This beautiful area not only adds to the view but also makes the property a great investment.</p>
-              <p>Whether you're looking for a property near the golf course or a 5-bedroom luxury villa with stunning views in Shimla, Vvie Villas has the best of both worlds.</p>
+              <p>Whether you&apos;re looking for a property near the golf course or a 5-bedroom luxury villa with stunning views in Shimla, Vvie Villas has the best of both worlds.</p>
 
 <div className={Style.twoimage}>
   <Image
@@ -106,7 +106,7 @@ The peaceful Shimla hills surround you, and the famous Naldehra Golf Course is j
               /> */}
 </div>
               <p><strong>Opportunity with Only Six Villas Available</strong></p>
-              <p>There are only siz villas that are available. Vvie Villas presents a rare opportunity. Options include 4 and 5 BHK luxury villas with mountain views near Naldehra, Shimla with fully managed modern amenities. Each home offers thoughtful layouts, ample parking, and a close connection to nature.</p>
+              <p>There are only six villas that are available. Vvie Villas presents a rare opportunity. Options include 4 and 5 BHK luxury villas with mountain views near Naldehra, Shimla with fully managed modern amenities. Each home offers thoughtful layouts, ample parking, and a close connection to nature.</p>
 
               <p><strong>Weekend Retreat or Full-Time Residence</strong></p>
               <p>Vvie Villas is perfect for a weekend getaway or a full-time home. It lets you enjoy a peaceful mountain lifestyle, all without giving up luxury.</p>

@@ -99,9 +99,9 @@ const Test = () => {
 </div>
               <p><strong>Scarcity Meets Sophistication</strong></p>
               <p>With only six villas available, ranging from 4 BHK to 5 BHK, the supply is really limited. This makes these villas one of the best luxury homes in Shimla, especially if you’re looking at it as an investment. Each villa is like a private retreat, with modern comforts like jacuzzis, panoramic balconies, and beautiful outdoor spaces.</p>
-              <p>It’s easy to see why owning a 4 or 5 BHK luxury holiday home near Naldehra Golf Course in Shimla can be a great investment.</p>
+              <p>It&apos;s easy to see why owning a 4 or 5 BHK luxury holiday home near Naldehra Golf Course in Shimla can be a great investment.</p>
               <p><strong>Final Word: Invest Where Beauty Meets Brilliance</strong></p>
-              <p>The investment nowadays you make is no longer left about location. Now it has become about lifestyle alignment. Vvie Villas captures the essence of that evolution. When you invest here, you're choosing a luxury villa with panoramic views in Shimla, designed for wellness, designed for connection and most importantly, designed to grow in value.</p>
+              <p>The investment nowadays you make is no longer left about location. Now it has become about lifestyle alignment. Vvie Villas captures the essence of that evolution. When you invest here, you&apos;re choosing a luxury villa with panoramic views in Shimla, designed for wellness, designed for connection and most importantly, designed to grow in value.</p>
               <p>Whether you are searching for a 4 & 5 BHK villa for investment at Naldehra Hills or looking for the best luxury villas in Himachal Pradesh that promise capital growth with zero compromise on comfort, Vvie Villas should be your first and final stop.</p>
               <p>Book your private site visit today and explore the finest investment property near Naldehra Golf Course.</p>
 <br />

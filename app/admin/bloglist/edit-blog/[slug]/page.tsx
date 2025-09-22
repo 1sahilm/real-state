@@ -17,11 +17,12 @@ const getSingleBlogBySlug = async (slug:string)=>{
 
 
 
-const page = async ({params}:any) => {
-  
+const page = async (props:any) => {
+  const params = await props.params;
+
   const slug = params.slug;
   const blog = await getSingleBlogBySlug(slug);
-  
+
 
   return (
     <SideBarLayout>

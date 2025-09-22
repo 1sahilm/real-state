@@ -33,8 +33,10 @@ const SideBarLayout = ({ children }: any) => {
 
 
   const [userData, setUserData] = useState<{ userId: string; role: string } | null>(null);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
+    setIsClient(true);
     const token = localStorage.getItem("token");
     if (token) {
       const decoded = parseJwt(token);
@@ -93,9 +95,12 @@ const SideBarLayout = ({ children }: any) => {
 
           <div className={styles["sidebar-menu"]}>
             <ul className={styles.sidebarlist}>
-              {navlist
-  .filter(item => item.roles.includes(userData?.role ?? ""))
-  .map((item, index) => (
+              {!isClient ? (
+                <li>Loading...</li>
+              ) : (
+                navlist
+                  .filter(item => item.roles.includes(userData?.role ?? ""))
+                  .map((item, index) => (
     <li key={index} className={styles.nav}>
       <a href={item.query}>
         <Image
@@ -107,7 +112,8 @@ const SideBarLayout = ({ children }: any) => {
         {!isSidemenu && <span>{item.text}</span>}
       </a>
     </li>
-))}
+                  ))
+              )}
             </ul>
           </div>
         </div>

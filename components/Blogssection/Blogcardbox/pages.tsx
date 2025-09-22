@@ -19,7 +19,7 @@ const BlogssectionCard = ({
   return (
     <div {...rest}>
       <div className={styles.cardbox}>
-        <img src={image} alt={title} className={styles.image} />
+        <Image src={image || ""} alt={title || ""} width={400} height={300} className={styles.image} />
         <h2 className={styles.title}>
           <a href="#">{title}</a>
         </h2>

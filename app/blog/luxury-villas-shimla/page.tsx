@@ -38,7 +38,7 @@ const Test = () => {
           <div
             className={Style.textblock} 
             >
-              <p><strong>"Some places don’t ask you to slow down. They make you want to."</strong></p>
+              <p><strong>&ldquo;Some places don&apos;t ask you to slow down. They make you want to.&rdquo;</strong></p>
               <p>Shimla is not only a travel destination, but it has more than that. Once the summer capital of British India, its colonial charm still lingers in cobbled streets, gothic architecture, and soft pine-scented winds. Although in recent years, the historic hill town has quietly evolved. It had now become <strong>North India’s most desirable address for villa living,</strong> not just a <strong>weekend gateway.</strong></p>
               <p>The shift isn’t just aesthetic, it’s experiential. Mornings don’t begin here with an alarm but with birdsongs and golden light that filters through the forests. The idea of home has moved beyond square feet. Today it is all about defined peace, privacy and proximity towards nature. If we talk about Shimla, it seems to offer all three. </p>
 <div className={Style.twoimage}>
@@ -57,7 +57,7 @@ const Test = () => {
               priority
               /> */}
 </div>
-                <p>Less than 30 minutes from Shimla, tucked away near the historic <strong>Naldehra Golf Course,</strong> new-age villas are redefining what luxury means in the hills. These are not just homes, but sanctuaries. Imagine sipping morning tea in your rooftop jacuzzi as mist drapes the valley, or unwinding at a clubhouse that overlooks an entire forest. Here, nature is not a weekend plan. It’s your everyday view.</p>
+                <p>Less than 30 minutes from Shimla, tucked away near the historic <strong>Naldehra Golf Course,</strong> new-age villas are redefining what luxury means in the hills. These are not just homes, but sanctuaries. Imagine sipping morning tea in your rooftop jacuzzi as mist drapes the valley, or unwinding at a clubhouse that overlooks an entire forest. Here, nature is not a weekend plan. It&apos;s your everyday view.</p>
                 <p>The spacious <strong>5 BHK villa near Naldehra Golf Course</strong> has much to offer</p>
                 
                 <ul>
@@ -97,7 +97,7 @@ const Test = () => {
               priority
               /> */}
 </div>
-              <p><strong>Luxury real estate in Shimla</strong> is poised for meaningful appreciation from an investment perspective. The main purpose of luxury living in the hills is something more than just about ROI. As land in metros becomes saturated and the demand for second homes rises, high-altitude luxury living is capturing more attention. But it's not only about ROI. For many, buying a <strong>luxury villa with panoramic views</strong> here is an emotional return—a return to stillness, space, and slow, meaningful living.</p>
+              <p><strong>Luxury real estate in Shimla</strong> is poised for meaningful appreciation from an investment perspective. The main purpose of luxury living in the hills is something more than just about ROI. As land in metros becomes saturated and the demand for second homes rises, high-altitude luxury living is capturing more attention. But it&apos;s not only about ROI. For many, buying a <strong>luxury villa with panoramic views</strong> here is an emotional return—a return to stillness, space, and slow, meaningful living.</p>
               <p>Culturally, Shimla continues to thrive with art festivals, theatre performances, and its timeless charm. It offers the best of both worlds—the pulse of a town with the peace of the wild. In every season, it gives you a new reason to fall in love.</p>
               <p>In today’s time, luxury is no longer about excess but about essence. And Shimla has it all.</p>
               <p>Are you also thinking of building your future in the hills? Do you want your luxury to be simply nature and peace?</p>

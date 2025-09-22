@@ -63,15 +63,13 @@ const FeaturedReads = () => {
                             {blogsData?.map((items:any, index:any) => {
                                 console.log("items", { items })
                                 return (
-                                    <>
-                                        <SmallCard
-                                            key={index}
-                                            image={items?.image}
-                                            title={items?.title}
-                                            description={items?.desc}
-                                            readmore={`${items.link}`}
-                                        />
-                                    </>
+                                    <SmallCard
+                                        key={items.id}
+                                        image={items?.image}
+                                        title={items?.title}
+                                        description={items?.desc}
+                                        readmore={`${items.link}`}
+                                    />
                                 )
                             })}
 
