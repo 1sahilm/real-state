@@ -23,7 +23,7 @@ const Test = () => {
         <div className={Style.content}>
           <div className={Style.img}>
             <Image
-              src="/shimla-bloh-3.jpg"
+              src="/blog/inner/shimla-colonial-charm-royal-summer-retreat-1.webp"
               alt={"Vive villa"}
               width={775}
               height={460}
@@ -58,7 +58,7 @@ Strolling through Shimla is like stepping into a living postcard from the past. 
 <p>The British influence is visible in every corner. From architectural styles to leisurely traditions like high tea and ballroom dances, Shimla carries an air of aristocratic calm, making it irresistible to both colonial officers and Indian royals alike.</p>
 <div className={Style.twoimage}>
   <Image
-              src="/shimla-blog-two.jpg"
+              src="/blog/inner/shimla-colonial-charm-royal-summer-retreat-2.webp"
               alt={"Vive villa"}
               width={400}
               height={400}

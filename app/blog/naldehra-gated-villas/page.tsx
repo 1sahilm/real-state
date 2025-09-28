@@ -23,7 +23,7 @@ const Test = () => {
         <div className={Style.content}>
           <div className={Style.img}>
             <Image
-              src="/blog2-naldera.jpg"
+              src="/blog/inner/gated-community-villas-naldehra-vvie-1.webp"
               alt={"Vive villa"}
               width={775}
               height={460}
@@ -44,7 +44,7 @@ The peaceful Shimla hills surround you, and the famous Naldehra Golf Course is j
 </p>
 <div className={Style.twoimage}>
   <Image
-              src="/nalender-blog-two.jpg"
+              src="/blog/inner/gated-community-villas-naldehra-vvie-2.webp"
               alt={"Vive villa"}
               width={400}
               height={400}
@@ -91,7 +91,7 @@ The peaceful Shimla hills surround you, and the famous Naldehra Golf Course is j
 
 <div className={Style.twoimage}>
   <Image
-              src="/nalender-blog-three.jpg"
+              src="/blog/inner/gated-community-villas-naldehra-vvie-3.webp"
               alt={"Vive villa"}
               width={400}
               height={400}

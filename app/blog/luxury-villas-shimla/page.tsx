@@ -23,7 +23,7 @@ const Test = () => {
         <div className={Style.content}>
           <div className={Style.img}>
             <Image
-              src="/blog2-naldera.jpg"
+              src="/blog/inner/shimla-new-hub-for-luxury-villas-1.webp"
               alt={"Vive villa"}
               width={775}
               height={460}
@@ -43,7 +43,7 @@ const Test = () => {
               <p>The shift isn’t just aesthetic, it’s experiential. Mornings don’t begin here with an alarm but with birdsongs and golden light that filters through the forests. The idea of home has moved beyond square feet. Today it is all about defined peace, privacy and proximity towards nature. If we talk about Shimla, it seems to offer all three. </p>
 <div className={Style.twoimage}>
   <Image
-              src="/nalender-blog-two.jpg"
+              src="/blog/inner/shimla-new-hub-for-luxury-villas-2.webp"
               alt={"Vive villa"}
               width={400}
               height={400}
@@ -83,7 +83,7 @@ const Test = () => {
 
 <div className={Style.twoimage}>
   <Image
-              src="/nalender-blog-three.jpg"
+              src="/blog/inner/shimla-new-hub-for-luxury-villas-3.webp"
               alt={"Vive villa"}
               width={400}
               height={400}

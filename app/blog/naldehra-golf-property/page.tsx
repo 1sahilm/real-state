@@ -23,7 +23,7 @@ const Test = () => {
         <div className={Style.content}>
           <div className={Style.img}>
             <Image
-              src="/blog2-naldera.jpg"
+              src="/blog/inner/investment-property-naldehra-golf-course-1.webp"
               alt={"Vive villa"}
               width={775}
               height={460}
@@ -42,7 +42,7 @@ const Test = () => {
               <p>While the allure of Shimla and its surrounds has long been known for its natural beauty and tranquil charm, real estate here is now being recognized for something more - its investment potential. And no area exemplifies this better than the coveted stretch around the Naldehra Golf Course.</p>
 <div className={Style.twoimage}>
   <Image
-              src="/nalender-blog-two.jpg"
+              src="/blog/inner/investment-property-naldehra-golf-course-2.webp"
               alt={"Vive villa"}
               width={400}
               height={400}
@@ -83,7 +83,7 @@ const Test = () => {
 </div> */}
 <div className={Style.twoimage}>
   <Image
-              src="/nalender-blog-three.jpg"
+              src="/blog/inner/investment-property-naldehra-golf-course-3.webp"
               alt={"Vive villa"}
               width={400}
               height={400}

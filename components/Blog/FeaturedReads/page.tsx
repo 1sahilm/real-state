@@ -112,35 +112,35 @@ const blogsData = [
         id:3,
         title:"Shimla’s Colonial Charm: Why Royal Families Chose It as Their Summer Retreat",
         desc:"Tucked away in the lap of the Himalayas, Shimla is more than just a picturesque hill station....",
-        image:"/shimla-bloh-3.jpg",
+        image:"/blog/shimla-colonial-charm-royal-summer-retreat.webp",
         link:"/blog/shimla-colonial-charm"
     },
     {
         id:4,
         title:"Why Shimla Is Becoming the New Hub for Luxury Villa Living in North India",
         desc:"Some places don’t ask you to slow down. They make you want to....",
-        image:"/shimla-bloh-3.jpg",
+        image:"/blog/shimla-new-hub-for-luxury-villas.webp",
         link:"/blog/luxury-villas-shimla"
     },
     {
         id:5,
         title:"Investment Property Near Naldehra Golf Course, Shimla",
         desc:"In the serene landscapes of Himachal Pradesh....",
-        image:"/shimla-bloh-3.jpg",
+        image:"/blog/investment-property-naldehra-golf-course.webp",
         link:"/blog/naldehra-golf-property"
     },
     {
         id:6,
         title:"Gated Community Villas for Sale in Naldehra: Discover the Luxurious Charm of Vvie Villas",
         desc:"Just imagine a place away in the beautiful hills of Himachal Pradesh....",
-        image:"/shimla-bloh-3.jpg",
+        image:"/blog/gated-community-villas-naldehra-vvie.webp",
         link:"/blog/naldehra-gated-villas"
     },
     {
         id:7,
         title:"Buying a Villa in Shimla: A Smart Investment or a Dream Fulfilled?",
         desc:"We often talk about investments as numbers. Returns. Trends. Risk and Reward....",
-        image:"/shimla-bloh-3.jpg",
+        image:"/blog/buying-villa-in-shimla-smart-investment-or-dream.webp",
         link:"/blog/buying-villa-shimla"
     }
 ]
