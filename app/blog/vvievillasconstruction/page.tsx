@@ -143,13 +143,7 @@ Superstructure completed for Villa No. 5 & 6.</p>
               height={400}
               priority
               />
-              {/* <Image
-              src="/slider/thirteen.jpeg"
-              alt={"Vive villa"}
-              width={400}
-              height={400}
-              priority
-              /> */}
+           
 </div>
  
 <p><strong>Foundation work for Villa No. 3 & 4 commenced.</strong></p>
@@ -163,32 +157,19 @@ Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
               height={400}
               priority
               />
-              {/* <Image
-              src="/slider/sixteen.jpeg"
-              alt={"Vive villa"}
-              width={400}
-              height={400}
-              priority
-              /> */}
+           
 </div>
 <br />
- 
-              </div> <br />
-              <ul className={Style.under}>
+     <ul className={Style.under} 
+     style={{
+      textAlign:"left",
+      width:"100%",
+     }}
+     >
   <li>Second floor slab for Villas 3 & 4 poured.<br /></li>
   <li>Plastering and roof work for Villas 5 & 6 wrapped up.<br /></li>
   <li>Our on-site office is nearing completion.<br /></li>
-
-  <li>
-    🛠️ <strong>What&apos;s Next?</strong><br />
-    As we move into the next phase of construction, the focus will shift towards:
-    <ul>
-      <li>Finishing works for Villas 5 & 6</li>
-      <li>Superstructure completion for Villas 3 & 4</li>
-      <li>Landscape and amenity integration</li>
-      <li>Final setup of the site office to better assist site visits and partner coordination</li>
-    </ul>
-  </li>
+ 
 
   <li>
     🏡 <strong>A Vision Taking Shape</strong><br />
@@ -198,8 +179,198 @@ Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
   <li>
     📸 We’ll continue to share progress photos and walkthroughs regularly — stay tuned!
   </li>
+  
 </ul>
+<p> 
+Plaster work & Roof Work of Villa No. 5 & 6 Completed   - June End</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/june-first.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />
+  <Image
+              src="/blog/june-second.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />
+           
+</div>
+<p> 
+Second floor Slab For Villa No. 3 & 4  - June End</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/june-third.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />
+  <Image
+              src="/blog/june-fourth.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />
+           
+</div>
+<p> 
+Site Office Near Completion –  June End</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/june-five.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p> 
+MEP of Villa  6 &  5  Started Aug ’25</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/aug-first.jpeg"
+              alt={"Vive villa"}
+              width={600}
+              height={600}
+              priority
+              /> 
+           
+</div>
+<p> 
+Structure of Villa  4 & 3 near Completion –  Aug ’25 End</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/aug-second.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p> 
+Structure of 4  villas completed -  Aug ’25</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/aug-third.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p> 
+Foundation Work for Villas  2 & 1 Started – Aug ’25 End</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/aug-fourth.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p> 
+Plaster Work for Villas 6&5 Completed  – Sept’25</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-first.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p> 
+Exterior Plaster Work for Villas 4&3 completed – Sept’25 End</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-second.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p> 
+Slab Work for Villa 1  - Sept’25</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-third.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p> 
+Foundation Work for Villas 2  – Sept’25</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-fourth.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p> 
+Electric and Plumbing for Villas 6,5 & 4  – Sept’25</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-five.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/sep-six.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p> 
+Villas Coming to Life</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-seven.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/sep-eight.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
 
+
+              </div> <br />
+              
+          
+  
         </div>
         
       </div>

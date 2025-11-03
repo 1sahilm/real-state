@@ -58,7 +58,7 @@ const Banner: React.FC<any> = ({ commingSoon }: BannerProposData) => {
         >
           {/* <source src={"../../assets/banner-video/videos.mov"} type="video/mp4" /> */}
           <source
-            src="/banner-video/latest-video-new.mp4"
+            src="/banner-video/Infranium-Website.mp4"
             type="video/mp4"
           />
           {/* <source src="../../assets/banner-video/videos.mp4" type="video/quicktime" /> */}
