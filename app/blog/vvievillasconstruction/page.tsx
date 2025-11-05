@@ -18,7 +18,6 @@ const Test = () => {
       <div className={Style.innerblog}>
         <div className={Style.title}>
           <h1>Vvie Villas – Construction Update</h1>
-          <span>June 2025</span>
         </div>
 
         <div className={Style.content}>
@@ -35,7 +34,7 @@ const Test = () => {
           <div
             className={Style.textblock} 
             >
-              <p>At Infranium Homes, we believe in transparency, consistency, and keeping our community informed at every stage of development. We&apos;re excited to share the June 2025 construction progress of our premium project – Vvie Villas, a collection of luxury villas nestled in the natural heartland of Coorg.
+              <p>At Infranium Homes, we believe in transparency, consistency, and keeping our community informed at every stage of development. We&apos;re excited to share the construction progress of our premium project – Vvie Villas, a collection of luxury villas nestled in the iconic naldehra golf hills shimla.
 </p>
 <p>📍 Project Timeline So Far <br />
 🔹 December 2024
@@ -169,20 +168,11 @@ Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
   <li>Second floor slab for Villas 3 & 4 poured.<br /></li>
   <li>Plastering and roof work for Villas 5 & 6 wrapped up.<br /></li>
   <li>Our on-site office is nearing completion.<br /></li>
- 
-
-  <li>
-    🏡 <strong>A Vision Taking Shape</strong><br />
-    Vvie Villas is more than just a residential project — it&apos;s a curated lifestyle experience amidst nature, designed with modern sensibilities and timeless aesthetics. Whether you&apos;re looking for a peaceful escape, an investment property, or a nature-wrapped primary home, Vvie Villas brings it all together.
-  </li>
-
-  <li>
-    📸 We’ll continue to share progress photos and walkthroughs regularly — stay tuned!
-  </li>
   
 </ul>
-<p> 
-Plaster work & Roof Work of Villa No. 5 & 6 Completed   - June End</p>
+ 
+<p>🔹 June End<br />
+Plaster work & Roof Work of Villa No. 5 & 6 Completed</p>
 <div className={Style.twoimage}>
   <Image
               src="/blog/june-first.jpeg"
@@ -200,8 +190,9 @@ Plaster work & Roof Work of Villa No. 5 & 6 Completed   - June End</p>
               />
            
 </div>
-<p> 
-Second floor Slab For Villa No. 3 & 4  - June End</p>
+ 
+<p>🔹 July 2025<br />
+Second floor Slab For Villa No. 3 & 4.</p>
 <div className={Style.twoimage}>
   <Image
               src="/blog/june-third.jpeg"
@@ -219,8 +210,9 @@ Second floor Slab For Villa No. 3 & 4  - June End</p>
               />
            
 </div>
-<p> 
-Site Office Near Completion –  June End</p>
+ 
+<p>🔹 July 2025<br />
+Site Office Near Completion.</p>
 <div className={Style.twoimage}>
   <Image
               src="/blog/june-five.jpeg"
@@ -231,8 +223,9 @@ Site Office Near Completion –  June End</p>
               /> 
            
 </div>
-<p> 
-MEP of Villa  6 &  5  Started Aug ’25</p>
+ 
+<p>🔹 Aug 2025<br />
+MEP of Villa  6 &  5.</p>
 <div className={Style.twoimage}>
   <Image
               src="/blog/aug-first.jpeg"
@@ -243,8 +236,8 @@ MEP of Villa  6 &  5  Started Aug ’25</p>
               /> 
            
 </div>
-<p> 
-Structure of Villa  4 & 3 near Completion –  Aug ’25 End</p>
+<p>🔹 Aug End<br />
+Structure of Villa  4 & 3 near Completion.</p>
 <div className={Style.twoimage}>
   <Image
               src="/blog/aug-second.jpeg"
@@ -255,8 +248,9 @@ Structure of Villa  4 & 3 near Completion –  Aug ’25 End</p>
               /> 
            
 </div>
-<p> 
-Structure of 4  villas completed -  Aug ’25</p>
+<p>🔹 Aug 2025<br />
+Structure of 4  villas completed</p>
+ 
 <div className={Style.twoimage}>
   <Image
               src="/blog/aug-third.jpeg"
@@ -267,8 +261,8 @@ Structure of 4  villas completed -  Aug ’25</p>
               /> 
            
 </div>
-<p> 
-Foundation Work for Villas  2 & 1 Started – Aug ’25 End</p>
+<p>🔹 Aug 2025 End<br />
+Foundation Work for Villas  2 & 1</p>
 <div className={Style.twoimage}>
   <Image
               src="/blog/aug-fourth.jpeg"
@@ -279,8 +273,9 @@ Foundation Work for Villas  2 & 1 Started – Aug ’25 End</p>
               /> 
            
 </div>
-<p> 
-Plaster Work for Villas 6&5 Completed  – Sept’25</p>
+<p>🔹 Sept 2025<br />
+Plaster Work for Villas 6&5</p>
+ 
 <div className={Style.twoimage}>
   <Image
               src="/blog/sep-first.jpeg"
@@ -291,8 +286,9 @@ Plaster Work for Villas 6&5 Completed  – Sept’25</p>
               /> 
            
 </div>
-<p> 
-Exterior Plaster Work for Villas 4&3 completed – Sept’25 End</p>
+<p>🔹 Sept 2025 End<br />
+Exterior Plaster Work for Villas 4&3</p>
+ 
 <div className={Style.twoimage}>
   <Image
               src="/blog/sep-second.jpeg"
@@ -303,8 +299,9 @@ Exterior Plaster Work for Villas 4&3 completed – Sept’25 End</p>
               /> 
            
 </div>
-<p> 
-Slab Work for Villa 1  - Sept’25</p>
+<p>🔹 Sept 2025<br />
+Slab Work for Villa 1</p>
+ 
 <div className={Style.twoimage}>
   <Image
               src="/blog/sep-third.jpeg"
@@ -315,8 +312,9 @@ Slab Work for Villa 1  - Sept’25</p>
               /> 
            
 </div>
-<p> 
-Foundation Work for Villas 2  – Sept’25</p>
+<p>🔹 Sept 2025<br />
+Foundation Work for Villas 2</p>
+ 
 <div className={Style.twoimage}>
   <Image
               src="/blog/sep-fourth.jpeg"
@@ -327,8 +325,9 @@ Foundation Work for Villas 2  – Sept’25</p>
               /> 
            
 </div>
-<p> 
-Electric and Plumbing for Villas 6,5 & 4  – Sept’25</p>
+<p>🔹 Sept 2025<br />
+Electric and Plumbing for Villas 6,5 & 4</p>
+ 
 <div className={Style.twoimage}>
   <Image
               src="/blog/sep-five.jpeg"
@@ -347,7 +346,7 @@ Electric and Plumbing for Villas 6,5 & 4  – Sept’25</p>
            
 </div>
 <p> 
-Villas Coming to Life</p>
+<strong> Villas Coming to Life</strong></p>
 <div className={Style.twoimage}>
   <Image
               src="/blog/sep-seven.jpeg"
@@ -365,6 +364,24 @@ Villas Coming to Life</p>
               /> 
            
 </div>
+<br />
+   <ul className={Style.under} 
+     style={{
+      textAlign:"left",
+      width:"100%",
+     }}
+     > 
+
+  <li>
+    🏡 <strong>A Vision Taking Shape</strong><br />
+    Vvie Villas is more than just a residential project — it&apos;s a curated lifestyle experience amidst nature, designed with modern sensibilities and timeless aesthetics. Whether you&apos;re looking for a peaceful escape, an investment property, or a nature-wrapped primary home, Vvie Villas brings it all together.
+  </li>
+
+  <li>
+    📸 We’ll continue to share progress photos and walkthroughs regularly — stay tuned!
+  </li>
+  
+</ul>
 
 
               </div> <br />
