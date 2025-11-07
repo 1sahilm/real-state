@@ -39,13 +39,13 @@ const Test = () => {
           <div
             className={Style.textblock} 
             >
-              <p>Naldehra is an old-school, cool hill station. It's got tall pine trees and golf courses that go way back to when the British were here. It still feels like it did back then. Cool winds, calm views, everything one could want.</p>
+              <p>Naldehra is an old-school, cool hill station. It&apos;s got tall pine trees and golf courses that go way back to when the British were here. It still feels like it did back then. Cool winds, calm views, everything one could want.</p>
 
               <p>However, Naldehra has been evolving within the past few years. It is no longer a weekend resort among the tourists. It is rapidly expanding as one of the most preferable places to stay and to invest in Himachal Pradesh.</p>
 
               <p>At the back of this transformation are among the top real estate developers, such as Infranium, who are bringing their vision to life.</p>
 
-              <p>Infranium real estate developers are building houses and villas here, aiming to blend modern living with the natural beauty of nature. We're trying to grow Naldehra in a way that doesn't mess with what makes it great.</p>
+              <p>Infranium real estate developers are building houses and villas here, aiming to blend modern living with the natural beauty of nature. We&apos;re trying to grow Naldehra in a way that doesn&apos;t mess with what makes it great.</p>
 
                 <br />
 <div className={Style.twoimage}>
@@ -121,7 +121,7 @@ Our new real-estate projects also contain many clubhouses, gyms, swimming pools,
                 <br />
                 <h4>Good Investment opportunity</h4>
 
-                <p>Naldehra is emerging as an investor hot spot. Because it's getting more popular and the land here is limited, property prices are going up. People see that buying here is a good move, both because it's in the hills and it's a solid investment.</p>
+                <p>Naldehra is emerging as an investor hot spot. Because it&apos;s getting more popular and the land here is limited, property prices are going up. People see that buying here is a good move, both because it&apos;s in the hills and it&apos;s a solid investment.</p>
 
                 <p>High-quality apartments are selling quickly, mostly to people from Delhi and nearby areas. 
 Reaching Naldehra has also become much easier with good connectivity to Shimla.</p>
@@ -167,7 +167,7 @@ Reaching Naldehra has also become much easier with good connectivity to Shimla.<
 
                 <br />
                 <h4>Conclusion</h4>
-                <p>The Naldehra transformation is evidence that when vision and commitment meet, great things take place. Infranium builders are not only developing luxurious houses but also creating a brighter future for the area. That's why you should consider Infranium real estate developers when you're deciding to buy a property in Naldhera. Ready to explore your dream villa in Naldehra? Contact Infranium today to discover premium properties and investment opportunities.</p>
+                <p>The Naldehra transformation is evidence that when vision and commitment meet, great things take place. Infranium builders are not only developing luxurious houses but also creating a brighter future for the area. That&apos;s why you should consider Infranium real estate developers when you&apos;re deciding to buy a property in Naldhera. Ready to explore your dream villa in Naldehra? Contact Infranium today to discover premium properties and investment opportunities.</p>
 
               </div>
 

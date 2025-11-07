@@ -1,4 +1,5 @@
 "use client"
+import Image from "next/image";
 import React, { useState } from "react";
 import styles from "./ourstory.module.scss"
 import Link from "next/link";
@@ -43,10 +44,12 @@ from your private rooftop jacuzzi.
           
         </div>
         <div className={styles.imageSection}>
-          <img
+          <Image
             src="/vive-villa.jpeg"
             alt="Architects working"
             className={styles.image}
+            width={700}
+            height={900}
           />
         </div>
       </div>

@@ -1,5 +1,6 @@
 "use client";
 import axios from "axios";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
 import React, { useRef } from "react"; 
 import Select from 'react-select';
@@ -357,7 +358,14 @@ const handleEditorChange = debounce((newContent: string) => {
     </label>
   ) : (
     <div className={styles.previewWrapper}>
-      <img src={previewImage} alt="Preview" className={styles.previewImage} />
+      <Image
+        src={previewImage}
+        alt="Preview"
+        className={styles.previewImage}
+        width={600}
+        height={400}
+        unoptimized
+      />
       <button type="button" onClick={handleRemoveImage} className={styles.removeButton}>
         ❌
       </button>

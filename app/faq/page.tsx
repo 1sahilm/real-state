@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Header from '@/components/Header'
 import React, { useState } from 'react'
 import styles from '../../styles/FaqSection.module.css'
@@ -20,10 +21,13 @@ const Faq = () => {
     </div>
     <section className={styles.aboutSection}>
       <div className={styles.imageWrapper}>
-        <img
+        <Image
           src="/about-us/baneer-about.jpg"
           alt="Architectural design"
           className={styles.backgroundImage}
+          width={1920}
+          height={1080}
+          priority
         />
          <div className={styles.textOverlay}>
           <h1>FAQ: Vvie Villas by Infranium</h1>

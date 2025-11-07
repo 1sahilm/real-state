@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styles from "../FourColumnSection/fourcolumnsection.module.scss";
 
@@ -10,21 +11,21 @@ const FourColumnSection = () => {
         </div>
         <div className={styles.fourbox}>
         <div className={styles.imageSection}>
-          <img
+          <Image
             src="/about-us/new-v.jpg"
             alt="Architects working"
             className={styles.image}
+            width={600}
+            height={800}
           />
         </div>
           {OURETHOSarry?.map((items, index) => {
             return (
-              <>
-                <div className={styles.box} key={index}>
+                <div className={styles.box} key={items.id ?? index}>
                   <h6>{items.id}</h6>
                   <h3>{items.name}</h3>
                   <p>{items.content}</p>
                 </div>
-              </>
             );
           })}
         </div>

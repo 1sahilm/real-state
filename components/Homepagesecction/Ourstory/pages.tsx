@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styles from "../Ourstory/ourstory.module.scss";
 import Link from "next/link";
@@ -33,10 +34,12 @@ to refined living
           
         </div>
         <div className={styles.imageSection}>
-          <img
+          <Image
             src="/5-BHK-luxury-villa-Naldehra.jpeg"
             alt="Buy Luxury Villas in Shimla & Naldehra, Himachal Pradesh"
             className={styles.image}
+            width={700}
+            height={900}
           />
         </div>
       </div>

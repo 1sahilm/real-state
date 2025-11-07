@@ -73,7 +73,7 @@ const Test = () => {
                 <p>The beauty of the peaceful nature will become a part of your life. Every day begins here with calmeness and filled with joy. While the evenings tend to close quietly and warmly. The peace and balance that busy city life tends to take away can be found here in Shimla.
 Infranium’s villas are luxurious and add the beauty of nature with the comfort. Spacious living space, personal gardens and terraces are all meant to help the person to feel good. It is not merely a house; it is a home where all is calm and classy.</p>
 
-                <p>Here you will feel completely comfortable and surrounded by nature. Thus, you'll be inspired and motivated no matter what the situation is.</p>
+                <p>Here you will feel completely comfortable and surrounded by nature. Thus, you&apos;ll be inspired and motivated no matter what the situation is.</p>
 
                 
 
@@ -112,7 +112,7 @@ Infranium’s villas are luxurious and add the beauty of nature with the comfort
 
                 <p>Each detail, wooden interiors and stone exteriors, and big windows made of glass, is thoroughly designed. The aim is to bring nature inside and all the comforts of modern living.</p>
 
-                <p>The interiors are also magnificent. The villas provide a cosy environment with an open plan, a ceiling and natural light flowing through the rooms. The major part of Infranium villas is that they're also equipped with the smart home features. Such as the automatic lighting and temperature controls.</p>
+                <p>The interiors are also magnificent. The villas provide a cosy environment with an open plan, a ceiling and natural light flowing through the rooms. The major part of Infranium villas is that they&apos;re also equipped with the smart home features. Such as the automatic lighting and temperature controls.</p>
 
                 <p>The interior is aligned towards a blend of old-fashioned beauty and new-fashioned elegance. Thus, you will experience both in the house. The details of the Infranium villas show that luxury is not only about costly building materials. It is also more about being thoughtful and appealing over time.</p>
 
