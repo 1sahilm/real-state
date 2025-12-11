@@ -156,6 +156,20 @@ const blogsData = [
         desc:"Naldehra is an old-school, cool hill station....",
         image:"/blog/infranium-transforming-naldehra.webp",
         link:"/blog/infranium-transforming-naldehra"
+    },
+    {
+        id:10,
+        title:"Why Infranium Sets the Standard for the Best Luxury Villas in Himachal Pradesh?",
+        desc:"Luxury in Himachal Pradesh has become much more....",
+        image:"/blog/best-luxury-villas-himachal.webp",
+        link:"/blog/best-luxury-villas-himachal"
+    },
+    {
+        id:11,
+        title:"How Infranium Helps You Buy the Perfect Luxury Villa in Himachal Pradesh?",
+        desc:"Purchasing a luxury villa is an important choice....",
+        image:"/blog/buy-luxury-villa-himachal.webp",
+        link:"/blog/buy-luxury-villa-himachal"
     }
 ]
 
