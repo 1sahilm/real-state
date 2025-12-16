@@ -23,7 +23,7 @@
     "jsonwebtoken": "^9.0.2",
     "locomotive-scroll": "^4.1.4",
     "mongoose": "^8.8.2",
-    "next": "15.4.6",
+    "next": "^15.4.10",
     "nodemailer": "^6.10.0",
     "npm": "^11.4.2",
     "react": "19.1.1",
