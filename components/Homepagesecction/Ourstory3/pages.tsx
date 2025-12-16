@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState } from "react";
 import styles from "./ourstory.module.scss"
 import Link from "next/link";
@@ -49,10 +50,12 @@ the horizon, while vibrant rhododendrons and Himalayan oak create a tapestry of 
           
         </div>
         <div className={styles.imageSection}>
-          <img
+          <Image
             src="/five-banner.jpg"
             alt="Architects working"
             className={styles.image}
+            width={700}
+            height={900}
           />
         </div>
       </div>

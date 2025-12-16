@@ -142,6 +142,34 @@ const blogsData = [
         desc:"We often talk about investments as numbers. Returns. Trends. Risk and Reward....",
         image:"/blog/buying-villa-in-shimla-smart-investment-or-dream.webp",
         link:"/blog/buying-villa-shimla"
+    },
+    {
+        id:8,
+        title:"Experience Luxury Living: Inside Shimla’s Most Premium & Lavish Villas",
+        desc:"Shimla has always been called the Queen of Hills....",
+        image:"/blog/premium-villas-shimla.webp",
+        link:"/blog/premium-villas-shimla"
+    },
+    {
+        id:9,
+        title:"From Vision to Reality: How the Infranium Transforming Naldehra",
+        desc:"Naldehra is an old-school, cool hill station....",
+        image:"/blog/infranium-transforming-naldehra.webp",
+        link:"/blog/infranium-transforming-naldehra"
+    },
+    {
+        id:10,
+        title:"Why Infranium Sets the Standard for the Best Luxury Villas in Himachal Pradesh?",
+        desc:"Luxury in Himachal Pradesh has become much more....",
+        image:"/blog/best-luxury-villas-himachal.webp",
+        link:"/blog/best-luxury-villas-himachal"
+    },
+    {
+        id:11,
+        title:"How Infranium Helps You Buy the Perfect Luxury Villa in Himachal Pradesh?",
+        desc:"Purchasing a luxury villa is an important choice....",
+        image:"/blog/buy-luxury-villa-himachal.webp",
+        link:"/blog/buy-luxury-villa-himachal"
     }
 ]
 

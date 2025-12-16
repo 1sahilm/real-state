@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import styles from "../ThreeColumnSection/threecolumnsection.module.scss";
 
@@ -56,10 +57,12 @@ provide you with the utmost exclusivity and refinement.
         </div> */}
         <div className={styles.column}>
         <div className={styles.imageSection}>
-          <img
+          <Image
             src="/4-5-BHK-luxury-villa-Naldehra.jpg"
             alt="4 & 5 BHK villas for sale in Shimla Naldehra,,Himachal Pradesh"
             className={styles.image}
+            width={700}
+            height={900}
           />
         </div>
          
