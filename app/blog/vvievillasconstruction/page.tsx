@@ -363,27 +363,8 @@ Electric and Plumbing for Villas 6,5 & 4</p>
               priority
               /> 
            
-</div>
-<br />
-   <ul className={Style.under} 
-     style={{
-      textAlign:"left",
-      width:"100%",
-     }}
-     > 
-
-  <li>
-    🏡 <strong>A Vision Taking Shape</strong><br />
-    Vvie Villas is more than just a residential project — it&apos;s a curated lifestyle experience amidst nature, designed with modern sensibilities and timeless aesthetics. Whether you&apos;re looking for a peaceful escape, an investment property, or a nature-wrapped primary home, Vvie Villas brings it all together.
-  </li>
-
-  <li>
-    📸 We’ll continue to share progress photos and walkthroughs regularly — stay tuned!
-  </li>
-  
-</ul>
-<br />
-<p>🔹October & December 
+</div> 
+<p>🔹October & November 
 <br />
 VRV ducting work completed in Villa 4,5&6</p>
 <div className={Style.twoimage}>
@@ -395,7 +376,7 @@ VRV ducting work completed in Villa 4,5&6</p>
               priority
               /> 
   <Image
-              src="/blog/jan-blog-s.jpeg"
+              src="/blog/jan-blog-S.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
@@ -468,6 +449,25 @@ Structures of Unit 1&2 near completion</p>
               /> 
            
 </div>
+<br />
+<br />
+ <ul className={Style.under} 
+     style={{
+      textAlign:"left",
+      width:"100%",
+     }}
+     > 
+
+  <li>
+    🏡 <strong>A Vision Taking Shape</strong><br />
+    Vvie Villas is more than just a residential project — it&apos;s a curated lifestyle experience amidst nature, designed with modern sensibilities and timeless aesthetics. Whether you&apos;re looking for a peaceful escape, an investment property, or a nature-wrapped primary home, Vvie Villas brings it all together.
+  </li>
+
+  <li>
+    📸 We’ll continue to share progress photos and walkthroughs regularly — stay tuned!
+  </li>
+  
+</ul>
               </div> <br />
               
           
