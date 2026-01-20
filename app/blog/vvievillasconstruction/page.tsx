@@ -382,8 +382,92 @@ Electric and Plumbing for Villas 6,5 & 4</p>
   </li>
   
 </ul>
+<br />
+<p>🔹October & December 
+<br />
+VRV ducting work completed in Villa 4,5&6</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/jan-blog-f.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/jan-blog-s.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
 
+<p>🔹December
 
+<br />
+Water Proofing work completed in Villa 4,5&6</p>
+ 
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/jan-blog-Third.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/jan-blog-four.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+ <br />
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/jan-blog-five.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/jan-blog-six.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div> 
+
+<p>🔹January
+
+<br />
+Structures of Unit 1&2 near completion</p>
+  
+<br />
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/jan-blog-seven.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/jan-blog-eight.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
               </div> <br />
               
           
