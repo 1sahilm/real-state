@@ -87,22 +87,7 @@ transform: 'translate(-50% , -50%)'
       
 
 {/* <p className={styles.bannerHs}>HPRERASHI2025125/P</p> */}
- <p className={styles.disclaimer}>Disclaimer: amã branded Vvie villas (‘Villas’), located at Seung village, Naldhera golf hills, PO Durgapur,
-Shimla (HP), are not owned, developed, marketed or sold by Ideal Ice Limited or its affiliates
-(“Ideal Ice”). The Villas are independently developed, marketed, and sold by Mr. Rohit Puri
-and Kushaan Puri (“the Developer”) who hold a limited license from Ideal Ice, to use the
-brand name ‘amã’ (“Brand”) with the Villas during the term of the operating agreement
-entered into between the Developer and Ideal Ice. In case of termination/revocation/expiry
-of the operating agreement, the Villas and the project will no longer be associated with
-Brand and the Developer will cease to have the right to use any Ideal Ice brandmarks
-including Brand.
-Ideal Ice does not provide any assurances or guarantees regarding the residences, the
-overall project, construction quality, financial performance, or associated costs. Ideal Ice is
-not responsible for the Developer’s marketing materials, promotional activities, or sales-
-related representations. Ideal Ice has not verified or confirmed the accuracy of any
-statements, representations, or information presented in this material. The Developer and
-its affiliates are independent entities and are not agents or representatives of Ideal Ice. They
-do not have any authority to make commitments or representations on behalf of Ideal Ice.</p>
+ 
 
       </section>
      <div className={styles.marquee}> <p className={styles.disclaimemodile}>Disclaimer: amã branded Vvie villas (‘Villas’), located at Seung village, Naldhera golf hills, PO Durgapur,
