@@ -57,8 +57,6 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
   return (
     <>
  
-
-
     <header  
 
     className={`${styles.header}   ${
@@ -78,16 +76,7 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
 
       <div className={styles.logo}>
         <Link href="/">
-        
-          
-
-
-{/* <Image
-            src={"/new-logo.png"}
-            width={120}
-            height={120}
-            alt="logo" 
-            />  black logo*/}
+         
 
 {isLogo ? <> 
           <Image
@@ -146,7 +135,7 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
    
     <Link href="/" data-cursor="pointer2" className={styles.logoLink}>
       <div className={styles.logoWrapper}>
-        <Image
+        {/* <Image
           // src={logo1}
           src={"/logo-updated_processed.jpeg"}
           alt="Real Estate"
@@ -154,7 +143,16 @@ const Header = ({ headertheme , isTrue, isLogo }: HeaderProp) => {
           height={100}
           className={`${styles.logoImage} ${styles.logoSmall} md:block`}
           priority
-        />
+        /> */}
+        {/* <Image
+          // src={logo1}
+          src={"/new-logo-2.svg"}
+          alt="Real Estate"
+          width={400}
+          height={400}
+          className={`${styles.logoImage} ${styles.logoSmall} md:block`}
+          priority
+        /> */}
 
         {/* <Image
           src={logo}

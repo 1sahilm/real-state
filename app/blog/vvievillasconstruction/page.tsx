@@ -343,7 +343,6 @@ Electric and Plumbing for Villas 6,5 & 4</p>
               height={400}
               priority
               /> 
-           
 </div>
 <p> 
 <strong> Villas Coming to Life</strong></p>
@@ -362,7 +361,6 @@ Electric and Plumbing for Villas 6,5 & 4</p>
               height={400}
               priority
               /> 
-           
 </div> 
 <p>🔹October & November 
 <br />
@@ -457,25 +455,17 @@ Structures of Unit 1&2 near completion</p>
       width:"100%",
      }}
      > 
-
   <li>
     🏡 <strong>A Vision Taking Shape</strong><br />
     Vvie Villas is more than just a residential project — it&apos;s a curated lifestyle experience amidst nature, designed with modern sensibilities and timeless aesthetics. Whether you&apos;re looking for a peaceful escape, an investment property, or a nature-wrapped primary home, Vvie Villas brings it all together.
   </li>
-
   <li>
     📸 We’ll continue to share progress photos and walkthroughs regularly — stay tuned!
   </li>
-  
 </ul>
               </div> <br />
-              
-          
-  
-        </div>
-        
-      </div>
-
+        </div>    
+      </div> 
       <FeaturedReads />
       {/* <JustReading /> */}
     </div>
