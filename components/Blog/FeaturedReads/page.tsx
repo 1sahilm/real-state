@@ -170,6 +170,13 @@ const blogsData = [
         desc:"Purchasing a luxury villa is an important choice....",
         image:"/blog/buy-luxury-villa-himachal.webp",
         link:"/blog/buy-luxury-villa-himachal"
+    },
+    {
+        id:12,
+        title:"Naldehra Golf Hills - The Power Of Location",
+        desc:"Naldehra is not a crowded hill station. It is calm....",
+        image:"/blog/naldehra-golf-first.jpeg",
+        link:"/blog/naldehra-golf-hills-the-power-of-location"
     }
 ]
 
