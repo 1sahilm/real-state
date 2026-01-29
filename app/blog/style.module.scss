@@ -182,3 +182,11 @@ line-height: 25px;
        .bulletpoints{
         list-style-type: disc;
        }
+
+       .twoBox{
+        display: flex;
+        gap: 50px;
+        @media (max-width:768px){
+            display: block;
+        }
+       }

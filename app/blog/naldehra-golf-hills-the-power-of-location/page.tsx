@@ -52,7 +52,10 @@ const Test = () => {
               </ul>
 
                 <br />
-                <div className={Style.twoimage}>
+                <div className={Style.twoBox}>
+
+              
+               
                   <Image
                               src="/blog/naldehra-golf-third.jpeg"
                               alt={"Vive villa"}
@@ -60,12 +63,12 @@ const Test = () => {
                               height={400}
                               priority
                               />
-                </div>
-
-                <br />
-                <h4>Vvie Villas – Living in the Best of Naldehra</h4>
-
                 
+ <div>
+
+
+                <h4>Vvie Villas – Living in the Best of Naldehra</h4>
+ 
                 <ul className={Style.bulletpoints}>
                   <li>Prime location near Naldehra Golf Hills</li>
                   <li>Scenic views, clean air, and peaceful surroundings</li>
@@ -74,6 +77,9 @@ const Test = () => {
                 </ul>
 
                 <p>Here, every morning begins with misty views and silence broken only by birds and breeze.</p>
+                 </div>
+  </div>
+<br />
       <div className={Style.twoimage}>
                   <Image
                               src="/blog/naldehra-golf-second.jpeg"
