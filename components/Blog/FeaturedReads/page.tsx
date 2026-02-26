@@ -177,6 +177,13 @@ const blogsData = [
         desc:"Naldehra is not a crowded hill station. It is calm....",
         image:"/blog/naldehra-golf-first.jpeg",
         link:"/blog/naldehra-golf-hills-the-power-of-location"
+    },
+    {
+        id:13,
+        title:"What makes Vvie Villas truly exclusive",
+        desc:"Not a crowded development, but an intimate collection...",
+        image:"/blog/blog12-banner.jpeg",
+        link:"/blog/what-makes-vvie-villas-truly-exclusive"
     }
 ]
 
