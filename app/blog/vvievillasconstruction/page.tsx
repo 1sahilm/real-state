@@ -447,6 +447,121 @@ Structures of Unit 1&2 near completion</p>
               /> 
            
 </div>
+
+<p>🔹February Construction Update
+
+<br />
+Unit- 1 brick work work in progress</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-first.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+ 
+           
+</div>
+<p>
+Unit -2 and unit -3 valley side lawns work</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-second.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+ 
+           
+</div>
+<p>Unit -2 and unit -3 valley side lawns work</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-third.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+ 
+           
+</div>
+<p>Unit -4 valley side lawns work in progress</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-fourth.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/feb-blog-five.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+ 
+           
+</div>
+<br />
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-six.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+ 
+           
+</div>
+<p>Unit -4 front side lawns work in progress</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-seven.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />  
+ 
+           
+</div>
+<p>Unit -6 lawn and side boundary work completed</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-eight.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />  
+ 
+           
+</div>
+<p>Road and Boundary wall work in progress</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-nine.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />  
+ 
+           
+</div>
 <br />
 <br />
  <ul className={Style.under} 
