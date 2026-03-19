@@ -96,7 +96,7 @@ const tabsarry = [
 const blogsData = [
     {
         id:1,
-        title:"Vvie Villas – Construction Update as of January 2026",
+        title:"Vvie Villas – Construction Update as of February 2026",
         desc:"At Infranium Homes, we believe in transparency, consistency, and keeping our community informed at every stage of development....",
         image:"/vivle-villa-banner.webp",
         link:"/blog/vvievillasconstruction"
