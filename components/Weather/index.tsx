@@ -44,7 +44,9 @@ const TempratureSwitch = dynamic(() =>
 );
 
 const Weather = () => {
-  const today = new Date();
+  const [today, setToday] = useState<Date | null>(null);
+  const [time, setTime] = useState<string>('');
+  const [day, setDay] = useState<number>(0);
   const [weather, setWeather] = useState<{
     temp: number;
     description: string;
@@ -67,25 +69,18 @@ const Weather = () => {
       }
     };
 
+    // Set date and time on client side only
+    const now = new Date();
+    setToday(now);
+    setTime(now.toLocaleTimeString().replace(/:\d+ /, ' '));
+    setDay(now.getDay());
+
     fetchData();
   }, []);
 
-  if (loading) return <p>Loading weather data...</p>;
+  if (loading || !today) return <p>Loading weather data...</p>;
   if (!weather) return <p>Unable to fetch weather data.</p>;
 
-
-  // today day from date 
-  // const todayDay = date.split(",")[0]
-
-
-  // const time = today.toLocaleTimeString();
-  // remove second from time
-  const time = today.toLocaleTimeString().replace(/:\d+ /, ' ');
-
-
-
-
-  const day = today.getDay();
   const daylist = ["Sun","Mon","Tue","Wednesday ","Thu","Fri","Sat"];
   console.log("time",time);
 

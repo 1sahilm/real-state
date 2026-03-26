@@ -18,7 +18,6 @@ const Test = () => {
       <div className={Style.innerblog}>
         <div className={Style.title}>
           <h1>Vvie Villas – Construction Update</h1>
-          <span>June 2025</span>
         </div>
 
         <div className={Style.content}>
@@ -35,7 +34,7 @@ const Test = () => {
           <div
             className={Style.textblock} 
             >
-              <p>At Infranium Homes, we believe in transparency, consistency, and keeping our community informed at every stage of development. We&apos;re excited to share the June 2025 construction progress of our premium project – Vvie Villas, a collection of luxury villas nestled in the natural heartland of Coorg.
+              <p>At Infranium Homes, we believe in transparency, consistency, and keeping our community informed at every stage of development. We&apos;re excited to share the construction progress of our premium project – Vvie Villas, a collection of luxury villas nestled in the iconic naldehra golf hills shimla.
 </p>
 <p>📍 Project Timeline So Far <br />
 🔹 December 2024
@@ -143,13 +142,7 @@ Superstructure completed for Villa No. 5 & 6.</p>
               height={400}
               priority
               />
-              {/* <Image
-              src="/slider/thirteen.jpeg"
-              alt={"Vive villa"}
-              width={400}
-              height={400}
-              priority
-              /> */}
+           
 </div>
  
 <p><strong>Foundation work for Villa No. 3 & 4 commenced.</strong></p>
@@ -163,47 +156,431 @@ Structure of Villas 5 & 6 and ground floor of Villas 3 & 4 completed.</p>
               height={400}
               priority
               />
-              {/* <Image
-              src="/slider/sixteen.jpeg"
+           
+</div>
+<br />
+     <ul className={Style.under} 
+     style={{
+      textAlign:"left",
+      width:"100%",
+     }}
+     >
+  <li>Second floor slab for Villas 3 & 4 poured.<br /></li>
+  <li>Plastering and roof work for Villas 5 & 6 wrapped up.<br /></li>
+  <li>Our on-site office is nearing completion.<br /></li>
+  
+</ul>
+ 
+<p>🔹 June End<br />
+Plaster work & Roof Work of Villa No. 5 & 6 Completed</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/june-first.jpeg"
               alt={"Vive villa"}
               width={400}
               height={400}
               priority
-              /> */}
+              />
+  <Image
+              src="/blog/june-second.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />
+           
+</div>
+ 
+<p>🔹 July 2025<br />
+Second floor Slab For Villa No. 3 & 4.</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/june-third.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />
+  <Image
+              src="/blog/june-fourth.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />
+           
+</div>
+ 
+<p>🔹 July 2025<br />
+Site Office Near Completion.</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/june-five.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+ 
+<p>🔹 Aug 2025<br />
+MEP of Villa  6 &  5.</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/aug-first.jpeg"
+              alt={"Vive villa"}
+              width={600}
+              height={600}
+              priority
+              /> 
+           
+</div>
+<p>🔹 Aug End<br />
+Structure of Villa  4 & 3 near Completion.</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/aug-second.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p>🔹 Aug 2025<br />
+Structure of 4  villas completed</p>
+ 
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/aug-third.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p>🔹 Aug 2025 End<br />
+Foundation Work for Villas  2 & 1</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/aug-fourth.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p>🔹 Sept 2025<br />
+Plaster Work for Villas 6&5</p>
+ 
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-first.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p>🔹 Sept 2025 End<br />
+Exterior Plaster Work for Villas 4&3</p>
+ 
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-second.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p>🔹 Sept 2025<br />
+Slab Work for Villa 1</p>
+ 
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-third.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p>🔹 Sept 2025<br />
+Foundation Work for Villas 2</p>
+ 
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-fourth.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+<p>🔹 Sept 2025<br />
+Electric and Plumbing for Villas 6,5 & 4</p>
+ 
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-five.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/sep-six.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+</div>
+<p> 
+<strong> Villas Coming to Life</strong></p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/sep-seven.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/sep-eight.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+</div> 
+<p>🔹October & November 
+<br />
+VRV ducting work completed in Villa 4,5&6</p>
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/jan-blog-f.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/jan-blog-S.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+
+<p>🔹December
+
+<br />
+Water Proofing work completed in Villa 4,5&6</p>
+ 
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/jan-blog-Third.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/jan-blog-four.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+ <br />
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/jan-blog-five.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/jan-blog-six.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div> 
+
+<p>🔹January
+
+<br />
+Structures of Unit 1&2 near completion</p>
+  
+<br />
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/jan-blog-seven.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/jan-blog-eight.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+           
+</div>
+
+<p>🔹February Construction Update
+
+<br />
+Unit- 1 brick work work in progress</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-first.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+ 
+           
+</div>
+<p>
+Unit -2 and unit -3 valley side lawns work</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-second.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+ 
+           
+</div>
+<p>Unit -2 and unit -3 valley side lawns work</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-third.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+ 
+           
+</div>
+<p>Unit -4 valley side lawns work in progress</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-fourth.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+  <Image
+              src="/blog/feb-blog-five.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
+ 
+           
 </div>
 <br />
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-six.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              /> 
  
-              </div> <br />
-              <ul className={Style.under}>
-  <li>Second floor slab for Villas 3 & 4 poured.<br /></li>
-  <li>Plastering and roof work for Villas 5 & 6 wrapped up.<br /></li>
-  <li>Our on-site office is nearing completion.<br /></li>
-
-  <li>
-    🛠️ <strong>What&apos;s Next?</strong><br />
-    As we move into the next phase of construction, the focus will shift towards:
-    <ul>
-      <li>Finishing works for Villas 5 & 6</li>
-      <li>Superstructure completion for Villas 3 & 4</li>
-      <li>Landscape and amenity integration</li>
-      <li>Final setup of the site office to better assist site visits and partner coordination</li>
-    </ul>
-  </li>
-
+           
+</div>
+<p>Unit -4 front side lawns work in progress</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-seven.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />  
+ 
+           
+</div>
+<p>Unit -6 lawn and side boundary work completed</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-eight.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />  
+ 
+           
+</div>
+<p>Road and Boundary wall work in progress</p>
+   
+<div className={Style.twoimage}>
+  <Image
+              src="/blog/feb-blog-nine.jpeg"
+              alt={"Vive villa"}
+              width={400}
+              height={400}
+              priority
+              />  
+ 
+           
+</div>
+<br />
+<br />
+ <ul className={Style.under} 
+     style={{
+      textAlign:"left",
+      width:"100%",
+     }}
+     > 
   <li>
     🏡 <strong>A Vision Taking Shape</strong><br />
     Vvie Villas is more than just a residential project — it&apos;s a curated lifestyle experience amidst nature, designed with modern sensibilities and timeless aesthetics. Whether you&apos;re looking for a peaceful escape, an investment property, or a nature-wrapped primary home, Vvie Villas brings it all together.
   </li>
-
   <li>
     📸 We’ll continue to share progress photos and walkthroughs regularly — stay tuned!
   </li>
 </ul>
-
-        </div>
-        
-      </div>
-
+              </div> <br />
+        </div>    
+      </div> 
       <FeaturedReads />
       {/* <JustReading /> */}
     </div>

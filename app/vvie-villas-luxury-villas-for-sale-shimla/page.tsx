@@ -57,10 +57,13 @@ const ProjectPage = () => {
 
       <section className={style.aboutSection}>
         <div className={style.imageWrapper}>
-          <img
+          <Image
             src="/vivle-villa-banner.webp"
             alt="Architectural design"
             className={style.backgroundImage}
+            width={1920}
+            height={1080}
+            priority
           />
         </div>
         <div className={style.textOverlay}
@@ -110,11 +113,9 @@ const ProjectPage = () => {
                 {" "}
                 {projectarray?.map((item, index) => {
                   return (
-                    <>
-                      <div className={style.box} key={index}>
-                        <img src={item.image} alt={item.title} className={style.featureImg} />
+                      <div className={style.box} key={`${item.title}-${index}`}>
+                        <Image src={item.image} alt={item.title} className={style.featureImg} width={800} height={600} />
                       </div>
-                    </>
                   );
                 })}
               </div>

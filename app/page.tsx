@@ -4,10 +4,6 @@ import HomeMenu from "@/components/Banner/homemenu/pages";
 import Banner from "../components/Banner/Banner";
 import Ourstory from "@/components/Homepagesecction/Ourstory/pages";
 import ThreeColumnSection from "@/components/Homepagesecction/ThreeColumnSection/pages";
-import FourColumnSection from "@/components/Homepagesecction/FourColumnSection/pages";
-import Fivesection from "@/components/Homepagesecction/Fivesection/pages";
-import Latestproject from "@/components/Latestproject/pages";
-import Testimonials from "@/components/Testimonials/pages";
 import Blogssection from "@/components/Blogssection/pages";
 import Footer from "@/components/Footer/pages";
 import Ourstory2 from "@/components/Homepagesecction/Ourstory2/pages";
@@ -78,15 +74,9 @@ export default function Home() {
       </div>
       <Banner bannerData={bannerData} commingSoon={true} />
       <Ourstory />
-      <Ourstory2 />
-      {/* <FourColumnSection /> */}
-
-
+      <Ourstory2 /> 
       <Ourstory3 />
-      <ThreeColumnSection />
-      {/* <Fivesection /> */}
-      {/* <Latestproject /> */}
-      {/* <Testimonials /> */}
+      <ThreeColumnSection /> 
       <Blogssection />
       <ContactUs 
       background="#fff"

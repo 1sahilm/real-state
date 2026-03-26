@@ -17,11 +17,9 @@ const SingleProject = () => {
                 {" "}
                 {projectarray?.map((item, index) => {
                   return (
-                    <>
-                      <div className={style.box} key={index}>
-                        <img src={item.image} alt={item.title} />
+                      <div className={style.box} key={item.title + index}>
+                        <Image src={item.image} alt={item.title} width={650} height={728} />
                       </div>
-                    </>
                   );
                 })}
               </div>
@@ -80,17 +78,15 @@ const SingleProject = () => {
           <div className={style.row}>
             {projectarray?.map((item, index) => {
               return (
-                <>
-                  <div className={style.box} key={index}>
+                  <div className={style.box} key={`${item.title}-${index}`}>
                     <div className={style.image}>
-                      <img src={item.image} alt={item.title} />
+                      <Image src={item.image} alt={item.title} width={650} height={728} />
                     </div>
                     <div className={style.blockcontent}>
                       <h3>{item.title}</h3>
                       <p>{item.subtitle}</p>
                     </div>
                   </div>
-                </>
               );
             })}
           </div>

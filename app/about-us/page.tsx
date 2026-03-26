@@ -19,10 +19,13 @@ const About = () => {
 
       <section className={styles.aboutSection}>
         <div className={styles.imageWrapper}>
-          <img
+          <Image
             src="/about-us/baneer-about.jpg"
             alt="Architectural design"
             className={styles.backgroundImage}
+            width={1920}
+            height={1080}
+            priority
           />
         </div>
         <div className={styles.textOverlay}>
@@ -109,17 +112,21 @@ pillars of collaboration and excellence.
       <div className={styles.infranimTeams}>
             {userData?.map((item:any , index:any)=>{
               return (
-                <>
-          <div className={styles.infranimContainer}> 
+          <div className={styles.infranimContainer} key={item?.name ?? index}> 
 
-                <img src={item?.image} alt="Member 1" className={styles.userAvatar} />
-                 <div className={styles.info} key={index}>
+                <Image
+                  src={item?.image}
+                  alt={item?.name || "Team member"}
+                  className={styles.userAvatar}
+                  width={250}
+                  height={250}
+                />
+                 <div className={styles.info}>
               <h3>{item?.name}</h3>
               <h6>{item?.role}</h6>
               <p>{item?.description}</p>
             </div>
           </div> 
-                </>
               )
             })}
             

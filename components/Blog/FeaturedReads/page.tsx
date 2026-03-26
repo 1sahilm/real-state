@@ -63,15 +63,13 @@ const FeaturedReads = () => {
                             {blogsData?.map((items:any, index:any) => {
                                 console.log("items", { items })
                                 return (
-                                    <>
-                                        <SmallCard
-                                            key={index}
-                                            image={items?.image}
-                                            title={items?.title}
-                                            description={items?.desc}
-                                            readmore={`${items.link}`}
-                                        />
-                                    </>
+                                    <SmallCard
+                                        key={items.id}
+                                        image={items?.image}
+                                        title={items?.title}
+                                        description={items?.desc}
+                                        readmore={`${items.link}`}
+                                    />
                                 )
                             })}
 
@@ -98,7 +96,7 @@ const tabsarry = [
 const blogsData = [
     {
         id:1,
-        title:"Vvie Villas – Construction Update as of June 2025",
+        title:"Vvie Villas – Construction Update as of February 2026",
         desc:"At Infranium Homes, we believe in transparency, consistency, and keeping our community informed at every stage of development....",
         image:"/vivle-villa-banner.webp",
         link:"/blog/vvievillasconstruction"
@@ -114,8 +112,78 @@ const blogsData = [
         id:3,
         title:"Shimla’s Colonial Charm: Why Royal Families Chose It as Their Summer Retreat",
         desc:"Tucked away in the lap of the Himalayas, Shimla is more than just a picturesque hill station....",
-        image:"/shimla-bloh-3.jpg",
+        image:"/blog/shimla-colonial-charm-royal-summer-retreat.webp",
         link:"/blog/shimla-colonial-charm"
+    },
+    {
+        id:4,
+        title:"Why Shimla Is Becoming the New Hub for Luxury Villa Living in North India",
+        desc:"Some places don’t ask you to slow down. They make you want to....",
+        image:"/blog/shimla-new-hub-for-luxury-villas.webp",
+        link:"/blog/luxury-villas-shimla"
+    },
+    {
+        id:5,
+        title:"Investment Property Near Naldehra Golf Course, Shimla",
+        desc:"In the serene landscapes of Himachal Pradesh....",
+        image:"/blog/investment-property-naldehra-golf-course.webp",
+        link:"/blog/naldehra-golf-property"
+    },
+    {
+        id:6,
+        title:"Gated Community Villas for Sale in Naldehra: Discover the Luxurious Charm of Vvie Villas",
+        desc:"Just imagine a place away in the beautiful hills of Himachal Pradesh....",
+        image:"/blog/gated-community-villas-naldehra-vvie.webp",
+        link:"/blog/naldehra-gated-villas"
+    },
+    {
+        id:7,
+        title:"Buying a Villa in Shimla: A Smart Investment or a Dream Fulfilled?",
+        desc:"We often talk about investments as numbers. Returns. Trends. Risk and Reward....",
+        image:"/blog/buying-villa-in-shimla-smart-investment-or-dream.webp",
+        link:"/blog/buying-villa-shimla"
+    },
+    {
+        id:8,
+        title:"Experience Luxury Living: Inside Shimla’s Most Premium & Lavish Villas",
+        desc:"Shimla has always been called the Queen of Hills....",
+        image:"/blog/premium-villas-shimla.webp",
+        link:"/blog/premium-villas-shimla"
+    },
+    {
+        id:9,
+        title:"From Vision to Reality: How the Infranium Transforming Naldehra",
+        desc:"Naldehra is an old-school, cool hill station....",
+        image:"/blog/infranium-transforming-naldehra.webp",
+        link:"/blog/infranium-transforming-naldehra"
+    },
+    {
+        id:10,
+        title:"Why Infranium Sets the Standard for the Best Luxury Villas in Himachal Pradesh?",
+        desc:"Luxury in Himachal Pradesh has become much more....",
+        image:"/blog/best-luxury-villas-himachal.webp",
+        link:"/blog/best-luxury-villas-himachal"
+    },
+    {
+        id:11,
+        title:"How Infranium Helps You Buy the Perfect Luxury Villa in Himachal Pradesh?",
+        desc:"Purchasing a luxury villa is an important choice....",
+        image:"/blog/buy-luxury-villa-himachal.webp",
+        link:"/blog/buy-luxury-villa-himachal"
+    },
+    {
+        id:12,
+        title:"Naldehra Golf Hills - The Power Of Location",
+        desc:"Naldehra is not a crowded hill station. It is calm....",
+        image:"/blog/naldehra-golf-first.jpeg",
+        link:"/blog/naldehra-golf-hills-the-power-of-location"
+    },
+    {
+        id:13,
+        title:"What makes Vvie Villas truly exclusive",
+        desc:"Not a crowded development, but an intimate collection...",
+        image:"/blog/blog12-banner.jpeg",
+        link:"/blog/what-makes-vvie-villas-truly-exclusive"
     }
 ]
 

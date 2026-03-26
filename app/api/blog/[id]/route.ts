@@ -5,7 +5,7 @@ export async function DELETE(
   request: NextRequest,
   context: any  // <-- use any to avoid type error temporarily
 ) {
-  const { id } = context.params;
+  const { id } = (await context.params);
 
   if (!id) {
     return NextResponse.json({ error: "Blog ID is required" }, { status: 400 });
@@ -25,7 +25,7 @@ export async function DELETE(
 } 
 
 export async function PATCH(request: NextRequest, context: any) {
-  const { id: slug } = context.params;
+  const { id: slug } = (await context.params);
 
   if (!slug) {
     return NextResponse.json({ error: 'Slug is required' }, { status: 400 });
